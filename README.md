@@ -31,8 +31,11 @@ flowchart TD
     J --> K[Post-Session Debrief]
     K --> L[Session Ends]
 ```
+
+
+
 📂 Structure
-	•	docs/: Academic LaTeX report and diagrams
+	•	Docs/: Academic LaTeX report and diagrams
 	•	unity_project/: Unity C# source files
 	•	data/: Anonymized datasets
 	•	website/: HTML files for recruitment and consent
