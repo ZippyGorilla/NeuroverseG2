@@ -30,6 +30,7 @@ flowchart TD
     I --> J[Cooperative Task or Puzzle]
     J --> K[Post-Session Debrief]
     K --> L[Session Ends]
+```
 📂 Structure
 	•	docs/: Academic LaTeX report and diagrams
 	•	unity_project/: Unity C# source files
