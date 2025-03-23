@@ -10,8 +10,11 @@ This project explores adaptive sensory filtering and profile blending in shared 
 - GDPR-compliant anonymous data collection
 - Modular Unity-based architecture
 
-##Flow Chart
+➡️ **[See Full Development Guide](docs/DEVELOPMENT_GUIDE.md)**
 
+---
+
+## 🔁 Flow Chart
 
 ```mermaid
 flowchart TD
@@ -27,28 +30,3 @@ flowchart TD
     I --> J[Cooperative Task or Puzzle]
     J --> K[Post-Session Debrief]
     K --> L[Session Ends]
-```
-
-  
-
-## 📂 Structure
-
-- `docs/`: Academic LaTeX report and diagrams
-- `unity_project/`: Unity C# source files
-- `data/`: Anonymized datasets
-- `website/`: HTML files for recruitment and consent
-
-## 🧪 Run the Study
-
-1. Clone the repo
-2. Open `unity_project/` in Unity 2022+
-3. Load the calibration or experience scenes
-4. Start testing on Meta Quest 3
-
-## 📜 License
-
-Licensed under GPL-3.0 or MIT
-
-## 👥 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
