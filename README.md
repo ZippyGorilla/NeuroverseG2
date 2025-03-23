@@ -31,3 +31,22 @@ Licensed under GPL-3.0 or MIT
 ## 👥 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+##Flow Chart
+
+
+```mermaid
+flowchart TD
+    A[Start VR Session] --> B[Calibration Scene]
+    B --> C[Passive Behavior Tracking]
+    C --> D[ML Model Predicts Sensory Profile]
+    D --> E{User Nearby?}
+    E -- Yes --> F[Blend Profiles]
+    E -- No --> G[Continue Solo Experience]
+    F --> H[Adapt Environment]
+    G --> H[Adapt Environment]
+    H --> I[Complete Task / Puzzle]
+    I --> J[Post-Session Debrief]
+    J --> K[Data Saved (Anonymized & GDPR)]
+    K --> L[Session Ends]
+```
