@@ -39,14 +39,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md)
 flowchart TD
     A[Start VR Session] --> B[Calibration Scene]
     B --> C[Passive Behavior Tracking]
-    C --> D[ML Model Predicts Sensory Profile]
-    D --> E{User Nearby?}
-    E -- Yes --> F[Blend Profiles]
+    C --> D[ML Predicts Sensory Profile]
+    D --> E{Is Other User Nearby?}
+    E -- Yes --> F[Blend Sensory Profiles]
     E -- No --> G[Continue Solo Experience]
     F --> H[Adapt Environment]
-    G --> H[Adapt Environment]
-    H --> I[Complete Task / Puzzle]
+    G --> H
+    H --> I[Cooperative Task or Puzzle]
     I --> J[Post-Session Debrief]
-    J --> K[Data Saved (Anonymized & GDPR)]
+    J --> K[Data Saved - Anonymized + GDPR-Compliant]
     K --> L[Session Ends]
 ```
