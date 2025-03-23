@@ -10,6 +10,27 @@ This project explores adaptive sensory filtering and profile blending in shared 
 - GDPR-compliant anonymous data collection
 - Modular Unity-based architecture
 
+##Flow Chart
+
+
+```mermaid
+flowchart TD
+    A[Start VR Session] --> B[Consent + GDPR Notice]
+    B --> C[Calibration Scene]
+    C --> D[Passive Behavior Tracking]
+    D --> E[ML Predicts Sensory Profile]
+    E --> F{Is Other User Nearby?}
+    F -- Yes --> G[Blend Sensory Profiles]
+    F -- No --> H[Continue Solo Experience]
+    G --> I[Adapt Environment]
+    H --> I
+    I --> J[Cooperative Task or Puzzle]
+    J --> K[Post-Session Debrief]
+    K --> L[Session Ends]
+```
+
+  
+
 ## 📂 Structure
 
 - `docs/`: Academic LaTeX report and diagrams
@@ -31,22 +52,3 @@ Licensed under GPL-3.0 or MIT
 ## 👥 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-##Flow Chart
-
-
-```mermaid
-flowchart TD
-    A[Start VR Session] --> B[Calibration Scene]
-    B --> C[Passive Behavior Tracking]
-    C --> D[ML Predicts Sensory Profile]
-    D --> E{Is Other User Nearby?}
-    E -- Yes --> F[Blend Sensory Profiles]
-    E -- No --> G[Continue Solo Experience]
-    F --> H[Adapt Environment]
-    G --> H
-    H --> I[Cooperative Task or Puzzle]
-    I --> J[Post-Session Debrief]
-    J --> K[Data Saved - Anonymized + GDPR-Compliant]
-    K --> L[Session Ends]
-```
