@@ -33,7 +33,6 @@ flowchart TD
 ```
 
 
-
 📂 Structure
 	-	Docs/: Academic LaTeX report and diagrams
 	-	unity_project/: Unity C# source files
