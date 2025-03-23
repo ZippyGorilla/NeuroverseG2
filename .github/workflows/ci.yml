@@ -22,6 +22,9 @@ jobs:
         dotnet-version: '5.0.x' # Adjust this version as necessary
 
     - name: Install dependencies
+      run: sudo apt-get update && sudo apt-get install -y libssl-dev
+
+    - name: Install .NET dependencies
       run: dotnet restore
 
     - name: Build
