@@ -24,6 +24,13 @@ jobs:
     - name: Install dependencies
       run: sudo apt-get update && sudo apt-get install -y libssl-dev
 
+    - name: Check for source files
+      run: |
+        if [ -z "$(find . -name '*.cs')" ]; then
+          echo "No source files found. Skipping build and test steps."
+          exit 0
+        fi
+
     - name: Install .NET dependencies
       run: dotnet restore
 
