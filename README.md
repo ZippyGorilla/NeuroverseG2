@@ -11,6 +11,8 @@ This project explores adaptive sensory filtering and profile blending in shared 
 - Modular Unity-based architecture
 
 ➡️ **[See Full Development Guide on GitHub Wiki](https://github.com/Ziforge/Neuroverse/wiki/Development-Setup-Guide)**
+
+
 📄 **[Edit or View the Thesis on Overleaf](https://www.overleaf.com/read/nddwcrqrpbcs#c4cd87)**
 ---
 
