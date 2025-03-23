@@ -3,7 +3,7 @@
 - [Home](Home)
 - [Development Setup Guide](Development-Setup-Guide)
 - [Contributing to Neuroverse](Contributing-to-Neuroverse)
-- [CI Test Settings](Home#ci-test-settings) <!-- Add this new link to the CI Test Settings section -->
+- [CI Test Settings](Home#ci-test-settings)
 
 ## Documentation
 
