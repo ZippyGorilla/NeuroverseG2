@@ -10,7 +10,7 @@ This project explores adaptive sensory filtering and profile blending in shared 
 - GDPR-compliant anonymous data collection
 - Modular Unity-based architecture
 
-➡️ **[See Full Development Guide](docs/DEVELOPMENT_GUIDE.md)**
+➡️ **[See Full Development Guide on GitHub Wiki](https://github.com/Ziforge/Neuroverse/wiki/Development-Setup-Guide)**
 
 ---
 
