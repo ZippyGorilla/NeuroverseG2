@@ -54,4 +54,4 @@ Licensed under GPL-3.0 or MIT
 
 ## 👥 Contributing
 
-See [Contributing Guide on the Wiki](https://github.com/Ziforge/Neuroverse/wiki/Contributing-to-Neuroverse)
+See [Contributing Guide on the Wiki](https://github.com/Ziforge/Neuroverse/wiki/Contributing‐to‐Neuroverse)
