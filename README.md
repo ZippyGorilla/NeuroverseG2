@@ -12,6 +12,7 @@ This project explores adaptive sensory filtering and profile blending in shared 
 
 ➡️ **[See Full Development Guide on GitHub Wiki](https://github.com/Ziforge/Neuroverse/wiki/Development-Setup-Guide)**
 
+
 ---
 
 ## 🔁 Flow Chart
@@ -53,4 +54,4 @@ Licensed under GPL-3.0 or MIT
 
 ## 👥 Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [Contributing Guide on the Wiki](https://github.com/Ziforge/Neuroverse/wiki/Contributing-to-Neuroverse)
