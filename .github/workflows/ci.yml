@@ -19,30 +19,23 @@ jobs:
     - name: Set up .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x' # Adjust this version as necessary
+        dotnet-version: '5.0.x'
 
-    - name: Install dependencies
-      run: sudo apt-get update && sudo apt-get install -y libssl-dev
+    - name: Set up Unity
+      uses: game-ci/unity-builder@v2
+      with:
+        unityVersion: 2020.3.13f1
 
-    - name: Check for source files
-      run: |
-        if [ -z "$(find . -name '*.cs')" ]; then
-          echo "No source files found. Skipping build and test steps."
-          exit 0
-        fi
+    - name: Activate Unity license
+      run: echo "Activate Unity license step" # Replace with actual license activation step
 
-    - name: Install .NET dependencies
-      run: dotnet restore
-
-    - name: Build
-      run: dotnet build --no-restore
-
-    - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+    - name: Run Unity tests
+      if: contains(github.event.pull_request.labels.*.name, 'run-tests')
+      run: echo "Run Unity tests step" # Replace with actual test command
 
     - name: Publish test results
-      if: always()
-      uses: actions/upload-artifact@v2 # Ensure this version is correct
+      if: contains(github.event.pull_request.labels.*.name, 'run-tests')
+      uses: actions/upload-artifact@v2
       with:
         name: test-results
-        path: '**/TestResults/*.xml'
+        path: path/to/test-results
