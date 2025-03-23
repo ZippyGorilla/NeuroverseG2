@@ -4,6 +4,7 @@
 - [Development Setup Guide](Development-Setup-Guide)
 - [Contributing to Neuroverse](Contributing-to-Neuroverse)
 - [CI Test Settings](Home#ci-test-settings)
+- [Verification of Pushes and Pulls](Home#verification-of-pushes-and-pulls)
 
 ## Documentation
 
