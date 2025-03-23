@@ -35,16 +35,16 @@ flowchart TD
 
 
 📂 Structure
-	•	Docs/: Academic LaTeX report and diagrams
-	•	unity_project/: Unity C# source files
-	•	data/: Anonymized datasets
-	•	website/: HTML files for recruitment and consent
+	-	Docs/: Academic LaTeX report and diagrams
+	-	unity_project/: Unity C# source files
+	-	data/: Anonymized datasets
+	-	website/: HTML files for recruitment and consent
 
 🧪 Run the Study
-	1.	Clone the repo
-	2.	Open unity_project/ in Unity 2022+
-	3.	Load the calibration or experience scenes
-	4.	Start testing on Meta Quest 3
+	- 1.	Clone the repo
+	- 2.	Open unity_project/ in Unity 2022+
+	- 3.	Load the calibration or experience scenes
+	- 4.	Start testing on Meta Quest 3
 
 📜 License
 
