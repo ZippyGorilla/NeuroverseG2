@@ -1,4 +1,5 @@
 # Neuroverse: Adaptive VR for Neurodivergent Empathy
+[![Docs](https://img.shields.io/badge/wiki-Documentation-blue?logo=github)](https://github.com/Ziforge/Neuroverse/wiki)
 
 This project explores adaptive sensory filtering and profile blending in shared VR experiences between neurotypical and neurodivergent individuals. Built in Unity using C# and deployed on Meta Quest 3.
 
@@ -16,7 +17,6 @@ This project explores adaptive sensory filtering and profile blending in shared 
 📄 **[Edit or View the Thesis on Overleaf](https://www.overleaf.com/read/nddwcrqrpbcs#c4cd87)**
 ---
 
-[![Docs](https://img.shields.io/badge/wiki-Documentation-blue?logo=github)](https://github.com/Ziforge/Neuroverse/wiki)
 
 ## 🔁 Flow Chart
 
