@@ -1,0 +1,26 @@
+name: Auto Link Issues to GitHub Project
+
+on:
+  schedule:
+    - cron: "0 10 * * 1"  # Every Monday at 10:00 UTC
+  workflow_dispatch:      # Manual trigger option
+
+jobs:
+  link-and-update:
+    runs-on: ubuntu-latest
+
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      PROJECT_ID: PVT_kwHOCt5hsc4A1Eqc  # Replace with actual ID
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up jq
+        run: sudo apt-get install jq
+
+      - name: Run automation script
+        run: |
+          chmod +x scripts/link_and_set_fields.sh
+          ./scripts/link_and_set_fields.sh
