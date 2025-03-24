@@ -1,0 +1,26 @@
+name: 📊 Generate Weekly Summary
+
+on:
+  schedule:
+    - cron: '0 10 * * FRI' # Every Friday at 10:00 UTC
+  workflow_dispatch:
+
+jobs:
+  generate-summary:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: 🧾 Generate Markdown Summary
+        run: bash scripts/generate_time_summary.sh
+
+      - name: 📤 Commit and Push
+        run: |
+          git config user.name "Neuroverse Bot"
+          git config user.email "bot@neuroverse.dev"
+          git add summary/
+          git commit -m "📊 Weekly time summary update"
+          git push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
