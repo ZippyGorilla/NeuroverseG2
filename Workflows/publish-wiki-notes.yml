@@ -1,0 +1,49 @@
+name: 📚 Sync Weekly Notes to Wiki
+
+on:
+  push:
+    paths:
+      - 'weekly_notes/**'
+    branches:
+      - main
+
+jobs:
+  publish-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout main repo
+        uses: actions/checkout@v3
+
+      - name: 🧠 Set up Git
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+      - name: 📥 Clone Wiki
+        run: |
+          git clone https://github.com/Ziforge/Neuroverse.wiki.git wiki
+
+      - name: 📝 Copy notes into Wiki
+        run: |
+          for file in weekly_notes/week*.md; do
+            filename=$(basename "$file")
+            weekname="${filename%.*}"
+            title=$(echo "$weekname" | sed 's/week/Week-/' | sed 's/_/-/g')
+            cp "$file" "wiki/${title}-Progress.md"
+            echo "✅ Added $file as ${title}-Progress.md"
+          done
+
+      - name: 🗂️ Update Wiki Sidebar
+        run: |
+          cd wiki
+          echo "## 🧭 Wiki Navigation" > _Sidebar.md
+          echo "- [Home](Home)" >> _Sidebar.md
+          echo "- [Development Guide](Development-Setup-Guide)" >> _Sidebar.md
+          echo "- [Automation Script](Automation-Script)" >> _Sidebar.md
+          echo -e "\n## 📅 Weekly Progress" >> _Sidebar.md
+          for file in Week-*-Progress.md; do
+            name="${file%.md}"
+            echo "- [${name//-/ }](\"$name\")" >> _Sidebar.md
+          done
+          git add . && git commit -m "🤖 Auto-sync weekly notes to wiki" && git push
