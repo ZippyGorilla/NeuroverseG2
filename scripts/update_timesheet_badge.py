@@ -1,31 +1,23 @@
-name: 🔁 Update Timesheet Badge in README
+import datetime
 
-on:
-  schedule:
-    - cron: '5 9 * * 1'  # Every Monday 09:05 UTC
-  workflow_dispatch:
+README_PATH = "README.md"
+BADGE_START = "[![Weekly Timesheet]("
 
-jobs:
-  update-readme:
-    runs-on: ubuntu-latest
+# Calculate current ISO week number
+week_num = datetime.datetime.now().isocalendar().week
+link = f"https://github.com/Ziforge/Neuroverse/blob/main/weekly_notes/week-{week_num}-timesheet.md"
 
-    steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+badge = f"[![Weekly Timesheet](https://img.shields.io/badge/Open_This_Week's_Timesheet-blue?style=for-the-badge)]({link})"
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+# Update README.md
+with open(README_PATH, "r") as f:
+    lines = f.readlines()
 
-    - name: Update README badge
-      run: |
-        python3 scripts/update_timesheet_badge.py
+with open(README_PATH, "w") as f:
+    for line in lines:
+        if BADGE_START in line:
+            f.write(badge + "\n")
+        else:
+            f.write(line)
 
-    - name: Commit and push changes
-      run: |
-        git config user.name github-actions[bot]
-        git config user.email github-actions[bot]@users.noreply.github.com
-        git add README.md
-        git commit -m \"🔁 Auto-update weekly timesheet badge\" || echo \"No changes to commit\"
-        git push
+print(f"✅ README updated with badge linking to week {week_num} timesheet")
