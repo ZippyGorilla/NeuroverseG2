@@ -14,3 +14,5 @@
 - [Run the Study](Home#run-the-study)
 - [License](Home#license)
 - [Contributing](Home#contributing)
+- [Development Guide](Development-Setup-Guide)
+- [Automation Script](Automation-Script)
