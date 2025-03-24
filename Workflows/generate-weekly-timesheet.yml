@@ -1,30 +1,31 @@
-name: 📆 Weekly Timesheet Generator
+name: 🗓️ Auto-Generate Weekly Timesheet
 
 on:
   schedule:
-    - cron: '0 9 * * MON'  # Every Monday at 9:00 UTC
-  workflow_dispatch:       # Allow manual trigger
+    - cron: '0 9 * * 1'  # Every Monday at 09:00 UTC
+  workflow_dispatch:
 
 jobs:
-  update-timesheet:
+  generate-timesheet:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🔄 Checkout Repo
-        uses: actions/checkout@v3
+    - name: Checkout Neuroverse Repo
+      uses: actions/checkout@v3
 
-      - name: 🛠️ Setup Git Config
-        run: |
-          git config user.name "Neuroverse Bot"
-          git config user.email "bot@neuroverse.dev"
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-      - name: ⏱️ Generate Weekly Timesheet
-        run: bash scripts/weekly_timesheet_updater.sh
+    - name: Run timesheet generator
+      run: |
+        python3 scripts/auto_generate_timesheet.py
 
-      - name: 📤 Commit and Push
-        run: |
-          git add weekly_notes/
-          git commit -m "🕒 Weekly Timesheet – Week $(date +%U)"
-          git push
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Commit new timesheet (if created)
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add weekly_notes/
+        git diff --cached --quiet || git commit -m "📅 Auto-create new weekly timesheet"
+        git push
