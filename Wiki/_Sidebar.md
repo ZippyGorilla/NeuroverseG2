@@ -16,3 +16,9 @@
 - [Contributing](Home#contributing)
 - [Development Guide](Development-Setup-Guide)
 - [Automation Script](Automation-Script)
+
+
+## 📅 Weekly Progress
+
+- [Week 1 Progress](Week-1-Progress)
+- [Week 2 Progress](Week-2-Progress)
