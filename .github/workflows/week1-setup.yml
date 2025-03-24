@@ -1,0 +1,24 @@
+name: Run Week 1 Setup (One-Time)
+
+on:
+  workflow_dispatch:  # manual trigger only
+
+jobs:
+  run-week1:
+    runs-on: ubuntu-latest
+
+    env:
+      GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      PROJECT_ID:PVT_kwHOCt5hsc4A1Eqc  # Replace with actual ID
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Install jq
+        run: sudo apt-get install jq
+
+      - name: Run Week 1 Setup Script
+        run: |
+          chmod +x scripts/run_week1_setup.sh
+          ./scripts/run_week1_setup.sh
