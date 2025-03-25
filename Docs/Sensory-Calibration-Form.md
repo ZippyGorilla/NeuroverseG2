@@ -1,73 +1,100 @@
-# 🧠 Neuroverse Sensory Calibration Questionnaire
+# 🧠 Sensory Calibration Questionnaire
 
-Welcome to **Neuroverse** — a VR experience designed to **adapt to your sensory profile** to increase comfort, engagement, and empathy. This short form helps us understand your preferences and context. All data is used **anonymously and respectfully**.
-
----
-
-## 👤 Section A: Identity (Optional)
-
-**1. How do you identify?**  
-- [ ] Male  
-- [ ] Female  
-- [ ] Nonbinary / Other  
-- [ ] Prefer not to say  
-
-**2. Do you relate to any of the following?** *(Select all that apply)*  
-- [ ] I have ADHD  
-- [ ] I am autistic  
-- [ ] I experience sensory sensitivity  
-- [ ] I am neurotypical  
-- [ ] Prefer not to answer  
-
-**3. Which region or culture do you identify with most?**  
-_Example: Nordic, East Asian, Mediterranean, etc._
-
-[ Write your answer here ]
+Welcome to Neuroverse! This brief questionnaire helps us tailor the experience to your comfort level by understanding your sensory preferences. All answers are anonymous and used only to adapt your environment.
 
 ---
 
-## 🌍 Section B: Sensory Preferences
+## 👁️ Visual Sensitivity
 
-**4. How do you feel in bright environments?**  
-- [ ] Energized  
-- [ ] Neutral  
-- [ ] Overwhelmed  
+**1. How do you typically respond to bright lights or high-contrast visuals?**
 
-**5. Do you prefer a calm or vivid visual style?**  
-- [ ] Calm (low contrast, minimal motion)  
-- [ ] Balanced  
-- [ ] Vivid (high contrast, rich detail)  
+- [ ] I am highly sensitive (prefer dim lighting and soft contrasts)
+- [ ] I have average tolerance
+- [ ] I am under-responsive (need stronger visual cues)
+- [ ] Prefer not to say
 
-**6. How do you prefer sound in immersive spaces?**  
-- [ ] Clear and loud  
-- [ ] Balanced  
-- [ ] Soft or subtle  
+**2. Would you like to disable visual adaptation (brightness/contrast changes)?**
 
-**7. Do you enjoy movement or camera effects in virtual spaces?**  
-- [ ] Yes, the more the better  
-- [ ] A little is fine  
-- [ ] I prefer it minimal  
+- [ ] Yes, opt out of visual adaptation
+- [ ] No, I am okay with it
 
 ---
 
-## 🔄 Section C: Adaptivity
+## 🔊 Auditory Sensitivity
 
-**8. Would you like the environment to adapt based on your behavior?**  
-- [ ] Yes, adapt automatically  
-- [ ] Ask me before adapting  
-- [ ] No, I will adjust things manually  
+**3. How do you react to overlapping or loud sounds?**
 
----
+- [ ] I am highly sensitive (prefer quiet, minimal sound)
+- [ ] I am generally okay with most sounds
+- [ ] I often don’t notice background sounds unless they're very loud
+- [ ] Prefer not to say
 
-## 🔐 Consent & Data Use
+**4. Would you like to disable auditory filtering (noise reduction/enhancement)?**
 
-> By completing this form, you agree that your input may be used **anonymously** to personalize your VR experience. No sensitive personal data will be stored or shared without explicit consent. Neuroverse is designed to be **GDPR-compliant**.
-
----
-
-📩 *Thank you! Your sensory preferences help create a more inclusive world.*
+- [ ] Yes, opt out of auditory adaptation
+- [ ] No, I am okay with it
 
 ---
 
-🗂️ **[Back to Project README](../README.md)**  
-📘 **[See How We Use This Data →](How-Adaptivity-Works.md)*
+## 🎮 Motion & Transition Sensitivity
+
+**5. How do you feel about fast movement or scene changes in VR?**
+
+- [ ] I get motion sick easily / prefer very slow transitions
+- [ ] I can tolerate moderate motion
+- [ ] I enjoy faster, more fluid motion
+- [ ] Prefer not to say
+
+**6. Would you like to disable adaptive motion smoothing?**
+
+- [ ] Yes, opt out of motion-based adaptation
+- [ ] No, I am okay with it
+
+---
+
+## ✋ Haptic (Touch/Vibration) Feedback
+
+**7. How comfortable are you with vibration or tactile feedback in controllers?**
+
+- [ ] I find it overstimulating and would rather not have it
+- [ ] I am okay with soft/moderate haptics
+- [ ] I need strong, frequent tactile cues to stay engaged
+- [ ] Prefer not to say
+
+**8. Would you like to disable haptic feedback entirely?**
+
+- [ ] Yes, opt out of haptics
+- [ ] No, I am okay with it
+
+---
+
+## 🌍 Additional Profile Inputs (Optional)
+
+**9. What best describes your neurotype?**  
+_(Used only for internal research calibration; not stored personally)_
+
+- [ ] Autistic
+- [ ] ADHD
+- [ ] Neurotypical
+- [ ] Bipolar / Mood spectrum
+- [ ] Schizophrenia spectrum
+- [ ] Prefer not to say
+
+**10. Cultural Background (optional)**
+
+- [ ] Western / European
+- [ ] Nordic / Scandinavian
+- [ ] East Asian
+- [ ] Middle Eastern
+- [ ] Other / Prefer not to say
+
+**11. Gender Identity (optional)**
+
+- [ ] Female
+- [ ] Male
+- [ ] Non-binary / other
+- [ ] Prefer not to say
+
+---
+
+✅ Thank you! Your sensory preferences help make Neuroverse more inclusive and accessible.
