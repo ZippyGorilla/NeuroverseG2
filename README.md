@@ -3,7 +3,7 @@
 [![Overleaf](https://img.shields.io/badge/View%20Thesis-Overleaf-brightgreen?logo=Overleaf&logoColor=white)](https://www.overleaf.com/read/nddwcrqrpbcs#c4cd87)
 ---
 [![Weekly Timesheet](https://img.shields.io/badge/Open_This_Week's_Timesheet-blue?style=for-the-badge)](https://github.com/Ziforge/Neuroverse/blob/main/weekly_notes/week-13-timesheet.md)
-🧠 [Sensory Calibration Questionnaire](docs/Sensory-Calibration-Form.md)
+[![🧠 Sensory Calibration Questionnaire](https://img.shields.io/badge/Questionnaire-%F0%9F%A7%A0-blue?style=for-the-badge)](docs/Sensory-Calibration-Form.md)
 
 > 🌍 A VR platform that adapts to individual sensory needs — connecting neurodivergent and neurotypical users through shared, empathetic interaction.
 
