@@ -1,0 +1,51 @@
+name: 📊 Weekly Time Visual Update
+
+on:
+  schedule:
+    - cron: '0 12 * * 5'  # Every Friday at 12:00 UTC
+  workflow_dispatch:
+
+jobs:
+  generate-and-update-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Neuroverse Repo
+      uses: actions/checkout@v3
+      with:
+        repository: Ziforge/Neuroverse
+        path: neuroverse
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install pandas matplotlib
+
+    - name: Run chart generator
+      run: |
+        cd neuroverse
+        python3 scripts/generate_time_visuals.py
+
+    - name: Checkout Wiki Repo
+      uses: actions/checkout@v3
+      with:
+        repository: Ziforge/Neuroverse.wiki
+        path: wiki
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Copy images to wiki
+      run: |
+        cp neuroverse/summary/*.png wiki/
+
+    - name: Commit & Push to Wiki
+      run: |
+        cd wiki
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add *.png
+        git commit -m "📊 Auto-update weekly time tracking visuals"
+        git push

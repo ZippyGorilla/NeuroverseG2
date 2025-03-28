@@ -1,0 +1,16 @@
+name: 🔔 Notify Microsoft Teams on Push
+
+on:
+  push:
+    branches: [main]  # You can change this if using another branch
+
+jobs:
+  notify-teams:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📡 Send Notification to Microsoft Teams
+        run: |
+          curl -H 'Content-Type: application/json' -d '{
+            "text": "🚀 New push to *Neuroverse* on `main` branch.\n👉 https://github.com/Ziforge/Neuroverse/commits/main"
+          }' ${{ secrets.TEAMS_WEBHOOK_URL }}
