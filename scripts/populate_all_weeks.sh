@@ -26,6 +26,19 @@ declare -A GROUP_IDS=(
   [C]="8607f2c4"
 )
 
+# Global weekly task creation
+for WEEK in {1..8}; do
+  echo "📌 Creating global task for Week $WEEK..."
+  gh issue create \
+    --title "🌍 Global Sprint Focus – Week $WEEK" \
+    --body "This is the global focus and coordination task for all groups during Week $WEEK of the sprint." \
+    --label "Week $WEEK" \
+    --repo "$REPO"
+  sleep 1
+  echo "✅ Created global Week $WEEK task."
+done
+
+# Assign issues to weeks and groups
 ISSUE_NUM=1
 for WEEK in {1..8}; do
   for GROUP in A B C; do
@@ -68,3 +81,4 @@ for WEEK in {1..8}; do
     ((ISSUE_NUM++))
   done
 done
+
