@@ -19,18 +19,21 @@ public class CalibrationLog {
 }
 
 public class CalibrationLogger : MonoBehaviour {
+    [Header("🔐 GDPR Consent")]
     public Toggle consentToggle;
+
+    [Header("🎛️ UI Elements")]
     public List<Slider> calibrationSliders;
     public List<string> sliderContexts;
-    public List<string> perceptualLabels; // Optional: preset labels based on slider position
+    public List<string> perceptualLabels;
 
     private CalibrationLog log = new CalibrationLog();
     private bool consentGiven = false;
 
     private void Start() {
-        // Attach event listeners to sliders
+        // Attach event listeners
         for (int i = 0; i < calibrationSliders.Count; i++) {
-            int index = i; // avoid closure bug
+            int index = i; // fix closure
             calibrationSliders[index].onValueChanged.AddListener(value => OnSliderChanged(index, value));
         }
 
@@ -75,6 +78,35 @@ public class CalibrationLogger : MonoBehaviour {
         string path = Path.Combine(Application.persistentDataPath, filename);
         string json = JsonUtility.ToJson(log, true);
         File.WriteAllText(path, json);
-        Debug.Log($"Calibration log saved to: {path}");
+        Debug.Log($"✅ Calibration log saved: {path}");
+    }
+
+    // 🔁 Public method for re-applying loaded slider values
+    public void ApplyValueToSlider(string paramName, float value) {
+        foreach (Slider s in calibrationSliders) {
+            if (s.name == paramName) {
+                s.value = value;
+                Debug.Log($"🔄 Restored slider {paramName} to value {value}");
+                break;
+            }
+        }
+    }
+
+    // 🔍 Load & apply full session
+    public void LoadCalibrationLog(string filename) {
+        string path = Path.Combine(Application.persistentDataPath, filename);
+        if (!File.Exists(path)) {
+            Debug.LogWarning($"📁 Calibration log not found: {filename}");
+            return;
+        }
+
+        string json = File.ReadAllText(path);
+        CalibrationLog loadedLog = JsonUtility.FromJson<CalibrationLog>(json);
+
+        foreach (CalibrationEntry entry in loadedLog.entries) {
+            ApplyValueToSlider(entry.parameterName, entry.value);
+        }
+
+        Debug.Log($"✅ Loaded calibration session: {filename}");
     }
 }
