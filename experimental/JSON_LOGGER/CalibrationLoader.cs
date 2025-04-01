@@ -1,28 +1,58 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.IO;
+using System.Collections.Generic;
 
 public class CalibrationLoader : MonoBehaviour
 {
+    [Header("🧠 Logger Reference")]
     public CalibrationLogger logger;
 
-    public void LoadFromFile(string filename)
+    [Header("📁 UI Elements")]
+    public Dropdown fileDropdown;
+    public Button loadButton;
+
+    private List<string> fileNames = new List<string>();
+
+    private void Start()
     {
-        string path = Path.Combine(Application.persistentDataPath, filename);
-        if (!File.Exists(path)) {
-            Debug.LogWarning("Calibration file not found: " + filename);
-            return;
-        }
+        if (loadButton != null)
+            loadButton.onClick.AddListener(OnLoadButtonPressed);
 
-        string json = File.ReadAllText(path);
-        CalibrationLog loadedLog = JsonUtility.FromJson<CalibrationLog>(json);
+        PopulateDropdown();
+    }
 
-        // Optionally apply last known values to sliders/UI
-        foreach (CalibrationEntry entry in loadedLog.entries)
+    void PopulateDropdown()
+    {
+        string dir = Application.persistentDataPath;
+        DirectoryInfo di = new DirectoryInfo(dir);
+        FileInfo[] files = di.GetFiles("calibration_log_*.json");
+
+        fileDropdown.ClearOptions();
+        fileNames.Clear();
+
+        foreach (FileInfo f in files)
         {
-            // You'd match by parameter name and update UI here
-            logger.ApplyValueToSlider(entry.parameterName, entry.value);
+            fileNames.Add(f.Name);
         }
 
-        Debug.Log("Loaded calibration from: " + filename);
+        if (fileNames.Count > 0)
+        {
+            fileDropdown.AddOptions(fileNames);
+        }
+        else
+        {
+            fileDropdown.AddOptions(new List<string> { "No logs found" });
+            loadButton.interactable = false;
+        }
+    }
+
+    void OnLoadButtonPressed()
+    {
+        if (fileDropdown.options.Count == 0 || fileNames.Count == 0)
+            return;
+
+        string selectedFile = fileNames[fileDropdown.value];
+        logger.LoadCalibrationLog(selectedFile);
     }
 }
