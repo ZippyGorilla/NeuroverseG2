@@ -11,16 +11,13 @@
 This project explores adaptive sensory filtering and profile blending in shared VR experiences between neurotypical and neurodivergent individuals. Built in Unity using C# and deployed on Meta Quest 3.
 
 ## 🧠 Features
-
-
-<details>
-<summary>📋 Click to copy Mermaid Code</summary>
+```mermaid
 flowchart TD
     A[Raise Wrist 🧠] --> B{Input Type?}
 
-    B -- Hand Tracking ✋ --> C[Tap Wrist to Open UI 👆]
-    B -- Controller 🎮 --> D[Press Menu Button 🎮]
-    B -- Gesture 🫰 --> E[Wrist Pinch Activation ✋]
+    B -- "Hand Tracking ✋" --> C[Tap Wrist to Open UI 👆]
+    B -- "Controller 🎮" --> D[Press Menu Button 🎮]
+    B -- "Gesture 🫰" --> E[Wrist Pinch Activation ✋]
 
     C --> F[Show Sensory Menu Panel 📺]
     D --> F
@@ -32,9 +29,9 @@ flowchart TD
     G --> G3[Profile 🧑‍🦱]
     G --> G4[Environment 🌍]
 
-    G1 --> H1[Adjust Sliders (Visual, Audio, Haptics, Motion)]
-    G2 --> H2[Select Calm / Stim / Focus Mode]
-    G3 --> H3[Save/Load Profile]
+    G1 --> H1[Adjust Sliders:\nVisual, Audio, Haptics, Motion]
+    G2 --> H2[Select Mode:\nCalm / Stim / Focus]
+    G3 --> H3[Save or Load Profile]
     G4 --> H4[Adjust Lighting, Space, Background]
 
     H1 --> I[Save Settings ✅]
@@ -49,11 +46,7 @@ flowchart TD
     style G2 fill:#ccf,stroke:#000
     style G3 fill:#ccf,stroke:#000
     style G4 fill:#ccf,stroke:#000
-    </details>
-
-
-
-
+```
 - Sensory calibration and profile prediction using ML
 - Real-time filtering (audio, visual, motion)
 - Shared user blending engine
