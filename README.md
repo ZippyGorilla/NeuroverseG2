@@ -41,11 +41,12 @@ flowchart TD
 
     I --> J[Return to VR World 🧘]
 
-    style F fill:#f9f,stroke:#333,stroke-width:2px
-    style G1 fill:#ccf,stroke:#000
-    style G2 fill:#ccf,stroke:#000
-    style G3 fill:#ccf,stroke:#000
-    style G4 fill:#ccf,stroke:#000
+    %% Improved styling for accessibility
+    style F fill:#ffffff,stroke:#333,stroke-width:2px
+    style G1 fill:#ddeeff,stroke:#000,stroke-width:1px
+    style G2 fill:#ddeeff,stroke:#000,stroke-width:1px
+    style G3 fill:#ddeeff,stroke:#000,stroke-width:1px
+    style G4 fill:#ddeeff,stroke:#000,stroke-width:1px
 ```
 - Sensory calibration and profile prediction using ML
 - Real-time filtering (audio, visual, motion)
