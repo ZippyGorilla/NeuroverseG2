@@ -76,16 +76,16 @@ flowchart TD
     I --> J[✅ Save Movement Profile]
     J --> K[🌍 Begin Experience]
 
-    style A fill:#ffffff,stroke:#333
-    style B fill:#e0f7fa,stroke:#000
-    style D fill:#fff3e0,stroke:#000
-    style E fill:#c8e6c9,stroke:#000
-    style F fill:#c8e6c9,stroke:#000
-    style G fill:#c8e6c9,stroke:#000
-    style H fill:#c8e6c9,stroke:#000
-    style I fill:#f0f0f0,stroke:#000
-    style J fill:#bbdefb,stroke:#000
-    style K fill:#b2dfdb,stroke:#000
+    style A fill:#ffffff,stroke:#222222,stroke-width:1.5px
+    style B fill:#eeeeee,stroke:#444444,stroke-width:1.5px
+    style D fill:#dddddd,stroke:#444444,stroke-width:1.5px
+    style E fill:#d0eaff,stroke:#000000,stroke-width:1.5px
+    style F fill:#d0eaff,stroke:#000000,stroke-width:1.5px
+    style G fill:#d0eaff,stroke:#000000,stroke-width:1.5px
+    style H fill:#d0eaff,stroke:#000000,stroke-width:1.5px
+    style I fill:#f9f9f9,stroke:#333333,stroke-width:1.5px
+    style J fill:#c8f0c8,stroke:#000000,stroke-width:1.5px
+    style K fill:#b2f0e0,stroke:#000000,stroke-width:1.5px
 ```
 
     
