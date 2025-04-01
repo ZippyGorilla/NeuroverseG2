@@ -68,6 +68,55 @@ Welcome to Neuroverse! This brief questionnaire helps us tailor the experience t
 
 ---
 
+
+# 🧠 Neuroverse Sensory Experience Consent Form
+
+Thank you for participating in the Neuroverse immersive experience. This research investigates sensory customization and shared VR interactions for neurodivergent and neurotypical users.
+
+## 🔐 Summary
+
+- You can opt in or out of specific sensory features.
+- You may withdraw at any time without consequence.
+- Data collected is anonymized and used only for non-commercial academic research.
+- You have the right to request deletion of your data (see GDPR section).
+
+---
+
+## 🎮 Interaction and Movement Options
+
+You will be presented with several movement strategies, including:
+- 🔄 Teleportation
+- 🎮 Smooth Locomotion (with speed and turn adjustments)
+- ⚡ Dash Movement
+- 🎯 Waypoint Autopilot
+
+These features are intended to support your comfort and accessibility. You may opt in or out of any of them below:
+
+**Would you like to use movement features?**  
+- [ ] Yes, I would like to interact with movement controls  
+- [ ] No, I prefer to remain stationary or use room-scale only  
+
+**If yes, which movement types would you like enabled?**  
+- [ ] Teleportation  
+- [ ] Smooth Locomotion  
+- [ ] Dash  
+- [ ] Waypoint Navigation  
+
+---
+
+## 🔊 Auditory Features and Sound Preferences
+
+This experience may include footstep sounds and environmental audio feedback that dynamically respond to your settings or terrain. You can control:
+- Volume and intensity
+- Sound texture (e.g., “Soft”, “Muffled”, “Natural”)
+- Whether sound is enabled at all
+
+**Would you like to include adaptive auditory feedback (e.g., footsteps)?**  
+- [ ] Yes  
+- [ ] No  
+
+---
+
 ## 🌍 Additional Profile Inputs (Optional)
 
 **9. What best describes your neurotype?**  
@@ -98,3 +147,11 @@ _(Used only for internal research calibration; not stored personally)_
 ---
 
 ✅ Thank you! Your sensory preferences help make Neuroverse more inclusive and accessible.
+## ✅ Participant Consent
+
+By checking the options above and continuing with the experience, you acknowledge that:
+- You understand the nature and purpose of this VR session.
+- You have had the opportunity to opt out of sensory features.
+- You consent to anonymized data collection as outlined.
+
+**Signature (Initials):** ________  **Date:** ___________
