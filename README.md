@@ -48,6 +48,47 @@ flowchart TD
     style G3 fill:#ddeeff,stroke:#000,stroke-width:1px
     style G4 fill:#ddeeff,stroke:#000,stroke-width:1px
 ```
+
+
+
+```mermaid
+flowchart TD
+    A[🏁 Start VR Session] --> B{Calm Mode Active?}
+
+    B -- Yes --> C[🧘 Stationary or Room-Scale Only]
+    B -- No --> D{User Movement Preference?}
+
+    D -- "Teleportation 🔄" --> E[Point & Click to Move]
+    D -- "Smooth Locomotion 🎮" --> F[Joystick Movement]
+
+    F --> F1[🎚️ Speed Slider:\nDrift / Natural / Snappy]
+    F --> F2[🎚️ Turn Rate Slider:\nSlow / Medium / Fast]
+
+    D -- "Dash (Short Burst) ⚡" --> G[Click to Dash]
+
+    D -- "Waypoint Auto-Move 🎯" --> H[Select Path > Auto Glide]
+
+    E --> I[🛑 Motion Lock Option Available]
+    F2 --> I
+    G --> I
+    H --> I
+
+    I --> J[✅ Save Movement Profile]
+    J --> K[🌍 Begin Experience]
+
+    style A fill:#ffffff,stroke:#333
+    style B fill:#e0f7fa,stroke:#000
+    style D fill:#fff3e0,stroke:#000
+    style E fill:#c8e6c9,stroke:#000
+    style F fill:#c8e6c9,stroke:#000
+    style G fill:#c8e6c9,stroke:#000
+    style H fill:#c8e6c9,stroke:#000
+    style I fill:#f0f0f0,stroke:#000
+    style J fill:#bbdefb,stroke:#000
+    style K fill:#b2dfdb,stroke:#000
+```
+
+    
 - Sensory calibration and profile prediction using ML
 - Real-time filtering (audio, visual, motion)
 - Shared user blending engine
