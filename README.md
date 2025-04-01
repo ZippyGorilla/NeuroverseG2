@@ -12,6 +12,48 @@ This project explores adaptive sensory filtering and profile blending in shared 
 
 ## 🧠 Features
 
+
+<details>
+<summary>📋 Click to copy Mermaid Code</summary>
+flowchart TD
+    A[Raise Wrist 🧠] --> B{Input Type?}
+
+    B -- Hand Tracking ✋ --> C[Tap Wrist to Open UI 👆]
+    B -- Controller 🎮 --> D[Press Menu Button 🎮]
+    B -- Gesture 🫰 --> E[Wrist Pinch Activation ✋]
+
+    C --> F[Show Sensory Menu Panel 📺]
+    D --> F
+    E --> F
+
+    F --> G{Choose Tab}
+    G --> G1[Sensory Filters 🔆]
+    G --> G2[Presets 🎮]
+    G --> G3[Profile 🧑‍🦱]
+    G --> G4[Environment 🌍]
+
+    G1 --> H1[Adjust Sliders (Visual, Audio, Haptics, Motion)]
+    G2 --> H2[Select Calm / Stim / Focus Mode]
+    G3 --> H3[Save/Load Profile]
+    G4 --> H4[Adjust Lighting, Space, Background]
+
+    H1 --> I[Save Settings ✅]
+    H2 --> I
+    H3 --> I
+    H4 --> I
+
+    I --> J[Return to VR World 🧘]
+
+    style F fill:#f9f,stroke:#333,stroke-width:2px
+    style G1 fill:#ccf,stroke:#000
+    style G2 fill:#ccf,stroke:#000
+    style G3 fill:#ccf,stroke:#000
+    style G4 fill:#ccf,stroke:#000
+    </details>
+
+
+
+
 - Sensory calibration and profile prediction using ML
 - Real-time filtering (audio, visual, motion)
 - Shared user blending engine
@@ -61,40 +103,3 @@ Licensed under GPL-3.0 or MIT
 ## 👥 Contributing
 
 See [Contributing Guide on the Wiki](https://github.com/Ziforge/Neuroverse/wiki/Contributing‐to‐Neuroverse)
-
-
-```mermaid
-flowchart TD
-    A[🧠 Raise Wrist] --> B{Input Type?}
-
-    B -- Hand Tracking ✋ --> C[👆 Tap Wrist to Open UI]
-    B -- Controller 🎮 --> D[🎮 Press Menu Button]
-    B -- Gesture 🫰 --> E[✋ Wrist Pinch Activation]
-
-    C --> F[📺 Show Sensory Menu Panel]
-    D --> F
-    E --> F
-
-    F --> G{Choose Tab}
-    G --> G1[🔆 Sensory Filters]
-    G --> G2[🎮 Presets]
-    G --> G3[🧑‍🦱 Profile]
-    G --> G4[🌍 Environment]
-
-    G1 --> H1[Adjust Sliders (Visual, Audio, Haptics, Motion)]
-    G2 --> H2[Select Calm / Stim / Focus Mode]
-    G3 --> H3[Save/Load Profile]
-    G4 --> H4[Adjust Lighting, Space, Background]
-
-    H1 --> I[✅ Save Settings]
-    H2 --> I
-    H3 --> I
-    H4 --> I
-
-    I --> J[🧘 Return to VR World]
-
-    style F fill:#f9f,stroke:#333,stroke-width:2px
-    style G1 fill:#ccf,stroke:#000
-    style G2 fill:#ccf,stroke:#000
-    style G3 fill:#ccf,stroke:#000
-    style G4 fill:#ccf,stroke:#000
