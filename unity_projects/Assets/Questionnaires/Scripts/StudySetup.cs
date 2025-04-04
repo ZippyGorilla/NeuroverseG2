@@ -4,6 +4,8 @@ using System.Globalization;
 using System.IO;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR;
 
 /// <summary>
 /// StudySetup.class
@@ -64,6 +66,8 @@ namespace VRQuestionnaireToolkit
                 SetTransformToSavedValues();
             else
                 SetTransformToDefault();
+
+            var controller = XRController.rightHand;
         }
 
         void Update()
@@ -83,21 +87,22 @@ namespace VRQuestionnaireToolkit
         void AdjustTransform()
         {
             // Press + to scale up
-            if (Input.GetKeyDown(KeyCode.Equals) || Input.GetKeyDown(KeyCode.KeypadPlus))
+            
+            if (Keyboard.current.equalsKey.wasPressedThisFrame || Keyboard.current.numpadPlusKey.wasPressedThisFrame)
                 this.transform.localScale = Vector3.Scale(this.transform.localScale, new Vector3(1.1f, 1.1f, 1.0f));
             // Press - to scale down
-            if (Input.GetKeyDown(KeyCode.Minus) || Input.GetKeyDown(KeyCode.KeypadMinus))
+            if (Keyboard.current.minusKey.wasPressedThisFrame || Keyboard.current.numpadMinusKey.wasPressedThisFrame)
                 this.transform.localScale = Vector3.Scale(this.transform.localScale, new Vector3(0.9f, 0.9f, 1.0f));
 
             // Press UpArrow to push the panel farther away
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Keyboard.current.upArrowKey.wasPressedThisFrame)
                 this.transform.Translate(new Vector3(0.0f, 0.0f, 0.2f));
             // Press DownArrow to bring the panel closer
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Keyboard.current.downArrowKey.wasPressedThisFrame)
                 this.transform.Translate(new Vector3(0.0f, 0.0f, -0.2f));
 
             // Press 0 to reset transform (position, rotation & scale)
-            if (Input.GetKeyDown(KeyCode.Alpha0) || Input.GetKeyDown(KeyCode.Keypad0))
+            if (Keyboard.current.digit0Key.wasPressedThisFrame || Keyboard.current.numpad0Key.wasPressedThisFrame)
                 SetTransformToDefault();
         }
 

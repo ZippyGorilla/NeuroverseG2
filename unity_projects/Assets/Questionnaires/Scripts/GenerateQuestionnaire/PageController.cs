@@ -160,6 +160,7 @@ namespace VRQuestionnaireToolkit
          */
         public void GoToNextPage()
         {
+            Debug.Log("A");
             if (CheckMandatoryQuestionsAnswered() || _pageFactory.CurrentPage == 0)
             {
                 // _pageFactory.GetComponentInChildren<TextMeshProUGUI>().gameObject.SetActive(false);
