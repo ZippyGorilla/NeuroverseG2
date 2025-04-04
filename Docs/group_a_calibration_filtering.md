@@ -54,3 +54,46 @@
 ### 7. Group A – Calibration & Adaptive Filtering Methodology
 - Defined initial workflow for passive user calibration via UI sliders and JSON persistence
 - I
+✅ Sprint Log
+
+⸻
+
+🛠️ Main Technical Contributions
+
+🔁 Calibration System Expansion
+• Refactored and finalized CalibrationLogger.cs:
+• Captures real-time perceptual input with timestamps and context
+• Maps values to user-friendly perceptual labels (e.g., “Muted”, “Natural”)
+• Serializes into timestamped JSON files
+• Honors GDPR consent toggle before any logging occurs
+• Developed and implemented CalibrationLoader.cs:
+• Automatically scans for calibration log files
+• Populates Unity UI dropdown for user selection
+• Reloads values into sliders and rehydrates session state
+
+⸻
+
+🧪 Research & Theoretical Development
+
+📄 LaTeX Academic Report (Overleaf)
+• Added two major new sections:
+• 🧠 Embodied Movement Strategies for Neurodivergent Accessibility
+• 🎛️ UI Paradigm for Neurodivergent Interaction: Wrist-Based Modular Menus
+• Provided academic backing and references on:
+• Teleportation vs. smooth locomotion
+• Importance of proprioception, comfort zones, and reduced visual strain
+• Menu ergonomics (e.g. Fallout-style Pip-Boy inspiration)
+• Use of perceptual terms across sensory filters for improved inclusivity
+• Integrated key sources:
+• Kane et al. on accessibility in immersive interfaces
+• Schwind et al. on VR locomotion and motion sickness mitigation
+• Lindgren et al. on cognitive load and menu orientation in AR/VR
+
+⸻
+
+🔐 GDPR & Consent System
+• Rewrote full GDPR form (Markdown + LaTeX) to reflect:
+• Optionality of haptics, motion, visual/audio adaptation
+• Clear statement of anonymized data handling
+• Participant right to withdraw at any time
+• Added opt-in toggle into the calibration logger with enforcement
