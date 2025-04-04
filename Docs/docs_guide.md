@@ -1,4 +1,4 @@
 cd docs 
 nano filename
-ctrl o 
-ctrl x
+ctrl o enter
+ctrl x 
