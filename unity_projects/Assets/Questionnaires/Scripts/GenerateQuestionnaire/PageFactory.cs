@@ -3,7 +3,7 @@ using UnityEngine;
 using SimpleJSON;
 using TMPro;
 using UnityEditor.Experimental;
-using UnityEngine.UI;
+using UnityEngine.UI; 
 
 /// <summary>
 /// PageFactory.class
@@ -128,7 +128,7 @@ namespace VRQuestionnaireToolkit
                             q_main = GameObject.Find("Q_Main");
                             radioHorizontalRec.SetParent(q_main.GetComponent<RectTransform>());
 
-                            //ensuring correct placement and scaling in the UI
+                            // ensuring correct placement and scaling in the UI
                             text = temp.GetComponentInChildren<TextMeshProUGUI>();
 
                             // If question mandatory -> add " * "
