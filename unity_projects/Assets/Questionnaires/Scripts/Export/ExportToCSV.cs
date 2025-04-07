@@ -11,6 +11,8 @@ using UnityEngine.Events;
 using UnityEngine.WSA;
 using Application = UnityEngine.Application;
 using UnityEngine.Networking;
+using System.Linq;
+using AYellowpaper.SerializedCollections;
 
 /// <summary>
 /// ExportToCSV.class
@@ -45,6 +47,8 @@ namespace VRQuestionnaireToolkit
         public string TargetURI = "http://www.example-server.com/survey-results.php";
 
         private List<string[]> _csvRows;
+        [SerializedDictionary("Filters","QuestionData")]
+        public SerializedDictionary<string, string[]> _csvColumns;
         private GameObject _pageFactory;
         private GameObject _vrQuestionnaireToolkit;
         private StudySetup _studySetup;
@@ -122,6 +126,7 @@ namespace VRQuestionnaireToolkit
             csvTitleRow[2] = "QuestionID";
             csvTitleRow[3] = "Answer";
             _csvRows.Add(csvTitleRow);
+
 
             string[] csvTemp = new string[4];
 
@@ -269,6 +274,13 @@ namespace VRQuestionnaireToolkit
             string _completeFileName_allResults = "questionnaireID_" + _questionnaireID + "_ALL_" + FileName + "." + _fileType;
             string _path = _folderPath + _completeFileName;
             string _path_allResults = _folderPath + _completeFileName_allResults;
+
+
+            _csvColumns = new SerializedDictionary<string, string[]>();
+            _csvColumns.Add(csvTitleRow[0], _csvRows[0].Skip(1).ToArray());
+            _csvColumns.Add(csvTitleRow[1], _csvRows[1].Skip(1).ToArray());
+            _csvColumns.Add(csvTitleRow[2], _csvRows[2].Skip(1).ToArray());
+            _csvColumns.Add(csvTitleRow[3], _csvRows[3].Skip(1).ToArray());
 
 
             string[][] output = new string[_csvRows.Count][];
