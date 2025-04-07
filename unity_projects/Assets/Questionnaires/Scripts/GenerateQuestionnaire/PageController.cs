@@ -163,6 +163,8 @@ namespace VRQuestionnaireToolkit
             Debug.Log("A");
             if (CheckMandatoryQuestionsAnswered() || _pageFactory.CurrentPage == 0)
             {
+                // INSERT FUNCTIONALITY TO GET ANSWER IN PAGE LOGGED TO THE CONTROL ELEMENT?
+
                 // _pageFactory.GetComponentInChildren<TextMeshProUGUI>().gameObject.SetActive(false);
                 _pageFactory.PageList[_pageFactory.CurrentPage].SetActive(false);
                 ++_pageFactory.CurrentPage;

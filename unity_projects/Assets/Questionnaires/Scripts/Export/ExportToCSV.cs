@@ -418,5 +418,12 @@ namespace VRQuestionnaireToolkit
             }
         }
     }
+
+    // Here a reverse version could be used to get all the data and have it collected in a single dictionary
+    // 
+
+
+
+
 }
 
