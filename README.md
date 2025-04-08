@@ -40,22 +40,34 @@ This system consists of three distinct rectangular zones that define how an ND (
 ## 📈 Mermaid Diagram
 
 ```mermaid
-flowchart LR
-    ND[ND User Space<br><b>🟦 Settings fixed<br>🔒 Cannot leave</b>]
-    ZONE[Shared Zone<br><b>🟨 Transition space<br>⚠️ Settings gradient</b>]
-    NT[NT User Space<br><b>🟥 No control<br>🛑 Kill switch only</b>]
+flowchart TB
+    style ND fill:#aec6cf,stroke:#333,stroke-width:2px,color:#000
+    style SubNT fill:#c9f7c0,stroke:#333,stroke-width:2px,color:#000
+    style Shared fill:#fff8b0,stroke:#333,stroke-width:2px,color:#000
+    style SubND fill:#d9d2e9,stroke:#333,stroke-width:2px,color:#000
+    style NT fill:#f4cccc,stroke:#333,stroke-width:2px,color:#000
 
-    ND -->|Moves into| ZONE
-    ZONE -->|Moves into| NT
+    ND[ND Zone\nStable Settings\nControlled by NT]
+    SubNT[Subzone:\nND experiences\nfull NT world]
+    Shared[Gradient Zone\nMixed Settings\nBoth Users Present]
+    SubND[Subzone:\nNT experiences\nfull ND world]
+    NT[NT Zone\nNo Control\nEmergency Kill Switch]
 
-    style ND fill:#b3cde0,stroke:#1f78b4,stroke-width:2px,color:#000
-    style ZONE fill:#ffffbf,stroke:#bdb76b,stroke-width:2px,color:#000
-    style NT fill:#f4a582,stroke:#800000,stroke-width:2px,color:#000
-
-    %% Add animation by using links with class
-    classDef flowLine stroke-dasharray: 5 5,animation: dash 2s linear infinite;
-    class ND,ZONE,NT flowLine;
+    ND --> SubNT
+    NT --> SubND
+    SubNT --> Shared
+    SubND --> Shared
 ```
+
+---
+
+### 🔍 Summary of Flow:
+- **ND → SubNT → Shared**
+- **NT → SubND → Shared**
+- Both users enter subzones where they temporarily experience the *full world* of the other
+- They converge in the **Shared zone** — a balanced adaptive space
+
+
 ```mermaid
 flowchart TD
     A[Raise Wrist 🧠] --> B{Input Type?}
