@@ -11,6 +11,63 @@
 This project explores adaptive sensory filtering and profile blending in shared VR experiences between neurotypical and neurodivergent individuals. Built in Unity using C# and deployed on Meta Quest 3.
 
 ## 🧠 Features
+
+
+# Interaction Ruleset Diagram
+
+This system consists of three distinct rectangular zones that define how an ND (neurodivergent) and NT (neurotypical) user interact spatially and through control of settings.
+
+## Description
+
+- **Rectangle 1 (R1)**:  
+  For the **ND user**  
+  - Settings are **fixed**
+  - Settings are **set by NT**
+  - If the ND user moves too far, they are **considered gone**
+
+- **Rectangle 3 (R3)**:  
+  For the **NT user**  
+  - Has **no control** over settings
+  - Has access to a **killswitch**
+  - No gradient, no influence over shared environment
+
+- **Rectangle 2 (R2)**:  
+  The **shared gradient zone**
+  - Represents a **blended settings** space between ND and NT areas
+
+---
+
+## 📈 Mermaid Diagram
+
+```mermaid
+flowchart TB
+    style ND fill:#aec6cf,stroke:#333,stroke-width:2px,color:#000
+    style SubNT fill:#c9f7c0,stroke:#333,stroke-width:2px,color:#000
+    style Shared fill:#fff8b0,stroke:#333,stroke-width:2px,color:#000
+    style SubND fill:#d9d2e9,stroke:#333,stroke-width:2px,color:#000
+    style NT fill:#f4cccc,stroke:#333,stroke-width:2px,color:#000
+
+    ND[ND Zone\nStable Settings\nControlled by ND]
+    SubNT[Subzone:\nND experiences\nfull ND world]
+    Shared[Gradient Zone\nMixed Settings\nBoth Users Present]
+    SubND[Subzone:\nNT experiences\nfull NT world]
+    NT[NT Zone\nNo Control\nEmergency Kill Switch]
+
+    ND --> SubNT
+    NT --> SubND
+    SubNT --> Shared
+    SubND --> Shared
+```
+
+---
+
+### 🔍 Summary of Flow:
+- **ND → SubNT → Shared**
+- **NT → SubND → Shared**
+- Both users enter subzones where they temporarily experience the *full world* of the other
+- They converge in the **Shared zone** — a balanced adaptive space
+
+
 ```mermaid
 flowchart TD
     A[Raise Wrist 🧠] --> B{Input Type?}
