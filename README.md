@@ -47,10 +47,10 @@ flowchart TB
     style SubND fill:#d9d2e9,stroke:#333,stroke-width:2px,color:#000
     style NT fill:#f4cccc,stroke:#333,stroke-width:2px,color:#000
 
-    ND[ND Zone\nStable Settings\nControlled by NT]
-    SubNT[Subzone:\nND experiences\nfull NT world]
+    ND[ND Zone\nStable Settings\nControlled by ND]
+    SubNT[Subzone:\nND experiences\nfull ND world]
     Shared[Gradient Zone\nMixed Settings\nBoth Users Present]
-    SubND[Subzone:\nNT experiences\nfull ND world]
+    SubND[Subzone:\nNT experiences\nfull NT world]
     NT[NT Zone\nNo Control\nEmergency Kill Switch]
 
     ND --> SubNT
