@@ -11,6 +11,51 @@
 This project explores adaptive sensory filtering and profile blending in shared VR experiences between neurotypical and neurodivergent individuals. Built in Unity using C# and deployed on Meta Quest 3.
 
 ## 🧠 Features
+
+
+# Interaction Ruleset Diagram
+
+This system consists of three distinct rectangular zones that define how an ND (neurodivergent) and NT (neurotypical) user interact spatially and through control of settings.
+
+## Description
+
+- **Rectangle 1 (R1)**:  
+  For the **ND user**  
+  - Settings are **fixed**
+  - Settings are **set by NT**
+  - If the ND user moves too far, they are **considered gone**
+
+- **Rectangle 3 (R3)**:  
+  For the **NT user**  
+  - Has **no control** over settings
+  - Has access to a **killswitch**
+  - No gradient, no influence over shared environment
+
+- **Rectangle 2 (R2)**:  
+  The **shared gradient zone**
+  - Represents a **blended settings** space between ND and NT areas
+
+---
+
+## 📈 Mermaid Diagram
+
+```mermaid
+flowchart LR
+    ND[ND User Space<br><b>🟦 Settings fixed<br>🔒 Cannot leave</b>]
+    ZONE[Shared Zone<br><b>🟨 Transition space<br>⚠️ Settings gradient</b>]
+    NT[NT User Space<br><b>🟥 No control<br>🛑 Kill switch only</b>]
+
+    ND -->|Moves into| ZONE
+    ZONE -->|Moves into| NT
+
+    style ND fill:#b3cde0,stroke:#1f78b4,stroke-width:2px,color:#000
+    style ZONE fill:#ffffbf,stroke:#bdb76b,stroke-width:2px,color:#000
+    style NT fill:#f4a582,stroke:#800000,stroke-width:2px,color:#000
+
+    %% Add animation by using links with class
+    classDef flowLine stroke-dasharray: 5 5,animation: dash 2s linear infinite;
+    class ND,ZONE,NT flowLine;
+```
 ```mermaid
 flowchart TD
     A[Raise Wrist 🧠] --> B{Input Type?}
