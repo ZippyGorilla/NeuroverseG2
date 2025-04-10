@@ -75,4 +75,9 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 =======
 .env
+<<<<<<< HEAD
 >>>>>>> e5d7ab5d39e8615259c230643c980ac03e36e405
+=======
+.DS_Store
+.DS_Store
+>>>>>>> origin/groupC
