@@ -47,8 +47,9 @@ namespace VRQuestionnaireToolkit
         public string TargetURI = "http://www.example-server.com/survey-results.php";
 
         private List<string[]> _csvRows;
-        [SerializedDictionary("Filters","QuestionData")]
+        [SerializedDictionary("Question","Participants Answer")]
         public SerializedDictionary<string, string[]> _csvColumns;
+        public StoredAnswers storedAnswers;
         private GameObject _pageFactory;
         private GameObject _vrQuestionnaireToolkit;
         private StudySetup _studySetup;
@@ -281,6 +282,15 @@ namespace VRQuestionnaireToolkit
             _csvColumns.Add(csvTitleRow[1], _csvRows[1].Skip(1).ToArray());
             _csvColumns.Add(csvTitleRow[2], _csvRows[2].Skip(1).ToArray());
             _csvColumns.Add(csvTitleRow[3], _csvRows[3].Skip(1).ToArray());
+
+            // This forloop goes through the entire questionnaire and stores the data in a dictionary with question:key and answer:value, making it (hopefully) easy to map to settings
+            // We use i = 1 to skip the first value in the rows, as those are titles and therefore irrelevant here
+            for (int i = 1; i < _csvRows[1].Length; i++)
+            {
+                storedAnswers.QuestionsWithAnswers.Add(_csvRows[1][i], _csvRows[3][i]);
+            }
+
+            
 
 
             string[][] output = new string[_csvRows.Count][];
