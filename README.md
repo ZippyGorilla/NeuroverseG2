@@ -18,7 +18,7 @@ flowchart TD
     B -- "Hand Tracking ✋" --> C[Tap Wrist to Open UI 👆]
     B -- "Controller 🎮" --> D[Press Menu Button 🎮]
     B -- "Gesture 🫰" --> E[Wrist Pinch Activation ✋]
-    
+    B -- "Controller 🎮" --> F[Y button = kill all sound (mute)]
 
     C --> F[Show Sensory Menu Panel 📺]
     D --> F
