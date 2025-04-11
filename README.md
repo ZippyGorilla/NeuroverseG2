@@ -9,13 +9,35 @@
 [![🛡️ GDPR Consent Form](https://img.shields.io/badge/GDPR%20Consent-View%20Policy-blue?style=for-the-badge)](https://github.com/Ziforge/Neuroverse/wiki/GDPR-Consent-Form)
 =======
 
->>>>>>> msvieira
+
 > 🌍 A VR platform that adapts to individual sensory needs — connecting neurodivergent and neurotypical users through shared, empathetic interaction.
 
 This project explores adaptive sensory filtering and profile blending in shared VR experiences between neurotypical and neurodivergent individuals. Built in Unity using C# and deployed on Meta Quest 3.
 
-## 🧠 Features
-<<<<<<< HEAD
+## 🧠 
+
+```mermaid
+flowchart TB
+    style ND fill:#aec6cf,stroke:#333,stroke-width:2px,color:#000
+    style SubNT fill:#c9f7c0,stroke:#333,stroke-width:2px,color:#000
+    style Shared fill:#fff8b0,stroke:#333,stroke-width:2px,color:#000
+    style SubND fill:#d9d2e9,stroke:#333,stroke-width:2px,color:#000
+    style NT fill:#f4cccc,stroke:#333,stroke-width:2px,color:#000
+
+    ND[ND Zone\nStable Settings\nControlled by ND]
+    SubNT[Subzone:\nND experiences\nfull NT world]
+    Shared[Gradient Zone\nMixed Settings\nBoth Users Present]
+    SubND[Subzone:\nNT experiences\nfull ND world]
+    NT[NT Zone\nNo Control\nEmergency Kill Switch]
+
+    ND --> SubNT
+    NT --> SubND
+    SubNT --> Shared
+    SubND --> Shared
+```
+
+
+
 ```mermaid
 flowchart TD
     A1[Controller 🎮 Y button] --> B1[Kill all sound - mute]
@@ -98,7 +120,6 @@ flowchart TD
     
 =======
 
->>>>>>> msvieira
 - Sensory calibration and profile prediction using ML
 - Real-time filtering (audio, visual, motion)
 - Shared user blending engine
