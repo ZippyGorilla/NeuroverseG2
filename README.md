@@ -13,6 +13,8 @@ This project explores adaptive sensory filtering and profile blending in shared 
 ## 🧠 Features
 ```mermaid
 flowchart TD
+    A1[Controller 🎮 Y button] --> B1[Kill all sound - mute]
+    A2[Controller 🎮 B button] --> B2[Kill all visual changes]
     A[Raise Wrist 🧠] --> B{Input Type?}
 
     B -- "Hand Tracking ✋" --> C[Tap Wrist to Open UI 👆]
