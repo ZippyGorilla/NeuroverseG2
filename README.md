@@ -1,7 +1,7 @@
 # Neuroverse: Adaptive VR for Neurodivergent Empathy
 [![Docs](https://img.shields.io/badge/wiki-Documentation-blue?logo=github)](https://github.com/Ziforge/Neuroverse/wiki)
 [![Overleaf](https://img.shields.io/badge/View%20Thesis-Overleaf-brightgreen?logo=Overleaf&logoColor=white)](https://www.overleaf.com/read/nddwcrqrpbcs#c4cd87)
-<<<<<<< HEAD
+
 ---
 [![Weekly Timesheet](https://img.shields.io/badge/Open_This_Week's_Timesheet-blue?style=for-the-badge)](https://github.com/Ziforge/Neuroverse/blob/main/weekly_notes/week-13-timesheet.md)
 [![📋 Neuroverse Sprint Board](https://img.shields.io/badge/Project%20Board-Neuroverse-green?style=for-the-badge)](https://github.com/users/Ziforge/projects/1/views/1)
