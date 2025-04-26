@@ -169,3 +169,9 @@ Licensed under GPL-3.0 or MIT
 ## 👥 Contributing
 
 See [Contributing Guide on the Wiki](https://github.com/Ziforge/Neuroverse/wiki/Contributing‐to‐Neuroverse)
+---
+
+# XR Interaction Toolkit Examples
+
+This section contains example scenes and components from the XR Interaction Toolkit.
+Merged into Neuroverse for development and experimentation.
