@@ -1,8 +1,47 @@
-# From neuroverse
-Library/
+# Unity
+[Libraries]/
+[Libraries]
 Temp/
-.DS_Store
+Obj/
+Build/
+Builds/
+UserSettings/
+MemoryCaptures/
+Logs/
+unity_projects/
 
-# From XR Toolkit
-[Ll]ogs/
-[Bb]uild/
+# Visual Studio / Rider / JetBrains
+.vscode/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build and cache
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.apk
+*.zip
+*.7z
+*.tar.gz
+*.rar
+*.iso
+
+# Others
+*.log
+*.temp
+*.bak
+*.backup
