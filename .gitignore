@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
@@ -86,3 +87,13 @@ crashlytics-build.properties
 =======
 .env
 >>>>>>> d7de8f9 (WIP: save local changes before rebase)
+=======
+# From neuroverse
+Library/
+Temp/
+.DS_Store
+
+# From XR Toolkit
+[Ll]ogs/
+[Bb]uild/
+>>>>>>> main

@@ -6,7 +6,11 @@ QualitySettings:
   serializedVersion: 5
   m_CurrentQuality: 2
   m_QualitySettings:
+<<<<<<< HEAD
   - serializedVersion: 3
+=======
+  - serializedVersion: 2
+>>>>>>> main
     name: Low
     pixelLightCount: 0
     shadows: 0
@@ -19,20 +23,30 @@ QualitySettings:
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
     shadowmaskMode: 0
     skinWeights: 2
+<<<<<<< HEAD
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> main
     anisotropicTextures: 0
     antiAliasing: 0
     softParticles: 0
     softVegetation: 0
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 0
+<<<<<<< HEAD
     useLegacyDetailDistribution: 1
     vSyncCount: 0
     realtimeGICPUUsage: 25
     lodBias: 0.4
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 0
+    lodBias: 0.4
+    maximumLODLevel: 0
+>>>>>>> main
     streamingMipmapsActive: 0
     streamingMipmapsAddAllCameras: 1
     streamingMipmapsMemoryBudget: 512
@@ -45,6 +59,7 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: a31e9f9f9c9d4b9429ed0d1234e22103, type: 2}
+<<<<<<< HEAD
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -56,6 +71,10 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   - serializedVersion: 3
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+>>>>>>> main
     name: Medium
     pixelLightCount: 1
     shadows: 1
@@ -68,20 +87,30 @@ QualitySettings:
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
     shadowmaskMode: 0
     skinWeights: 2
+<<<<<<< HEAD
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> main
     anisotropicTextures: 1
     antiAliasing: 2
     softParticles: 0
     softVegetation: 0
     realtimeReflectionProbes: 0
     billboardsFaceCameraPosition: 1
+<<<<<<< HEAD
     useLegacyDetailDistribution: 1
     vSyncCount: 1
     realtimeGICPUUsage: 25
     lodBias: 0.7
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 1
+    lodBias: 0.7
+    maximumLODLevel: 0
+>>>>>>> main
     streamingMipmapsActive: 0
     streamingMipmapsAddAllCameras: 1
     streamingMipmapsMemoryBudget: 512
@@ -94,6 +123,7 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: d847b876476d3d6468f5dfcd34266f96, type: 2}
+<<<<<<< HEAD
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -107,6 +137,12 @@ QualitySettings:
   - serializedVersion: 3
     name: High
     pixelLightCount: 1
+=======
+    excludedTargetPlatforms: []
+  - serializedVersion: 2
+    name: High
+    pixelLightCount: 2
+>>>>>>> main
     shadows: 2
     shadowResolution: 1
     shadowProjection: 1
@@ -117,20 +153,30 @@ QualitySettings:
     shadowCascade4Split: {x: 0.06666667, y: 0.2, z: 0.46666667}
     shadowmaskMode: 1
     skinWeights: 2
+<<<<<<< HEAD
     globalTextureMipmapLimit: 0
     textureMipmapLimitSettings: []
+=======
+    textureQuality: 0
+>>>>>>> main
     anisotropicTextures: 1
     antiAliasing: 2
     softParticles: 0
     softVegetation: 1
     realtimeReflectionProbes: 1
     billboardsFaceCameraPosition: 1
+<<<<<<< HEAD
     useLegacyDetailDistribution: 1
     vSyncCount: 0
     realtimeGICPUUsage: 25
     lodBias: 1
     maximumLODLevel: 0
     enableLODCrossFade: 1
+=======
+    vSyncCount: 1
+    lodBias: 1
+    maximumLODLevel: 0
+>>>>>>> main
     streamingMipmapsActive: 0
     streamingMipmapsAddAllCameras: 1
     streamingMipmapsMemoryBudget: 512
@@ -143,6 +189,7 @@ QualitySettings:
     asyncUploadPersistentBuffer: 1
     resolutionScalingFixedDPIFactor: 1
     customRenderPipeline: {fileID: 11400000, guid: 19ba41d7c0026c3459d37c2fe90c55a0, type: 2}
+<<<<<<< HEAD
     terrainQualityOverrides: 0
     terrainPixelError: 1
     terrainDetailDensityScale: 1
@@ -154,6 +201,9 @@ QualitySettings:
     terrainMaxTrees: 50
     excludedTargetPlatforms: []
   m_TextureMipmapLimitGroupNames: []
+=======
+    excludedTargetPlatforms: []
+>>>>>>> main
   m_PerPlatformDefaultQuality:
     Android: 1
     Lumin: 2

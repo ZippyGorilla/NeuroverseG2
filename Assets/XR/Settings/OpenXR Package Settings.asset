@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5a1f07dc5afe854f9f12a4194aca3fb, type: 3}
   m_Name: tvOS
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   features:
   - {fileID: -7420671885076026774}
   m_renderMode: 1
@@ -41,6 +42,13 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+  features: []
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+>>>>>>> main
 --- !u!114 &-8982687287376122942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,6 +151,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &-7770432995445276046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,6 +172,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &-7648258473844283210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +194,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &-7608060900037799521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,6 +255,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &-6573851565946683436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +337,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &-4225681502171392240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +378,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &-3903003852789735936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +485,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+<<<<<<< HEAD
 --- !u!114 &-2771017982047610358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,6 +526,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &-2499487439286003631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -548,6 +568,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &-2334694869938486663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,6 +589,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &-1823474653701937229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +612,7 @@ MonoBehaviour:
   priority: 0
   required: 0
   ignoreValidationErrors: 0
+<<<<<<< HEAD
 --- !u!114 &-1080483311122794222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +673,8 @@ MonoBehaviour:
   company: Meta
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &-800350216900034390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +788,7 @@ MonoBehaviour:
   - {fileID: -8291086759234677695}
   - {fileID: -3208818634984433492}
   - {fileID: 8853038420651924762}
+<<<<<<< HEAD
   - {fileID: -7770432995445276046}
   - {fileID: 7706106382125429728}
   - {fileID: 1296618732134527097}
@@ -769,12 +796,16 @@ MonoBehaviour:
   - {fileID: -809280228963327898}
   - {fileID: 5919627515107961633}
   - {fileID: -146406073460417689}
+=======
+  - {fileID: 7706106382125429728}
+>>>>>>> main
   - {fileID: 825951596646197351}
   - {fileID: -2894596327522978702}
   - {fileID: -3900110921459270002}
   - {fileID: -8806996966201340447}
   - {fileID: 5480092333243304735}
   - {fileID: -8982687287376122942}
+<<<<<<< HEAD
   - {fileID: 4375952591805000430}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
@@ -823,6 +854,12 @@ MonoBehaviour:
   company: Meta
   priority: 0
   required: 0
+=======
+  m_renderMode: 1
+  m_depthSubmissionMode: 0
+  m_optimizeBufferDiscards: 0
+  m_symmetricProjection: 0
+>>>>>>> main
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,6 +958,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &1030279679128856437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -942,6 +980,8 @@ MonoBehaviour:
   company: Meta
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &1040830859926692976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,6 +1002,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &1261486249393391025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1062,6 +1103,8 @@ MonoBehaviour:
   extensionStrings:
   - XR_KHR_binding_modification
   - XR_EXT_dpad_binding
+=======
+>>>>>>> main
 --- !u!114 &1684623128424116259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,6 +1125,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &1707325002045645965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,6 +1146,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &2160611348634348533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1115,6 +1161,7 @@ MonoBehaviour:
   m_Name: WSA
   m_EditorClassIdentifier: 
   features:
+<<<<<<< HEAD
   - {fileID: 4248803967175389570}
   - {fileID: 1361534134239375350}
   - {fileID: -2615045072136889872}
@@ -1136,6 +1183,24 @@ MonoBehaviour:
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
+=======
+  - {fileID: 1026340525553648688}
+  - {fileID: 4978679205910125342}
+  - {fileID: 7809597527105262626}
+  - {fileID: 3907284375083548995}
+  - {fileID: 2873141870851550725}
+  - {fileID: -797626536027374938}
+  - {fileID: -800350216900034390}
+  - {fileID: -7961216342899362848}
+  - {fileID: 9189614301777160674}
+  - {fileID: -6573851565946683436}
+  - {fileID: -2403184901646773700}
+  - {fileID: -582637802356596728}
+  - {fileID: 7937377237187288131}
+  - {fileID: 3423243248100404824}
+  - {fileID: 7652348340984044497}
+  m_renderMode: 1
+>>>>>>> main
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
@@ -1200,12 +1265,16 @@ MonoBehaviour:
   - {fileID: 8464723363117808772}
   - {fileID: 1684623128424116259}
   - {fileID: -4602306870851548315}
+<<<<<<< HEAD
   - {fileID: -2771017982047610358}
   - {fileID: -3030403765990284541}
   - {fileID: 1030279679128856437}
   - {fileID: 1261486249393391025}
   - {fileID: -231749031482718748}
   - {fileID: -4225681502171392240}
+=======
+  - {fileID: -3030403765990284541}
+>>>>>>> main
   - {fileID: 789601449055226367}
   - {fileID: -6437728053220933227}
   - {fileID: -1823474653701937229}
@@ -1213,11 +1282,15 @@ MonoBehaviour:
   - {fileID: 6485794992086508210}
   - {fileID: -3903003852789735936}
   - {fileID: 197974141623786851}
+<<<<<<< HEAD
   - {fileID: -9030582563244989627}
   m_renderMode: 1
   m_autoColorSubmissionMode: 1
   m_colorSubmissionModes:
     m_List: 00000000
+=======
+  m_renderMode: 1
+>>>>>>> main
   m_depthSubmissionMode: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
@@ -1243,6 +1316,7 @@ MonoBehaviour:
   required: 0
   cacheSize: 1048576
   perThreadCacheSize: 51200
+<<<<<<< HEAD
 --- !u!114 &3808781912316197710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,6 +1337,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &3907284375083548995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,6 +1359,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &3917440910570111136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1389,6 +1466,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &4827589749270124813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,6 +1534,7 @@ MonoBehaviour:
   extensionStrings:
   - XR_KHR_binding_modification
   - XR_EXT_dpad_binding
+<<<<<<< HEAD
 --- !u!114 &5265146342836577734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1477,6 +1557,8 @@ MonoBehaviour:
   required: 0
   cacheSize: 1048576
   perThreadCacheSize: 51200
+=======
+>>>>>>> main
 --- !u!114 &5480092333243304735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,6 +1579,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &5919627515107961633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1557,6 +1640,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &6485794992086508210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,6 +1722,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &7733329665603874733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1657,6 +1743,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &7809597527105262626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,6 +1805,7 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+<<<<<<< HEAD
 --- !u!114 &8687752765668167606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1737,6 +1826,8 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+=======
+>>>>>>> main
 --- !u!114 &8853038420651924762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1767,6 +1858,7 @@ MonoBehaviour:
   - visibleName: Quest Pro
     manifestName: cambria
     enabled: 1
+<<<<<<< HEAD
   - visibleName: Quest 3
     manifestName: eureka
     enabled: 1
@@ -1776,6 +1868,10 @@ MonoBehaviour:
   forceRemoveInternetPermission: 1
   symmetricProjection: 0
   foveatedRenderingApi: 0
+=======
+  forceRemoveInternetPermission: 1
+  symmetricProjection: 0
+>>>>>>> main
   systemSplashScreen: {fileID: 0}
   optimizeBufferDiscards: 1
   lateLatchingMode: 0
