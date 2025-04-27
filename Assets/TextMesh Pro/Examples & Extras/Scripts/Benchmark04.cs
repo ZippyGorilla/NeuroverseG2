@@ -4,8 +4,10 @@ using System.Collections;
 
 namespace TMPro.Examples
 {
+
     public class Benchmark04 : MonoBehaviour
     {
+
         public int SpawnType = 0;
 
         public int MinPointSize = 12;
@@ -43,7 +45,7 @@ namespace TMPro.Examples
                     //textMeshPro.anchor = AnchorPositions.Left;
                     textMeshPro.rectTransform.pivot = new Vector2(0, 0.5f);
 
-                    textMeshPro.enableWordWrapping = false;
+                    textMeshPro.textWrappingMode = TextWrappingModes.NoWrap;
                     textMeshPro.extraPadding = true;
                     textMeshPro.isOrthographic = true;
                     textMeshPro.fontSize = i;
@@ -78,5 +80,6 @@ namespace TMPro.Examples
                 }
             }
         }
+
     }
 }

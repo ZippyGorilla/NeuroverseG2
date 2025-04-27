@@ -1,4 +1,3 @@
-using System;
 using UnityEngine.Events;
 
 namespace UnityEngine.XR.Content.Interaction
@@ -8,7 +7,15 @@ namespace UnityEngine.XR.Content.Interaction
     /// </summary>
     public class Breakable : MonoBehaviour
     {
-        [Serializable] public class BreakEvent : UnityEvent<GameObject, GameObject> { }
+        public UnityAction<Collider> onBreak;
+        public int pointValue = 1;
+
+#pragma warning disable CS0108 // Member hides inherited member; missing new keyword
+        public Collider collider => m_Collider;
+#pragma warning restore CS0108 // Member hides inherited member; missing new keyword
+
+        [SerializeField]
+        Collider m_Collider;
 
         [SerializeField]
         [Tooltip("The 'broken' version of this object.")]
@@ -18,31 +25,26 @@ namespace UnityEngine.XR.Content.Interaction
         [Tooltip("The tag a collider must have to cause this object to break.")]
         string m_ColliderTag = "Destroyer";
 
-        [SerializeField]
-        [Tooltip("Events to fire when a matching object collides and break this object. " +
-            "The first parameter is the colliding object, the second parameter is the 'broken' version.")]
-        BreakEvent m_OnBreak = new BreakEvent();
-
         bool m_Destroyed = false;
-
-        /// <summary>
-        /// Events to fire when a matching object collides and break this object.
-        /// The first parameter is the colliding object, the second parameter is the 'broken' version.
-        /// </summary>
-        public BreakEvent onBreak => m_OnBreak;
 
         void OnCollisionEnter(Collision collision)
         {
             if (m_Destroyed)
                 return;
 
-            if (collision.gameObject.tag.Equals(m_ColliderTag, System.StringComparison.InvariantCultureIgnoreCase))
+            if (collision.gameObject.CompareTag(m_ColliderTag))
             {
-                m_Destroyed = true;
-                var brokenVersion = Instantiate(m_BrokenVersion, transform.position, transform.rotation);
-                m_OnBreak.Invoke(collision.gameObject, brokenVersion);
-                Destroy(gameObject);
+                Break(collision.collider);
             }
+        }
+
+        public void Break(Collider collider)
+        {
+            if (m_Destroyed) return;
+            m_Destroyed = true;
+            Instantiate(m_BrokenVersion, transform.position, transform.rotation);
+            onBreak?.Invoke(collider);
+            Destroy(gameObject);
         }
     }
 }

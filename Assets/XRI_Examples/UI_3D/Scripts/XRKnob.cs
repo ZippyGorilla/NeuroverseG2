@@ -2,14 +2,13 @@ using System;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 namespace UnityEngine.XR.Content.Interaction
 {
     /// <summary>
     /// An interactable knob that follows the rotation of the interactor
     /// </summary>
-    public class XRKnob : XRBaseInteractable
+    public class XRKnob : UnityEngine.XR.Interaction.Toolkit.Interactables.XRBaseInteractable
     {
         const float k_ModeSwitchDeadZone = 0.1f; // Prevents rapid switching between the different rotation tracking modes
 
@@ -88,6 +87,10 @@ namespace UnityEngine.XR.Content.Interaction
         Transform m_Handle = null;
 
         [SerializeField]
+        [Tooltip("The transform to snap the interactor to when holding the lever")]
+        Transform m_InteractorSnapTransform = null;
+
+        [SerializeField]
         [Tooltip("The value of the knob")]
         [Range(0.0f, 1.0f)]
         float m_Value = 0.5f;
@@ -120,7 +123,7 @@ namespace UnityEngine.XR.Content.Interaction
         [Tooltip("Events to trigger when the knob is rotated")]
         ValueChangeEvent m_OnValueChange = new ValueChangeEvent();
 
-        IXRSelectInteractor m_Interactor;
+        UnityEngine.XR.Interaction.Toolkit.Interactors.IXRSelectInteractor m_Interactor;
 
         bool m_PositionDriven = false;
         bool m_UpVectorDriven = false;
@@ -229,6 +232,11 @@ namespace UnityEngine.XR.Content.Interaction
         void EndGrab(SelectExitEventArgs args)
         {
             m_Interactor = null;
+        }
+
+        public override Transform GetAttachTransform(IXRInteractor interactor)
+        {
+            return m_InteractorSnapTransform;
         }
 
         public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
