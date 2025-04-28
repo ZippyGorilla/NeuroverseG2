@@ -8,11 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-<<<<<<< HEAD
   defaultScreenOrientation: 3
-=======
-  defaultScreenOrientation: 4
->>>>>>> main
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -50,11 +46,7 @@ PlayerSettings:
   defaultScreenHeight: 1080
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-<<<<<<< HEAD
   m_StereoRenderingPath: 2
-=======
-  m_StereoRenderingPath: 0
->>>>>>> main
   m_ActiveColorSpace: 1
   unsupportedMSAAFallback: 0
   m_SpriteBatchVertexThreshold: 300
@@ -190,15 +182,9 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
-<<<<<<< HEAD
   AndroidMinSdkVersion: 32
   AndroidTargetSdkVersion: 32
   AndroidPreferredInstallLocation: 0
-=======
-  AndroidMinSdkVersion: 23
-  AndroidTargetSdkVersion: 0
-  AndroidPreferredInstallLocation: 1
->>>>>>> main
   aotOptions: 
   stripEngineCode: 1
   iPhoneStrippingLevel: 0
@@ -586,11 +572,7 @@ PlayerSettings:
   - m_BuildTarget: LuminSupport
     m_GraphicsJobs: 0
   - m_BuildTarget: AndroidPlayer
-<<<<<<< HEAD
     m_GraphicsJobs: 1
-=======
-    m_GraphicsJobs: 0
->>>>>>> main
   - m_BuildTarget: WebGLSupport
     m_GraphicsJobs: 0
   m_BuildTargetGraphicsJobMode:
@@ -598,11 +580,8 @@ PlayerSettings:
     m_GraphicsJobMode: 0
   - m_BuildTarget: XboxOnePlayer
     m_GraphicsJobMode: 0
-<<<<<<< HEAD
   - m_BuildTarget: AndroidPlayer
     m_GraphicsJobMode: 1
-=======
->>>>>>> main
   m_BuildTargetGraphicsAPIs:
   - m_BuildTarget: iOSSupport
     m_APIs: 10000000

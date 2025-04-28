@@ -743,11 +743,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -1171,11 +1167,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -1352,7 +1344,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.756, y: 1.361}
   m_SizeDelta: {x: 3000, y: 1600}
   m_Pivot: {x: 0.5, y: 0.5}
-<<<<<<< HEAD
 --- !u!1 &115984275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,8 +1478,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115984275}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &120854664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1619,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 120854664}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
 --- !u!1 &140659452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,8 +1694,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140659452}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &148585486 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4297420317864066871, guid: 48e2cee497f58e349adce509e90fdf2d, type: 3}
@@ -1746,7 +1732,6 @@ Transform:
   - {fileID: 1162349047}
   m_Father: {fileID: 1230061735}
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
-<<<<<<< HEAD
 --- !u!1 &151237504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,8 +1902,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> main
 --- !u!1 &159346526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,11 +2188,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2476,11 +2455,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -2545,10 +2520,7 @@ Transform:
   m_Children:
   - {fileID: 94380032}
   - {fileID: 777917385}
-<<<<<<< HEAD
   - {fileID: 1332627996}
-=======
->>>>>>> main
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188882187
@@ -2880,7 +2852,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7308607478092806258, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
   m_PrefabInstance: {fileID: 226652258}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &227010035
 GameObject:
   m_ObjectHideFlags: 0
@@ -2917,8 +2888,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> main
 --- !u!4 &228545721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8164705571879959090, guid: 69bcbe8a3c723a8459bad61946074109, type: 3}
@@ -3725,11 +3694,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -3991,11 +3956,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -4234,7 +4195,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338660825}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &340291562
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,8 +4270,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340291562}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &350421942
 GameObject:
   m_ObjectHideFlags: 0
@@ -4706,11 +4664,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -4846,11 +4800,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -5675,7 +5625,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-<<<<<<< HEAD
 --- !u!1 &444702831
 GameObject:
   m_ObjectHideFlags: 0
@@ -5810,8 +5759,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444702831}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &445596635
 GameObject:
   m_ObjectHideFlags: 0
@@ -6757,11 +6704,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -6795,7 +6738,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502671623}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
 --- !u!1 &505780514
 GameObject:
   m_ObjectHideFlags: 0
@@ -6833,8 +6775,6 @@ RectTransform:
   m_AnchoredPosition: {x: -447.31757, y: -469.28702}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> main
 --- !u!1 &507633897
 GameObject:
   m_ObjectHideFlags: 0
@@ -6935,11 +6875,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -7118,7 +7054,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521468229}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
 --- !u!1 &523909784
 GameObject:
   m_ObjectHideFlags: 0
@@ -7265,8 +7200,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523909784}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &534385765
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,11 +7335,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -7501,7 +7430,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-<<<<<<< HEAD
 --- !u!1 &561742130
 GameObject:
   m_ObjectHideFlags: 0
@@ -7636,8 +7564,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 561742130}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &563523501
 GameObject:
   m_ObjectHideFlags: 0
@@ -7958,11 +7884,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -8301,11 +8223,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -8538,7 +8456,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2147483647
   m_RaycastTriggerInteraction: 1
-<<<<<<< HEAD
 --- !u!1 &598172836
 GameObject:
   m_ObjectHideFlags: 0
@@ -8673,8 +8590,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 598172836}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &608416865
 GameObject:
   m_ObjectHideFlags: 0
@@ -9799,11 +9714,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -9837,7 +9748,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638521782}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
 --- !u!1 &638982344
 GameObject:
   m_ObjectHideFlags: 0
@@ -9914,8 +9824,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638982344}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &639473228
 GameObject:
   m_ObjectHideFlags: 0
@@ -10666,11 +10574,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -11429,7 +11333,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688237900}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &689031579
 GameObject:
   m_ObjectHideFlags: 0
@@ -11466,8 +11369,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4, y: -0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> main
 --- !u!1 &692775480
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,11 +11973,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -12308,7 +12205,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69bcbe8a3c723a8459bad61946074109, type: 3}
-<<<<<<< HEAD
 --- !u!1 &798426899
 GameObject:
   m_ObjectHideFlags: 0
@@ -12546,8 +12442,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-=======
->>>>>>> main
 --- !u!1 &826830809
 GameObject:
   m_ObjectHideFlags: 0
@@ -12650,11 +12544,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -12933,11 +12823,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -13662,13 +13548,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 1928608166160100158, guid: 49e2fbde9521b4341879174df5a51b64, type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 1879048247
       objectReference: {fileID: 0}
-=======
->>>>>>> main
     - target: {fileID: 5356569681960622866, guid: 49e2fbde9521b4341879174df5a51b64, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -14640,11 +14523,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -15208,13 +15087,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 6960627886175621283, guid: fcac0c3f142ea3742a0565751dec41de, type: 3}
       propertyPath: m_BlockingMask.m_Bits
       value: 1879048247
       objectReference: {fileID: 0}
-=======
->>>>>>> main
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15310,7 +15186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!1 &1062688481
 GameObject:
   m_ObjectHideFlags: 0
@@ -15386,8 +15261,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062688481}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &1066453731
 GameObject:
   m_ObjectHideFlags: 0
@@ -16118,11 +15991,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -16195,7 +16064,6 @@ Transform:
   - {fileID: 1552345009}
   m_Father: {fileID: 94380032}
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1114812011
 GameObject:
   m_ObjectHideFlags: 0
@@ -16240,8 +16108,6 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> main
 --- !u!1001 &1121475622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16594,11 +16460,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -17096,11 +16958,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -18391,11 +18249,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -18948,7 +18802,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5493551732918695637, guid: 06b4ece1c4423ab479d9282189c023c7, type: 3}
   m_PrefabInstance: {fileID: 1278978912}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &1284526561
 GameObject:
   m_ObjectHideFlags: 0
@@ -19026,8 +18879,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284526561}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &1294851191
 GameObject:
   m_ObjectHideFlags: 0
@@ -19430,7 +19281,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316056385}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1316312061
 GameObject:
   m_ObjectHideFlags: 0
@@ -19510,8 +19360,6 @@ MonoBehaviour:
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
   m_ScrollDeltaPerTick: 6
-=======
->>>>>>> main
 --- !u!1001 &1332232279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19672,14 +19520,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!224 &1332627996 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7948282963121910373, guid: 2601f7e000e6543498b55c40a966deac, type: 3}
   m_PrefabInstance: {fileID: 1794566658}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> main
 --- !u!1 &1343286191
 GameObject:
   m_ObjectHideFlags: 0
@@ -19806,7 +19651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e601cf28e9702c945abe3b90e7f51974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!1 &1350578872
 GameObject:
   m_ObjectHideFlags: 0
@@ -19895,8 +19739,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350578872}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &1357422418
 GameObject:
   m_ObjectHideFlags: 0
@@ -19997,11 +19839,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -20145,11 +19983,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -20384,11 +20218,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -20422,7 +20252,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382509436}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
 --- !u!1 &1385963760
 GameObject:
   m_ObjectHideFlags: 0
@@ -20557,8 +20386,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385963760}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1001 &1392977948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20792,7 +20619,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397824937}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1406097963
 GameObject:
   m_ObjectHideFlags: 0
@@ -20954,8 +20780,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> main
 --- !u!1 &1406285520
 GameObject:
   m_ObjectHideFlags: 0
@@ -21235,7 +21059,6 @@ MonoBehaviour:
   m_OnKeyboardFocusChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD
 --- !u!1 &1409952398
 GameObject:
   m_ObjectHideFlags: 0
@@ -21279,8 +21102,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 23.957094, y: 5.989273}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> main
 --- !u!1001 &1410077791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21937,7 +21758,6 @@ Transform:
   - {fileID: 608416866}
   m_Father: {fileID: 1793296597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1462577724
 GameObject:
   m_ObjectHideFlags: 0
@@ -22072,8 +21892,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462577724}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1001 &1467762830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22598,11 +22416,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -22741,7 +22555,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1508418154}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1516794053
 GameObject:
   m_ObjectHideFlags: 0
@@ -22821,8 +22634,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1516794053}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &1519479188
 GameObject:
   m_ObjectHideFlags: 0
@@ -24565,14 +24376,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
-<<<<<<< HEAD
 --- !u!1 &1565975417 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 366349417295850677, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
   m_PrefabInstance: {fileID: 2609984114077390469}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> main
 --- !u!1 &1576084405
 GameObject:
   m_ObjectHideFlags: 0
@@ -25085,11 +24893,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -25425,7 +25229,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
-<<<<<<< HEAD
 --- !u!1 &1601930109
 GameObject:
   m_ObjectHideFlags: 0
@@ -25506,8 +25309,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2094949073380260117, guid: 2601f7e000e6543498b55c40a966deac, type: 3}
   m_PrefabInstance: {fileID: 1794566658}
   m_PrefabAsset: {fileID: 0}
-=======
->>>>>>> main
 --- !u!1 &1611893770
 GameObject:
   m_ObjectHideFlags: 0
@@ -25819,11 +25620,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -25960,11 +25757,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -26684,11 +26477,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -26934,7 +26723,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
-<<<<<<< HEAD
 --- !u!1 &1747299676
 GameObject:
   m_ObjectHideFlags: 0
@@ -27040,8 +26828,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> main
 --- !u!1001 &1750487235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27191,7 +26977,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751911996}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1756178019
 GameObject:
   m_ObjectHideFlags: 0
@@ -27460,8 +27245,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756844834}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &1757845773
 GameObject:
   m_ObjectHideFlags: 0
@@ -27562,11 +27345,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -28223,11 +28002,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -28368,7 +28143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ButtonToPress: {fileID: 278075342}
   m_SwitchContext: 1
-<<<<<<< HEAD
 --- !u!1001 &1794566658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28536,8 +28310,6 @@ PrefabInstance:
       addedObject: {fileID: 2142794532}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2601f7e000e6543498b55c40a966deac, type: 3}
-=======
->>>>>>> main
 --- !u!1001 &1801101346
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29182,7 +28954,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7308607478092806258, guid: 224ab99c12567b94a8a7fad519daf55b, type: 3}
   m_PrefabInstance: {fileID: 1803928727}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &1806469814
 GameObject:
   m_ObjectHideFlags: 0
@@ -29288,8 +29059,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> main
 --- !u!1 &1812461338
 GameObject:
   m_ObjectHideFlags: 0
@@ -29556,7 +29325,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814111438}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1826528157
 GameObject:
   m_ObjectHideFlags: 0
@@ -29691,8 +29459,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1826528157}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1001 &1830947589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30105,7 +29871,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838835542}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1844854690
 GameObject:
   m_ObjectHideFlags: 0
@@ -30227,8 +29992,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844854690}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1 &1849452731
 GameObject:
   m_ObjectHideFlags: 0
@@ -30417,11 +30180,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -30990,7 +30749,6 @@ MonoBehaviour:
   m_Description: 6. Focus
   m_BlockUntilComplete: 0
   m_AutoProgressOnComplete: 1
-<<<<<<< HEAD
 --- !u!1 &1900080023
 GameObject:
   m_ObjectHideFlags: 0
@@ -31089,8 +30847,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
-=======
->>>>>>> main
 --- !u!1 &1913037773
 GameObject:
   m_ObjectHideFlags: 0
@@ -31665,11 +31421,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -31726,7 +31478,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
-<<<<<<< HEAD
 --- !u!1001 &1943684913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31784,8 +31535,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
-=======
->>>>>>> main
 --- !u!1001 &1963227689
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31963,11 +31712,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -33568,11 +33313,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -33852,7 +33593,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076917059}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &2078717037
 GameObject:
   m_ObjectHideFlags: 0
@@ -33987,8 +33727,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078717037}
   m_CullTransparentMesh: 1
-=======
->>>>>>> main
 --- !u!1001 &2093842724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35029,7 +34767,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
-<<<<<<< HEAD
 --- !u!1 &2142794531
 GameObject:
   m_ObjectHideFlags: 0
@@ -35066,8 +34803,6 @@ RectTransform:
   m_AnchoredPosition: {x: -447.20575, y: -469.423}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
-=======
->>>>>>> main
 --- !u!1 &2146430211
 GameObject:
   m_ObjectHideFlags: 0
@@ -35174,11 +34909,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -37220,11 +36951,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -37411,11 +37138,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -38332,11 +38055,7 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-<<<<<<< HEAD
   m_enableWordWrapping: 0
-=======
-  m_enableWordWrapping: 1
->>>>>>> main
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
@@ -38726,12 +38445,9 @@ SceneRoots:
   - {fileID: 1902120916235679079}
   - {fileID: 499064196}
   - {fileID: 275395432}
-<<<<<<< HEAD
   - {fileID: 1747299680}
   - {fileID: 151237507}
   - {fileID: 1406097966}
   - {fileID: 1806469818}
   - {fileID: 1316312064}
   - {fileID: 1943684913}
-=======
->>>>>>> main

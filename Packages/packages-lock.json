@@ -1,6 +1,5 @@
 {
   "dependencies": {
-<<<<<<< HEAD
     "com.meta.xr.sdk.core": {
       "version": "74.0.2",
       "depth": 0,
@@ -37,8 +36,6 @@
       },
       "url": "https://packages.unity.com"
     },
-=======
->>>>>>> main
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 0,
@@ -58,7 +55,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
     "com.unity.editorcoroutines": {
       "version": "1.0.0",
       "depth": 1,
@@ -66,8 +62,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-=======
->>>>>>> main
     "com.unity.ext.nunit": {
       "version": "1.0.6",
       "depth": 1,
@@ -75,18 +69,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
-    "com.unity.feature.vr": {
-      "version": "1.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.xr.oculus": "4.4.0",
-        "com.unity.xr.openxr": "1.13.1"
-      }
-    },
->>>>>>> main
     "com.unity.ide.visualstudio": {
       "version": "2.0.22",
       "depth": 0,
@@ -254,18 +236,6 @@
       },
       "url": "https://packages.unity.com"
     },
-<<<<<<< HEAD
-=======
-    "com.unity.xr.oculus": {
-      "version": "4.4.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.xr.management": "4.4.0"
-      },
-      "url": "https://packages.unity.com"
-    },
->>>>>>> main
     "com.unity.xr.openxr": {
       "version": "1.13.1",
       "depth": 0,
