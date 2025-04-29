@@ -1743,6 +1743,7 @@ GameObject:
   - component: {fileID: 151237507}
   - component: {fileID: 151237506}
   - component: {fileID: 151237505}
+  - component: {fileID: 151237508}
   m_Layer: 0
   m_Name: ND Sound
   m_TagString: Untagged
@@ -1902,6 +1903,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &151237508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151237504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8595608a71205b046954dc985f650b3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Area: {fileID: 1806469815}
+  Player: {fileID: 1565975417}
+  OverlayRenderer: {fileID: 1649624258}
+  ZoneDarkness: 1
+  FadeRadius: 5
 --- !u!1 &159346526
 GameObject:
   m_ObjectHideFlags: 0
@@ -19701,6 +19719,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4682837593e398438123de4199f9f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  labels: []
+  labelDirections: []
+  hoverThreshold: 0.6
+  glowSegments: []
+  handle: {fileID: 0}
+  circleArea: {fileID: 0}
+  mixer: {fileID: 0}
+  gainParameter: Gain
+  frequencyParameter: Frequency
+  maxGain: 3
+  minGain: 0.05
+  minFreq: 20
+  maxFreq: 8000
 --- !u!114 &1350578875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25868,6 +25899,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!23 &1649624258 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 714330505145295791, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+  m_PrefabInstance: {fileID: 2609984114077390469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1655002129
 GameObject:
   m_ObjectHideFlags: 0
@@ -36339,6 +36375,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 298921887889211250, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 298921887889211250, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 298921887889211250, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 366349417295850675, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_BackGroundColor.a
       value: 1
@@ -36355,6 +36403,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 714330505145295791, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9b6569ef30a5c1143b3b79596ca86439, type: 2}
     - target: {fileID: 963534865920503432, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
@@ -36385,6 +36437,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3115292631596432376, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3314816736109699687, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: Area
+      value: 
+      objectReference: {fileID: 1806469815}
+    - target: {fileID: 3314816736109699687, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1565975417}
+    - target: {fileID: 3314816736109699687, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: ZoneDarkness
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3755023497685003746, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
@@ -36455,7 +36519,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3314816736109699687, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
