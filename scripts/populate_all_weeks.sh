@@ -26,7 +26,6 @@ declare -A GROUP_IDS=(
   [C]="8607f2c4"
 )
 
-<<<<<<< HEAD
 # Global weekly task creation
 for WEEK in {1..8}; do
   echo "📌 Creating global task for Week $WEEK..."
@@ -40,8 +39,6 @@ for WEEK in {1..8}; do
 done
 
 # Assign issues to weeks and groups
-=======
->>>>>>> msvieira
 ISSUE_NUM=1
 for WEEK in {1..8}; do
   for GROUP in A B C; do
@@ -84,7 +81,4 @@ for WEEK in {1..8}; do
     ((ISSUE_NUM++))
   done
 done
-<<<<<<< HEAD
 
-=======
->>>>>>> msvieira
