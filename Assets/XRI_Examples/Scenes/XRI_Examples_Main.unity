@@ -1491,7 +1491,7 @@ AudioSource:
   m_GameObject: {fileID: 151237504}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 1cb761d3a2b41174ea253f98b468b3cc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -16528,6 +16528,26 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_MaxValue
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1161015283}
+    - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetVolumeFromSlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SoundSettings, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1027582128, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
@@ -16540,7 +16560,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1420128961}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1696836625, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1161015283}
   m_SourcePrefab: {fileID: 100100000, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
 --- !u!224 &1161015280 stripped
 RectTransform:
@@ -16552,6 +16575,36 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
   m_PrefabInstance: {fileID: 1161015279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1161015282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1696836625, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+  m_PrefabInstance: {fileID: 1161015279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1161015283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161015282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e2195e3889f421db1a2e1134d4cf6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSlider: {fileID: 1161015284}
+  masterMixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+--- !u!114 &1161015284 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+  m_PrefabInstance: {fileID: 1161015279}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1162349044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20071,7 +20124,7 @@ AudioSource:
   m_GameObject: {fileID: 1406097963}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
