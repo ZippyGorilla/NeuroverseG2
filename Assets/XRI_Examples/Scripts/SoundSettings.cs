@@ -30,8 +30,8 @@ public class SoundSettings : MonoBehaviour
         soundSlider.value = _value;
     }
 
-    public void HalfVol() { //Set the Master volume slider to its mid-point.
-        SetVolume(50);
+    public void QuarterVol() { //Set the Master volume slider to its mid-point.
+        SetVolume(25);
     }
 
 }

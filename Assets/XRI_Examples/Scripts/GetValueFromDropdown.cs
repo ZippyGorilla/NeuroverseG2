@@ -6,12 +6,26 @@ public class GetValueFromDropdown : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
+    SoundSettings sSScript;
+
+    void Start()
+    {
+        sSScript = GameObject.FindGameObjectWithTag("SoundSetSlider").GetComponent<SoundSettings>();
+    }
+
 
 
     public void GetDropdownValue()
     {
         int pickedEntryIndex = dropdown.value;
 
-        Debug.Log(pickedEntryIndex);
+        if (dropdown.value == 1)
+        {
+            sSScript.QuarterVol();
+        }
+
+        //Debug.Log(pickedEntryIndex);
+
+        
     }
 }
