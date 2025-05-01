@@ -31,8 +31,7 @@ public class DarknessOverlayGradient : MonoBehaviour
 
     public void SetZoneDarkness(float value) 
     {
-        Debug.Log("SetZoneDarkness!" + value);
-        ZoneDarkness = value; //Mathf.Clamp01(value);
+        ZoneDarkness = 1 - value; //Mathf.Clamp01(value);
     }
 
     void Update()
