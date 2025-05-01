@@ -13,7 +13,7 @@ public class DarknessOverlayGradient : MonoBehaviour
 
     [Tooltip("Maximum darkness inside the zone (0 = no effect, 1 = full black)")]
     [Range(0, 1)]
-    public float ZoneDarkness = 0.9f;
+    public float ZoneDarkness = 0.5f;
 
     [Tooltip("Radius where the darkness fully fades out")]
     public float FadeRadius = 10f;
