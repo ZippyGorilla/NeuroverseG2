@@ -29,6 +29,11 @@ public class DarknessOverlayGradient : MonoBehaviour
         }
     }
 
+    public void SetZoneDarkness(float value) 
+    {
+        ZoneDarkness = value; //Mathf.Clamp01(value);
+    }
+
     void Update()
     {
         if (Player == null || Area == null || _overlayMaterial == null) return;
