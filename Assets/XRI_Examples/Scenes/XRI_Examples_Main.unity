@@ -33797,7 +33797,7 @@ PrefabInstance:
       objectReference: {fileID: 2073684561}
     - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
