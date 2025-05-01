@@ -1486,6 +1486,8 @@ GameObject:
   - component: {fileID: 151237506}
   - component: {fileID: 151237505}
   - component: {fileID: 151237508}
+  - component: {fileID: 151237509}
+  - component: {fileID: 151237510}
   m_Layer: 0
   m_Name: ND Sound
   m_TagString: Untagged
@@ -1503,7 +1505,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 9a02ea84904f947eeaf270f2154853f6, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5130e2e127634fcf8bd7559a6b2b4d7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1623,7 +1625,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151237504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b70f60b2c3e5444e930302f01d0c75a, type: 3}
   m_Name: 
@@ -1661,7 +1663,33 @@ MonoBehaviour:
   Player: {fileID: 1565975417}
   OverlayRenderer: {fileID: 1649624258}
   ZoneDarkness: 1
-  FadeRadius: 5
+  FadeRadius: 15
+--- !u!114 &151237509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151237504}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf13392cfcfc4483b2e0eed0e21a0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &151237510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151237504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5146a17347f9f4240b53b2c60ba18093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Area: {fileID: 1806469815}
+  Player: {fileID: 1565975422}
 --- !u!1 &159346526
 GameObject:
   m_ObjectHideFlags: 0
@@ -20863,6 +20891,8 @@ GameObject:
   - component: {fileID: 1406097966}
   - component: {fileID: 1406097965}
   - component: {fileID: 1406097964}
+  - component: {fileID: 1406097967}
+  - component: {fileID: 1406097968}
   m_Layer: 0
   m_Name: Non ND Sound
   m_TagString: Untagged
@@ -20879,8 +20909,8 @@ AudioSource:
   m_GameObject: {fileID: 1406097963}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 9a02ea84904f947eeaf270f2154853f6, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 16fba6d30ed741d4a9fdd6e79ee2f3ac, type: 3}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+  m_audioClip: {fileID: 8300000, guid: b5dea63635b514263a635a337b26c737, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -20991,7 +21021,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406097963}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b70f60b2c3e5444e930302f01d0c75a, type: 3}
   m_Name: 
@@ -21013,6 +21043,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1406097967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406097963}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf13392cfcfc4483b2e0eed0e21a0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1406097968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406097963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5146a17347f9f4240b53b2c60ba18093, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Area: {fileID: 1747299677}
+  Player: {fileID: 1565975422}
 --- !u!1 &1406285520
 GameObject:
   m_ObjectHideFlags: 0
@@ -24513,6 +24569,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 366349417295850677, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
   m_PrefabInstance: {fileID: 2609984114077390469}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1565975422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 366349417295850678, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+  m_PrefabInstance: {fileID: 2609984114077390469}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1576084405
 GameObject:
   m_ObjectHideFlags: 0
@@ -27260,7 +27321,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747299676}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29060,7 +29121,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806469814}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
