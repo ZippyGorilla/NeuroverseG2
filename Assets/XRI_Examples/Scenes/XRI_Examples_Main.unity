@@ -1488,6 +1488,7 @@ GameObject:
   - component: {fileID: 151237508}
   - component: {fileID: 151237509}
   - component: {fileID: 151237510}
+  - component: {fileID: 151237511}
   m_Layer: 0
   m_Name: ND Sound
   m_TagString: Untagged
@@ -1505,7 +1506,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 9a02ea84904f947eeaf270f2154853f6, type: 2}
-  m_audioClip: {fileID: 8300000, guid: b5dea63635b514263a635a337b26c737, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5130e2e127634fcf8bd7559a6b2b4d7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1683,13 +1684,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151237504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5146a17347f9f4240b53b2c60ba18093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Area: {fileID: 1806469815}
   Player: {fileID: 1565975422}
+--- !u!114 &151237511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151237504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3839d8413594748e491ed068a9686c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Area: {fileID: 1806469815}
+  Player: {fileID: 1565975422}
+  VolumeInside: 1
+  VolumeOutside: 0
+  FadeDistance: 15
 --- !u!1 &159346526
 GameObject:
   m_ObjectHideFlags: 0
@@ -20893,6 +20911,7 @@ GameObject:
   - component: {fileID: 1406097964}
   - component: {fileID: 1406097967}
   - component: {fileID: 1406097968}
+  - component: {fileID: 1406097969}
   m_Layer: 0
   m_Name: Non ND Sound
   m_TagString: Untagged
@@ -20910,7 +20929,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
-  m_audioClip: {fileID: 8300000, guid: b5dea63635b514263a635a337b26c737, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d5130e2e127634fcf8bd7559a6b2b4d7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -21062,13 +21081,30 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406097963}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5146a17347f9f4240b53b2c60ba18093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Area: {fileID: 1747299677}
   Player: {fileID: 1565975422}
+--- !u!114 &1406097969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406097963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3839d8413594748e491ed068a9686c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Area: {fileID: 1747299677}
+  Player: {fileID: 1565975422}
+  VolumeInside: 1
+  VolumeOutside: 0
+  FadeDistance: 15
 --- !u!1 &1406285520
 GameObject:
   m_ObjectHideFlags: 0
