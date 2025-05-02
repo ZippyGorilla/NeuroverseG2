@@ -1664,7 +1664,7 @@ MonoBehaviour:
   Player: {fileID: 1565975417}
   OverlayRenderer: {fileID: 1649624258}
   ZoneDarkness: 1
-  FadeRadius: 15
+  FadeRadius: 30
 --- !u!114 &151237509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27357,7 +27357,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1747299676}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29157,7 +29157,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806469814}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

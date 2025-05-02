@@ -16,7 +16,7 @@ public class DarknessOverlayGradient : MonoBehaviour
     public float ZoneDarkness = 0.5f;
 
     [Tooltip("Radius where the darkness fully fades out")]
-    public float FadeRadius = 10f;
+    public float FadeRadius = 30f; //15
 
     private Material _overlayMaterial;
 
