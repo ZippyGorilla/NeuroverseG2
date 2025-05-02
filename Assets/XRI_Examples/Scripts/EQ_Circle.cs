@@ -13,7 +13,7 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
     [SerializeField] Image[] glowSegments; // same count/order as labels
     
     Color normalColor = Color.gray;
-    Color hoverColor = Color.black;
+    Color hoverColor = Color.white;
 
     private Vector3[] currentScales;
     private Vector3[] targetScales;
