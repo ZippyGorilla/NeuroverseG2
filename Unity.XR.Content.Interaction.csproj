@@ -84,6 +84,7 @@
     <Compile Include="Assets\XRI_Examples\Global\Scripts\ObjectReset.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\EQ_Circle.cs" />
     <Compile Include="Assets\XRI_Examples\VRWalkthrough\Scripts\WaypointCurve.cs" />
+    <Compile Include="Assets\XRI_Examples\Scripts\GetValueFromDropdown.cs" />
     <Compile Include="Assets\XRI_Examples\Setup\Scripts\LocomotionSetup.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\HalfVolume.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\InteractionAnimator.cs" />
@@ -106,6 +107,7 @@
     <Compile Include="Assets\XRI_Examples\UI_3D\Scripts\ClawMachine\UfoAbductionForce.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\DestroyObject.cs" />
     <Compile Include="Assets\XRI_Examples\SocketInteractors\Scripts\XRInfiniteInteractable.cs" />
+    <Compile Include="Assets\XRI_Examples\Scripts\ToggleMenu.cs" />
     <Compile Include="Assets\XRI_Examples\Props\Scripts\OnCollision.cs" />
     <Compile Include="Assets\XRI_Examples\Props\Scripts\Breakable.cs" />
     <Compile Include="Assets\XRI_Examples\SocketInteractors\Scripts\KeyLockSystem\Lock.cs" />
