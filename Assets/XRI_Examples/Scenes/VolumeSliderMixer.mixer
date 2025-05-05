@@ -42,6 +42,12 @@ AudioMixerController:
     name: CFreq
   - guid: 38f182088b6b0234084e94db7bddbe79
     name: FreqG
+  - guid: d647912c1c18804479c223ff47b2944c
+    name: Room
+  - guid: caa299f8e82fa3a40865885d1ac5f9f7
+    name: dryLevel
+  - guid: 5affd3612d2c2a145bfa1dce0099d5b2
+    name: decayTime
   m_AudioMixerGroupViews:
   - guids:
     - c356ac39294fd4d49b4ebcf2877ebf2d
@@ -64,6 +70,7 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 24400004}
   - {fileID: -4092661650878313350}
+  - {fileID: 8994196430294241445}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -91,5 +98,51 @@ AudioMixerSnapshotController:
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: f1968be89fe0344999c0ca59e78f275e
-  m_FloatValues: {}
+  m_FloatValues:
+    5affd3612d2c2a145bfa1dce0099d5b2: 0.1
+    779631e210b18c242af42b721fb91c29: 0
+    caa299f8e82fa3a40865885d1ac5f9f7: 0
+    d647912c1c18804479c223ff47b2944c: -10000
   m_TransitionOverrides: {}
+--- !u!244 &8994196430294241445
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5e8c2f9ec02ee3543af0430aaee1c679
+  m_EffectName: SFX Reverb
+  m_MixLevel: cf720b827fa9798458776a3cab466dc0
+  m_Parameters:
+  - m_ParameterName: Dry Level
+    m_GUID: caa299f8e82fa3a40865885d1ac5f9f7
+  - m_ParameterName: Room
+    m_GUID: d647912c1c18804479c223ff47b2944c
+  - m_ParameterName: Room HF
+    m_GUID: b0009764fbf05274eba277e5d2cda6d2
+  - m_ParameterName: Decay Time
+    m_GUID: 5affd3612d2c2a145bfa1dce0099d5b2
+  - m_ParameterName: Decay HF Ratio
+    m_GUID: 056f77d67c739f440bfea801cecc4a2a
+  - m_ParameterName: Reflections
+    m_GUID: 584d041fce298694d88d07c2ba8e4add
+  - m_ParameterName: Reflect Delay
+    m_GUID: 40420358558abdc4f90d0f1183f559c1
+  - m_ParameterName: Reverb
+    m_GUID: 779631e210b18c242af42b721fb91c29
+  - m_ParameterName: Reverb Delay
+    m_GUID: 6fe26ec98347595418f8f3ac54123474
+  - m_ParameterName: Diffusion
+    m_GUID: 9f27f61ec50307c44aa237a74c26c145
+  - m_ParameterName: Density
+    m_GUID: 50b2b404fdde9b042a9f577dbab04d9b
+  - m_ParameterName: HF Reference
+    m_GUID: fb49fd8a3babf2d4f903266e7669c196
+  - m_ParameterName: Room LF
+    m_GUID: 1e715831ce7f37d41beb80a47aeda7e8
+  - m_ParameterName: LF Reference
+    m_GUID: ab70f76e55177b942a5ee2586639c80e
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0

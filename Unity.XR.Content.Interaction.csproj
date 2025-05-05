@@ -78,6 +78,7 @@
     <Compile Include="Assets\XRI_Examples\Global\Scripts\AutoSocketAttach.cs" />
     <Compile Include="Assets\XRI_Examples\Focus\Scripts\FocusInteractableUpdater.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\OnSelectInteractable.cs" />
+    <Compile Include="Assets\XRI_Examples\Scripts\DropdownSoundSelector.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\AnimationEventActionFinished.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\AnimationEventActionBegin.cs" />
     <Compile Include="Assets\XRI_Examples\VRWalkthrough\Scripts\Walkthrough.cs" />
@@ -124,6 +125,7 @@
     <Compile Include="Assets\XRI_Examples\SocketInteractors\Scripts\KeyLockSystem\IKeychain.cs" />
     <Compile Include="Assets\XRI_Examples\UI_3D\Scripts\ClawMachine\FlippyDoor.cs" />
     <Compile Include="Assets\XRI_Examples\Physics\Scripts\Door.cs" />
+    <Compile Include="Assets\XRI_Examples\Scripts\Reverb_Circle.cs" />
     <Compile Include="Assets\XRI_Examples\SocketInteractors\Scripts\XRGridSocketInteractor.cs" />
   </ItemGroup>
   <ItemGroup>
