@@ -13,10 +13,10 @@ public class DarknessOverlayGradient : MonoBehaviour
 
     [Tooltip("Maximum darkness inside the zone (0 = no effect, 1 = full black)")]
     [Range(0, 1)]
-    public float ZoneDarkness = 0.9f;
+    public float ZoneDarkness = 0.5f;
 
     [Tooltip("Radius where the darkness fully fades out")]
-    public float FadeRadius = 10f;
+    public float FadeRadius = 30f; //15
 
     private Material _overlayMaterial;
 
@@ -27,6 +27,11 @@ public class DarknessOverlayGradient : MonoBehaviour
             // Use a unique material instance to avoid modifying shared material
             _overlayMaterial = OverlayRenderer.material;
         }
+    }
+
+    public void SetZoneDarkness(float value) 
+    {
+        ZoneDarkness = 1 - value; //Mathf.Clamp01(value);
     }
 
     void Update()
