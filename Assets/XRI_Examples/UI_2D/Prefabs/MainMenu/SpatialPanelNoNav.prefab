@@ -2173,6 +2173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8432770312707429563, guid: 3aa8ee2a47661f1468bab41079948717, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 1879048247
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6111518285726507920, guid: 3aa8ee2a47661f1468bab41079948717, type: 3}
     - {fileID: 3116081381999269627, guid: 3aa8ee2a47661f1468bab41079948717, type: 3}
