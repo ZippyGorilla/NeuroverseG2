@@ -24,7 +24,7 @@ public class GetValueFromDropdown : MonoBehaviour
             sSScript.QuarterVol();
         }
 
-        //Debug.Log(pickedEntryIndex);
+        Debug.Log(pickedEntryIndex);
 
         
     }
