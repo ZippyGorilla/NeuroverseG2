@@ -23,7 +23,7 @@ public class VisualSettings : MonoBehaviour
         // SmoothDamp gives eased interpolation toward lastValue
         smoothedValue = Mathf.SmoothDamp(smoothedValue, lastValue, ref velocity, timeToSettle);
 
-        Debug.Log("brightSmooth: " + smoothedValue);
+        //Debug.Log("brightSmooth: " + smoothedValue);
 
          // Apply to system
         darkOverlayG.SetZoneDarkness(smoothedValue/100f);
