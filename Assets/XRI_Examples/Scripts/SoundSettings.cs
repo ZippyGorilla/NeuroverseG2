@@ -42,8 +42,8 @@ public class SoundSettings : MonoBehaviour
         // SmoothDamp gives eased interpolation toward lastValue
         smoothedValue = Mathf.SmoothDamp(smoothedValue, lastValue, ref velocity, timeToSettle);
 
-        Debug.Log("UpdateSmooth: " + smoothedValue);
-         // Apply to system
+        //Debug.Log("UpdateSmooth: " + smoothedValue);
+        // Apply to system
         PlayerPrefs.SetFloat("SavedMasterVolume", smoothedValue);
         masterMixer.SetFloat("MasterVolume", Mathf.Log10(smoothedValue / 100) * 20f);
     }
