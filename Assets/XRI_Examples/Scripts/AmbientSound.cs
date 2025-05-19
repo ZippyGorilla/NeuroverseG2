@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class GetValueFromDropdown : MonoBehaviour
+public class AmbientSound : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
@@ -15,7 +15,7 @@ public class GetValueFromDropdown : MonoBehaviour
 
 
 
-    public void GetDropdownValue()
+    public void GetValue()
     {
         int pickedEntryIndex = dropdown.value;
 
