@@ -22,6 +22,7 @@ public class AmbientSound : MonoBehaviour
         if (dropdown.value == 1)
         {
             sSScript.QuarterVol();
+            Debug.Log("QuarterVol() chosen");
         }
 
         Debug.Log(pickedEntryIndex);
