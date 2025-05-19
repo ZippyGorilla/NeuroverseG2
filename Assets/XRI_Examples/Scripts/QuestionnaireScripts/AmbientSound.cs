@@ -22,11 +22,20 @@ public class AmbientSound : MonoBehaviour
         if (dropdown.value == 1)
         {
             sSScript.QuarterVol();
-            Debug.Log("QuarterVol() chosen");
+            Debug.Log("UnityDebug Ambient_Sound: " + "Option_1");
         }
-
-        Debug.Log(pickedEntryIndex);
-
+        else if (dropdown.value == 2)
+        {
+            Debug.Log("UnityDebug Ambient_Sound: " + "Option_2");
+        }
+        else if (dropdown.value == 3)
+        {
+            Debug.Log("UnityDebug Ambient_Sound: " + "Option_3");
+        }
+        else if (dropdown.value == 4)
+        {
+            Debug.Log("UnityDebug Ambient_Sound: " + "Option_4");
+        }
         
     }
 }
