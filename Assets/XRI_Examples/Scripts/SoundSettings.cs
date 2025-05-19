@@ -28,8 +28,9 @@ public class SoundSettings : MonoBehaviour
     }
 
     public void SetVolumeFromSlider() {
-        SetVolume(soundSlider.value);
         Debug.Log("UnityDebug Master_Vol_(Slider): " + soundSlider.value);
+        SetVolume(soundSlider.value);
+        
     }
 
     public void RefreshSlider(float _value) {
