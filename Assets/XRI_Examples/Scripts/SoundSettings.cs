@@ -29,6 +29,7 @@ public class SoundSettings : MonoBehaviour
 
     public void SetVolumeFromSlider() {
         SetVolume(soundSlider.value);
+        Debug.Log("UnityDebug Master_Vol_(Slider): " + soundSlider.value);
     }
 
     public void RefreshSlider(float _value) {
@@ -42,7 +43,7 @@ public class SoundSettings : MonoBehaviour
         // SmoothDamp gives eased interpolation toward lastValue
         smoothedValue = Mathf.SmoothDamp(smoothedValue, lastValue, ref velocity, timeToSettle);
 
-        //Debug.Log("UpdateSmooth: " + smoothedValue);
+        //Debug.Log("UnityDebug Master_Volume: " + smoothedValue);
         // Apply to system
         PlayerPrefs.SetFloat("SavedMasterVolume", smoothedValue);
         masterMixer.SetFloat("MasterVolume", Mathf.Log10(smoothedValue / 100) * 20f);
