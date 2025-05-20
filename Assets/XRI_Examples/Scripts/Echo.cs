@@ -29,4 +29,10 @@ public class EchoController : MonoBehaviour
         mixer.SetFloat(echoDelayParam, delay);
     }
 
+    public void SetDelayFast(float value)
+    {
+        float delay = Mathf.Lerp(minDelay, maxDelay, value);
+        mixer.SetFloat(echoDelayParam, delay);
+    }
+
 }
