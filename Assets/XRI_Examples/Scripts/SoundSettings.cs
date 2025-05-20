@@ -13,13 +13,16 @@ public class SoundSettings : MonoBehaviour
     private float velocity = 0f; //SmoothDamp
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void Start() {
-        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 0.0")); 
-        SetVolume(36);
+    private void Start()
+    {
+        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 8.0"));
+        SetVolume(8);
     }
 
-    public void SetVolume(float _value) {
-        if(_value < 1) {
+    public void SetVolume(float _value)
+    {
+        if (_value < 1)
+        {
             _value = .001f;
         }
 
@@ -27,20 +30,23 @@ public class SoundSettings : MonoBehaviour
         //masterMixer.SetFloat("MasterVolume", Mathf.Log10(_value / 100) * 20f);   
     }
 
-    public void SetVolumeFromSlider() {
+    public void SetVolumeFromSlider()
+    {
         Debug.Log("UnityDebug Master_Vol_(Slider): " + soundSlider.value);
         SetVolume(soundSlider.value);
-        
+
     }
 
-    public void RefreshSlider(float _value) {
+    public void RefreshSlider(float _value)
+    {
         soundSlider.value = _value;
     }
 
-    void Update () { 
+    void Update()
+    {
         // Always read the latest slider position as target (lastValue)
         lastValue = soundSlider.value;
-        
+
         // SmoothDamp gives eased interpolation toward lastValue
         smoothedValue = Mathf.SmoothDamp(smoothedValue, lastValue, ref velocity, timeToSettle);
 
@@ -50,8 +56,16 @@ public class SoundSettings : MonoBehaviour
         masterMixer.SetFloat("MasterVolume", Mathf.Log10(smoothedValue / 100) * 20f);
     }
 
-    public void QuarterVol() { //Set the Master volume slider to its mid-point.
-        SetVolume(25);
+    public void highlySensitiveVol()
+    {
+        SetVolume(20);
+    }
+    public void moderateVol()
+    {
+        SetVolume(40);
+    }
+    public void underResponsiveVol() {
+        SetVolume(60);
     }
 
 }

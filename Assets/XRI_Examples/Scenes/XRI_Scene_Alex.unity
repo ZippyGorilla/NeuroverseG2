@@ -20075,9 +20075,10 @@ MonoBehaviour:
   m_text: "Welcome to the XR Interaction Toolkit examples, \nmodified to include
     sound settings. Here you\u2019ll find \nexamples of an XR rig setup with ray
     and grab \ninteractors, locomotion settings and a variety of \ninteractive objects.\n\nOpen/close
-    sound menu: press 'X' button on your left controller.\n\nYou can use your right
-    thumbstick to teleport and your \nleft thumbstick to move freely between areas.\n\nInteract
-    with 2D user interface with the trigger button, \nand 3D controls with the grip."
+    sound menu: press 'X' button on your left controller (circled in blue in the
+    above picture).\n\nYou can use your right thumbstick to teleport and your left
+    thumbstick to move freely between areas.\n\nInteract with 2D user interface with
+    the trigger button, and 3D controls with the grip."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -21429,6 +21430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dropdown
       objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_TagString
+      value: SoundSetSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.size
       value: 5
@@ -22040,7 +22045,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "How do you feel about reverb or \u201Croom-like\u201D audio?\n(e.g., sounds
-    that feel like they\u2019re in a hall, cave, or large space)"
+    that feel like they\u2019re in a large space)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}

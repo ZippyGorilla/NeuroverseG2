@@ -21,8 +21,8 @@ public class AmbientSound : MonoBehaviour
 
         if (dropdown.value == 1)
         {
-            Debug.Log("UnityDebug Ambient_Sound: " + "Option_1");
-             sSScript.QuarterVol();
+            Debug.Log("UnityDebug Ambient_Sound*TODO: " + "Option_1");
+             sSScript.highlySensitiveVol();
         }
         else if (dropdown.value == 2)
         {

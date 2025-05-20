@@ -24,7 +24,7 @@ public class Choice_SoundTexture : MonoBehaviour
         else if (dropdown.value == 1)
         {
             Debug.Log("UnityDebug Volume_Tolerance: " + "Option_1");
-            sSScript.QuarterVol();
+            sSScript.highlySensitiveVol();
         }
         else if (dropdown.value == 2)
         {

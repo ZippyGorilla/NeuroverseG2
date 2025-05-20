@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class HighFrequencies : MonoBehaviour
+public class Choice_Distortion : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 

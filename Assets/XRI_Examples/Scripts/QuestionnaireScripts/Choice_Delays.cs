@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class VolumeTolerance : MonoBehaviour
+public class Choice_Delays : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
@@ -24,7 +24,7 @@ public class VolumeTolerance : MonoBehaviour
         else if (dropdown.value == 1)
         {
             Debug.Log("UnityDebug Volume_Tolerance: " + "Option_1");
-            sSScript.QuarterVol();
+            sSScript.highlySensitiveVol();
         }
         else if (dropdown.value == 2)
         {
