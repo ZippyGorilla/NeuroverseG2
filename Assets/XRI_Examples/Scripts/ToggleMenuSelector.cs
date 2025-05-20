@@ -5,26 +5,31 @@ public class ToggleMenuSelector : MonoBehaviour
 {
     public Toggle toggle;
     public GameObject soundSettings;
+    public GameObject soundSettingsLabel;
     public GameObject sxfSettings;
+    public GameObject sxfSettingsLabel;
 
     private void Start()
     {
-        toggle.onValueChanged.AddListener(OntoggleValueChanged);
-        OntoggleValueChanged(toggle); // Initialize
+        toggle.onValueChanged.AddListener(OnToggleChanged);
+        OnToggleChanged(toggle.isOn); // Initialize
     }
 
-    private void OntoggleValueChanged(int index)
+    private void OnToggleChanged(bool isOn)
     {
-        switch (index)
+        if (isOn)
         {
-            case 0: // Option A - EQ
-                eqAndReverb.SetActive(true);
-                saturationAndDelay.SetActive(false);
-                break;
-            case 1: // Option B - Reverb
-                eqAndReverb.SetActive(false);
-                saturationAndDelay.SetActive(true);
-                break;
+            soundSettings.SetActive(false);
+            soundSettingsLabel.SetActive(false);
+            sxfSettings.SetActive(true);
+            sxfSettingsLabel.SetActive(true);
+        }
+        else
+        {
+            soundSettings.SetActive(true);
+            soundSettingsLabel.SetActive(true);
+            sxfSettings.SetActive(false);
+            sxfSettingsLabel.SetActive(false);
         }
     }
 }

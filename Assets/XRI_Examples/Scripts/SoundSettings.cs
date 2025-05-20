@@ -15,7 +15,7 @@ public class SoundSettings : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start() {
         SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 0.0")); 
-        SetVolume(0);
+        SetVolume(36);
     }
 
     public void SetVolume(float _value) {
