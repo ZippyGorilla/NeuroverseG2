@@ -6,15 +6,25 @@ public class VolumeTolerance : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
+    SoundSettings sSScript;
 
+    void Start()
+    {
+        sSScript = GameObject.FindGameObjectWithTag("SoundSetSlider").GetComponent<SoundSettings>();
+    }
 
     public void GetValue()
     {
         int pickedEntryIndex = dropdown.value;
 
-        if (dropdown.value == 1)
+        if (dropdown.value == 0)
+        {
+            Debug.Log("UnityDebug Volume_Tolerance: " + "No_option_chosen");
+        }
+        else if (dropdown.value == 1)
         {
             Debug.Log("UnityDebug Volume_Tolerance: " + "Option_1");
+            sSScript.QuarterVol();
         }
         else if (dropdown.value == 2)
         {
