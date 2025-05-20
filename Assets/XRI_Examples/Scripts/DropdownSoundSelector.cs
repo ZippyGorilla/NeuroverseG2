@@ -5,8 +5,8 @@ using UnityEngine.UI; // or TMPro if using TMP_Dropdown
 public class DropdownSoundSelector : MonoBehaviour
 {
     public TMP_Dropdown dropdown;
-    public GameObject eqPanel;
-    public GameObject reverbPanel;
+    public GameObject eqAndReverb;
+    public GameObject saturationAndDelay;
 
     private void Start()
     {
@@ -19,12 +19,12 @@ public class DropdownSoundSelector : MonoBehaviour
         switch (index)
         {
             case 0: // Option A - EQ
-                eqPanel.SetActive(true);
-                reverbPanel.SetActive(false);
+                eqAndReverb.SetActive(true);
+                saturationAndDelay.SetActive(false);
                 break;
             case 1: // Option B - Reverb
-                eqPanel.SetActive(false);
-                reverbPanel.SetActive(true);
+                eqAndReverb.SetActive(false);
+                saturationAndDelay.SetActive(true);
                 break;
         }
     }
