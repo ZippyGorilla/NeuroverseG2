@@ -100,12 +100,12 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
         float logMax = Mathf.Log10(maxFreq);
         float logFreq = Mathf.Lerp(logMin, logMax, (y + 1f) / 2f);
         float freq = Mathf.Pow(10f, logFreq);
-        
+
         mixer.SetFloat(gainParameter, gain);
         mixer.SetFloat(frequencyParameter, freq);
 
         UpdateLabelVisuals(new Vector2(x, y));
 
-        Debug.Log($"Gain: {gain} dB, Frequency: {freq} Hz");
+        Debug.Log("UnityDebug EQ: " + $"Gain:{gain}dB,Frequency:{freq}Hz,x:{x},y:{y}");
     }
 }
