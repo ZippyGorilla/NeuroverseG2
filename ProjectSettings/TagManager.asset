@@ -12,6 +12,7 @@ TagManager:
   - SoundSetSlider
   - ND_Sound
   - musicVol
+  - sfxVol
   layers:
   - Default
   - TransparentFX

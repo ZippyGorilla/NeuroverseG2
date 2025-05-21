@@ -22,7 +22,7 @@ public class AmbientSound : MonoBehaviour
         if (dropdown.value == 1)
         {
             Debug.Log("UnityDebug Ambient_Sound*TODO: " + "Option_1");
-             sSScript.highlySensitiveVol();
+             sSScript.musHighlySensitiveVol();
         }
         else if (dropdown.value == 2)
         {

@@ -56,16 +56,29 @@ public class SoundSettings : MonoBehaviour
         masterMixer.SetFloat("MasterVolume", Mathf.Log10(smoothedValue / 100) * 20f);
     }
 
-    public void highlySensitiveVol()
+    public void musHighlySensitiveVol()
     {
         SetVolume(20);
     }
-    public void moderateVol()
+    public void musModerateVol()
     {
         SetVolume(40);
     }
-    public void underResponsiveVol() {
+    public void musUnderResponsiveVol()
+    {
         SetVolume(60);
+    }
+
+    public void sfxHighlySensitiveVol()
+    {
+        SetVolume(35);
+    }
+    public void sfxModerateVol()
+    {
+        SetVolume(55);
+    }
+    public void sfxUnderResponsiveVol() {
+        SetVolume(70);
     }
 
 }
