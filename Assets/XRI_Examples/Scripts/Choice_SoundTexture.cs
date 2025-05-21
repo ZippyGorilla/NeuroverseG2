@@ -6,11 +6,11 @@ public class Choice_SoundTexture : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
-    SoundSettings sSScript;
+    EQCircleController paramEqScript;
 
     void Start()
     {
-        sSScript = GameObject.FindGameObjectWithTag("SoundSetSlider").GetComponent<SoundSettings>();
+        paramEqScript = GameObject.FindGameObjectWithTag("eqHandle").GetComponent<EQCircleController>();
     }
 
     public void GetValue()
@@ -19,24 +19,25 @@ public class Choice_SoundTexture : MonoBehaviour
 
         if (dropdown.value == 0)
         {
-            Debug.Log("UnityDebug Volume_Tolerance: " + "No_option_chosen");
+            Debug.Log("UnityDebug Sound_Texture: " + "No_option_chosen");
         }
         else if (dropdown.value == 1)
         {
-            Debug.Log("UnityDebug Volume_Tolerance: " + "Option_1");
-            sSScript.musHighlySensitiveVol();
+            Debug.Log("UnityDebug Sound_Texture: " + "Option_1");
+            paramEqScript.ApplyEQ(3, 10);
         }
         else if (dropdown.value == 2)
         {
-            Debug.Log("UnityDebug Volume_Tolerance: " + "Option_2");
+            Debug.Log("UnityDebug Sound_Texture: " + "Option_2");
         }
         else if (dropdown.value == 3)
         {
-            Debug.Log("UnityDebug Volume_Tolerance: " + "Option_3");
+            Debug.Log("UnityDebug Sound_Texture: " + "Option_3");
+            paramEqScript.ApplyEQ(3,8000);
         }
         else if (dropdown.value == 4)
         {
-            Debug.Log("UnityDebug Volume_Tolerance: " + "Option_4");
+            Debug.Log("UnityDebug Sound_Texture: " + "Option_4");
         }
     }
 }

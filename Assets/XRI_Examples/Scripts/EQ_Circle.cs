@@ -91,7 +91,7 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
         }
     }
 
-    void ApplyEQ(float x, float y)
+    public void ApplyEQ(float x, float y)
     {
         // Gain mapping
         float gain = Mathf.Lerp(minGain, maxGain, (x + 1) / 2f);

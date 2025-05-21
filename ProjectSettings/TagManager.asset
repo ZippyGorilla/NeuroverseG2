@@ -13,6 +13,7 @@ TagManager:
   - ND_Sound
   - musicVol
   - sfxVol
+  - eqHandle
   layers:
   - Default
   - TransparentFX

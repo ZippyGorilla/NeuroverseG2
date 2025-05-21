@@ -7,12 +7,12 @@ public class Choice_SoundEnvs : MonoBehaviour
     [SerializeField] private TMP_Dropdown dropdown;
 
     SoundSettings sSScript;
-    SoundSettings sfxVol;
+    sfxSettings sfxVol;
 
     void Start()
     {
         sSScript = GameObject.FindGameObjectWithTag("musicVol").GetComponent<SoundSettings>();
-        sfxVol = GameObject.FindGameObjectWithTag("sfxVol").GetComponent<SoundSettings>();
+        sfxVol = GameObject.FindGameObjectWithTag("sfxVol").GetComponent<sfxSettings>();
     }
 
     public void GetValue()
