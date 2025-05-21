@@ -122,7 +122,7 @@ MonoBehaviour:
   Area: {fileID: 0}
   Player: {fileID: 0}
   OverlayRenderer: {fileID: 0}
-  ZoneDarkness: 2
+  ZoneDarkness: 1
   FadeRadius: 5
 --- !u!1001 &366349417952975812
 PrefabInstance:
