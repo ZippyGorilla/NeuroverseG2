@@ -10,7 +10,7 @@ public class Choice_Delays : MonoBehaviour
 
     void Start()
     {
-        sSScript = GameObject.FindGameObjectWithTag("SoundSetSlider").GetComponent<SoundSettings>();
+        sSScript = GameObject.FindGameObjectWithTag("musicVol").GetComponent<SoundSettings>();
     }
 
     public void GetValue()

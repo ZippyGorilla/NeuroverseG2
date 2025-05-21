@@ -11,6 +11,7 @@ TagManager:
   - Water
   - SoundSetSlider
   - ND_Sound
+  - musicVol
   layers:
   - Default
   - TransparentFX
