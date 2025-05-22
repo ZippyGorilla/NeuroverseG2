@@ -3,19 +3,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundClarity : MonoBehaviour
+public class ChoiceSoundEnvs : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider[] sfxSliders;
 
-    [SerializeField] GameObject eqHandle;
-
     public void GetValue()
     {
-        int pickedEntryIndex = dropdown.value;
-
         if (dropdown.value == 0)
         {
             Debug.Log("UnityDebug SoundEnvs: " + "No_option_chosen");
@@ -50,6 +46,11 @@ public class SoundClarity : MonoBehaviour
         else if (dropdown.value == 4)
         {
             Debug.Log("UnityDebug SoundEnvs: " + "Option_4");
+            musicSlider.SetValueWithoutNotify(0.2f);
+            for (int i = 0; i < sfxSliders.Length; i++)
+            {
+                sfxSliders[i].SetValueWithoutNotify(0.2f);
+            }
         }
     }
 }

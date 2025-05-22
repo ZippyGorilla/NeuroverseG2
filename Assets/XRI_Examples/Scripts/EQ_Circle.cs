@@ -89,7 +89,7 @@ public class EQCircleController : MonoBehaviour
         SetTargetEQ(normX, normY);
     }
 
-    void SetTargetEQ(float x, float y)
+    public void SetTargetEQ(float x, float y)
     {
         targetGain = Mathf.Lerp(minGain, maxGain, (x + 1) / 2f);
 

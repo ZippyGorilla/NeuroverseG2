@@ -75,7 +75,7 @@ public class RevCircleController : MonoBehaviour
         SetTargetReverb(normX, normY);
     }
 
-    void SetTargetReverb(float x, float y)
+    public void SetTargetReverb(float x, float y)
     {
         targetRoom = Mathf.Lerp(minDryWet, maxDryWet, (y + 1f) / 2f);
         targetDecay = Mathf.Lerp(minDecayTime, maxDecayTime, (x + 1f) / 2f);
