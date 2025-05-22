@@ -14,8 +14,8 @@ public class SoundSettings : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start() {
-        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 0.0")); 
-        SetVolume(36);
+        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 8.0")); 
+        SetVolume(8); // Start with a low value :)
     }
 
     public void SetVolume(float _value) {
@@ -50,7 +50,7 @@ public class SoundSettings : MonoBehaviour
         masterMixer.SetFloat("MasterVolume", Mathf.Log10(smoothedValue / 100) * 20f);
     }
 
-    public void QuarterVol() { //Set the Master volume slider to its mid-point.
+    public void QuarterVol() { //Set the Master volume slider to its quarter-point.
         SetVolume(25);
     }
 
