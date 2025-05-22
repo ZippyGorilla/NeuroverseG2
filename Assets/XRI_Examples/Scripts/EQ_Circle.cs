@@ -100,7 +100,7 @@ public class EQCircleController : MonoBehaviour
 
         //UpdateLabelVisuals(new Vector2(x, y));
 
-        Debug.Log($"UnityDebug EQ (Smoothed): Gain:{targetGain}dB, Freq:{targetFreq}Hz");
+        Debug.Log("UnityDebug EQ_" + handle.name + ": " + $"Gain:{currentGain}dB,Frequency:{currentFreq}Hz,x:{x},y:{y}");
     }
 
     //void UpdateLabelVisuals(Vector2 handlePos)
@@ -109,7 +109,7 @@ public class EQCircleController : MonoBehaviour
     //    {
     //        float proximity = Vector2.Dot(handlePos.normalized, labelDirections[i]);
     //        float t = Mathf.InverseLerp(hoverThreshold, 1f, proximity);
-//
+    //
     //        labels[i].color = Color.Lerp(normalColor, hoverColor, t);
     //        targetScales[i] = Vector3.Lerp(Vector3.one * 0.2f, Vector3.one * 1.1f, t);
     //        currentScales[i] = Vector3.Lerp(currentScales[i], targetScales[i], Time.deltaTime * scaleSpeed);
@@ -121,5 +121,7 @@ public class EQCircleController : MonoBehaviour
     {
         handle.anchoredPosition = Vector2.zero;
         SetTargetEQ(-0.36f, 0f); // Reset to neutral values
+        
+        Debug.Log("UnityDebug EQ_" + handle.name + ": Reseted");
     }
 }

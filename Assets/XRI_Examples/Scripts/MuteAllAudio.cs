@@ -29,6 +29,6 @@ public class MuteAllAudio : MonoBehaviour
     {
         isMuted = !isMuted;
         AudioListener.volume = isMuted ? 0f : 1f;
-        Debug.Log($"UnityDebug MuteAllAudio: Muted = {isMuted}");
+        Debug.Log($"UnityDebug MuteAllAudio: {isMuted}");
     }
 }

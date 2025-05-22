@@ -50,6 +50,8 @@ public class PitchController : MonoBehaviour
     {
         // Convert slider value (0-1) to pitch range
         targetPitch = Mathf.Lerp(minPitch, maxPitch, value);
+
+        Debug.Log("UnityDebug PitchShift_" + pitchSlider.name + ": " + value + "x");
     }
 
     private void ResetPitch()
@@ -57,5 +59,7 @@ public class PitchController : MonoBehaviour
         float defaultSliderValue = 0.33f;
         pitchSlider.SetValueWithoutNotify(defaultSliderValue);
         OnSliderChanged(defaultSliderValue);
+
+        Debug.Log("UnityDebug PitchShift_" + pitchSlider.name + ": Reseted");
     }
 }

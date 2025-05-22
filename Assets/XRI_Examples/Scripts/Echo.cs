@@ -35,12 +35,16 @@ public class EchoController : MonoBehaviour
     {
         float delay = Mathf.Lerp(minDelay, maxDelay, value);
         mixer.SetFloat(echoDelayParam, delay);
+
+        Debug.Log("UnityDebug Delay_" + echoDelaySlider.name + ": " + value * 100 + "%");
     }
 
     private void ResetDelay()
     {
         echoDelaySlider.SetValueWithoutNotify(0f);
         SetEchoDelay(0f);
+
+        Debug.Log("UnityDebug Delay_" + echoDelaySlider.name + ": Reseted");
     }
 
 }

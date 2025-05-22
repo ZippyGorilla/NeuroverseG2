@@ -43,12 +43,17 @@ public class AudioVolumeAndMuteSlider : MonoBehaviour
         if (!muteToggle.isOn)
         {
             PlayerPrefs.SetFloat("SavedMasterVolume", val);
+            Debug.Log("UnityDebug Volume_" + volumeSlider.name + ": " + val * 100 + "%");
         }
     }
 
     void OnMuteChanged(bool isMuted)
     {
         ApplyVolume();
+        if (isMuted)
+        {
+            Debug.Log("UnityDebug Mute_" + muteToggle.name + ": Muted");
+        }
     }
 
     void ApplyVolume()

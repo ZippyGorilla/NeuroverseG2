@@ -46,11 +46,15 @@ public class SaturationController : MonoBehaviour
         mixer.SetFloat(distortionParam, distortion);
         mixer.SetFloat(highpassParam, cutoff);
         mixer.SetFloat(duckVolumeParam, volume);
+
+        Debug.Log("UnityDebug Saturation_" + fxSlider.name + ": " + value * 100 + "%");
     }
 
     private void ResetSat()
     {
         fxSlider.SetValueWithoutNotify(0f);
         OnSliderValueChanged(fxSlider.value);
+
+        Debug.Log("UnityDebug Saturation_" + fxSlider.name + ": Reseted");
     }
 }

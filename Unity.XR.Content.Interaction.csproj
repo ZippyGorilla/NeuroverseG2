@@ -90,6 +90,7 @@
     <Compile Include="Assets\XRI_Examples\Global\Scripts\OnTilt.cs" />
     <Compile Include="Assets\XRI_Examples\VRWalkthrough\Scripts\WalkthroughTriggers\WalkthroughTrigger.cs" />
     <Compile Include="Assets\XRI_Examples\Setup\Scripts\TargetFilterToggle.cs" />
+    <Compile Include="Assets\XRI_Examples\Scripts\OpenScene.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\OnAnimationEvent.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\QuestionnaireScripts\Choice_MuteAmbient.cs" />
     <Compile Include="Assets\XRI_Examples\AdamAmbientZoneScripts\LockAudioToHead.cs" />

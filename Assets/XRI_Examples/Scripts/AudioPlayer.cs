@@ -17,34 +17,36 @@ public class AudioPlayer : MonoBehaviour
 
     void Start()
     {
-        playStopButton.onValueChanged.AddListener(playOrStop);
+        playStopButton.onValueChanged.AddListener(playOrPause);
         nextButton.onClick.AddListener(nextSong);
         previousButton.onClick.AddListener(previousSong);
 
-        playOrStop(playStopButton.isOn);
+        playOrPause(playStopButton.isOn);
         nextSong();
         previousSong();
 
         StopAllSongs();
         Songs[currentSongIndex].Play();
         playStopButton.isOn = false; // Playing
-        playOrStop(false);
+        playOrPause(false);
     }
 
     // Update is called once per frame
-    void playOrStop(bool _pause)
+    void playOrPause(bool _pause)
     {
         if (_pause)
         {
             Songs[currentSongIndex].Pause();
             playIcon.SetActive(true);
             pauseIcon.SetActive(false);
+            Debug.Log("UnityDebug playOrPause: " + "Pause");
         }
         else
         {
             Songs[currentSongIndex].Play();
             playIcon.SetActive(false);
             pauseIcon.SetActive(true);
+            Debug.Log("UnityDebug playOrPause: " + "Play");
         }
     }
     void nextSong()
@@ -53,7 +55,7 @@ public class AudioPlayer : MonoBehaviour
         currentSongIndex = (currentSongIndex + 1) % Songs.Length;
         Songs[currentSongIndex].Play();
         playStopButton.isOn = false; // Ensure play state is correct
-        playOrStop(false);
+        playOrPause(false);
     }
     void previousSong()
     {
@@ -61,7 +63,7 @@ public class AudioPlayer : MonoBehaviour
         currentSongIndex = (currentSongIndex - 1 + Songs.Length) % Songs.Length;
         Songs[currentSongIndex].Play();
         playStopButton.isOn = false;
-        playOrStop(false);
+        playOrPause(false);
     }
 
     void StopAllSongs()

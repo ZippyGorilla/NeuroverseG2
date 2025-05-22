@@ -79,11 +79,15 @@ public class RevCircleController : MonoBehaviour
     {
         targetRoom = Mathf.Lerp(minDryWet, maxDryWet, (y + 1f) / 2f);
         targetDecay = Mathf.Lerp(minDecayTime, maxDecayTime, (x + 1f) / 2f);
+
+        Debug.Log("UnityDebug Reverb_" + handle.name + ": " + $"Decay:{smoothedDecay}ms,Room:{smoothedRoom}mB,x:{x},y:{y}");
     }
 
     private void ResetRevSettings()
     {
         handle.anchoredPosition = Vector2.zero;
         SetTargetReverb(-1f, -1f); // Bottom-left of the circle
+
+        Debug.Log("UnityDebug Reverb_" + handle.name + ": Reseted");
     }
 }
