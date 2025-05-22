@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 
-public class FXSliderControl : MonoBehaviour
+public class SaturationController : MonoBehaviour
 {
     public Slider fxSlider;
     public AudioMixer mixer;
@@ -11,6 +11,9 @@ public class FXSliderControl : MonoBehaviour
     public string distortionParam = "DistortionAmount";
     public string highpassParam = "HighpassCutoff";
     public string duckVolumeParam = "DuckVolume";
+
+    [Header("Reset Button")]
+    public Button resetButton;
 
     [Header("Ranges")]
     public float minDistortion = 0f;
@@ -25,7 +28,13 @@ public class FXSliderControl : MonoBehaviour
     void Start()
     {
         fxSlider.onValueChanged.AddListener(OnSliderValueChanged);
-        OnSliderValueChanged(fxSlider.value); // Initialize
+        OnSliderValueChanged(fxSlider.value); // Initialize 
+
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetSat);
+        }
+
     }
 
     void OnSliderValueChanged(float value)
@@ -37,5 +46,11 @@ public class FXSliderControl : MonoBehaviour
         mixer.SetFloat(distortionParam, distortion);
         mixer.SetFloat(highpassParam, cutoff);
         mixer.SetFloat(duckVolumeParam, volume);
+    }
+
+    private void ResetSat()
+    {
+        fxSlider.SetValueWithoutNotify(0f);
+        OnSliderValueChanged(fxSlider.value);
     }
 }

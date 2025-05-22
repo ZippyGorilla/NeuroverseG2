@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-using System;
 
 public class PitchController : MonoBehaviour
 {
@@ -12,21 +11,51 @@ public class PitchController : MonoBehaviour
 
     [Header("Mixer Parameters")]
     public string pitchParam = "pitchAmount";
-     
+
     [Header("Ranges")]
     public float minPitch = 0.5f;
     public float maxPitch = 2f;
 
+    [Header("Reset Button")]
+    public Button resetButton;
+
+    [Header("Smoothing")]
+    public float smoothingTime = 0.2f;
+
+    private float targetPitch = 1f;
+    private float smoothedPitch = 1f;
+    private float pitchVelocity = 0f;
+
     void Start()
     {
-        // Optionally set default slider values
-        pitchSlider.onValueChanged.AddListener(SetPitch);
-        SetPitch(pitchSlider.value);
+        pitchSlider.onValueChanged.AddListener(OnSliderChanged);
+
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetPitch);
+        }
+
+        // Initialize with slider's current value
+        OnSliderChanged(pitchSlider.value);
     }
 
-    public void SetPitch(float value)
+    void Update()
     {
-        float pitch = Mathf.Lerp(minPitch, maxPitch, value);
-        mixer.SetFloat(pitchParam, pitch);
+        // Smoothly interpolate the pitch value
+        smoothedPitch = Mathf.SmoothDamp(smoothedPitch, targetPitch, ref pitchVelocity, smoothingTime);
+        mixer.SetFloat(pitchParam, smoothedPitch);
+    }
+
+    void OnSliderChanged(float value)
+    {
+        // Convert slider value (0-1) to pitch range
+        targetPitch = Mathf.Lerp(minPitch, maxPitch, value);
+    }
+
+    private void ResetPitch()
+    {
+        float defaultSliderValue = 0.33f;
+        pitchSlider.SetValueWithoutNotify(defaultSliderValue);
+        OnSliderChanged(defaultSliderValue);
     }
 }

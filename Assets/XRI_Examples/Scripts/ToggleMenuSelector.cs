@@ -1,35 +1,40 @@
 using UnityEngine;
-using UnityEngine.UI; // or TMPro if using TMP_Dropdown
+using UnityEngine.UI;
 
-public class ToggleMenuSelector : MonoBehaviour
+public class ToggleSoundSelector : MonoBehaviour
 {
-    public Toggle toggle;
-    public GameObject soundSettings;
-    public GameObject soundSettingsLabel;
-    public GameObject sxfSettings;
-    public GameObject sxfSettingsLabel;
+    public Toggle[] toggles;              // 4 toggles (part of the same ToggleGroup)
+    public GameObject[] soundObjects;     // 4 corresponding GameObjects to activate/deactivate
 
-    private void Start()
+    void Start()
     {
-        toggle.onValueChanged.AddListener(OnToggleChanged);
-        OnToggleChanged(toggle.isOn); // Initialize
+        if (toggles.Length != soundObjects.Length)
+        {
+            Debug.LogError("Toggles and soundObjects must match in length!");
+            return;
+        }
+
+        foreach (Toggle toggle in toggles)
+        {
+            toggle.onValueChanged.AddListener(OnToggleValueChanged);
+        }
+
+        UpdateActiveObject();
     }
 
-    private void OnToggleChanged(bool isOn)
+    void OnToggleValueChanged(bool isOn)
     {
         if (isOn)
         {
-            soundSettings.SetActive(false);
-            soundSettingsLabel.SetActive(false);
-            sxfSettings.SetActive(true);
-            sxfSettingsLabel.SetActive(true);
+            UpdateActiveObject();
         }
-        else
+    }
+
+    void UpdateActiveObject()
+    {
+        for (int i = 0; i < toggles.Length; i++)
         {
-            soundSettings.SetActive(true);
-            soundSettingsLabel.SetActive(true);
-            sxfSettings.SetActive(false);
-            sxfSettingsLabel.SetActive(false);
+            soundObjects[i].SetActive(toggles[i].isOn);
         }
     }
 }
