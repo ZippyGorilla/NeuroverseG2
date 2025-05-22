@@ -26,9 +26,10 @@ public class FXSliderControl : MonoBehaviour
     {
         fxSlider.onValueChanged.AddListener(OnSliderValueChanged);
         OnSliderValueChanged(fxSlider.value); // Initialize
+        //Debug.Log("Choice_Distortion" + GetComponent<this>());
     }
 
-    void OnSliderValueChanged(float value)
+    public void OnSliderValueChanged(float value)
     {
         float distortion = Mathf.Lerp(minDistortion, maxDistortion, value);
         float cutoff = Mathf.Lerp(minCutoff, maxCutoff, value);
@@ -37,5 +38,11 @@ public class FXSliderControl : MonoBehaviour
         mixer.SetFloat(distortionParam, distortion);
         mixer.SetFloat(highpassParam, cutoff);
         mixer.SetFloat(duckVolumeParam, volume);
+    }
+
+    public void RefreshSlider(float _value)
+    {
+        fxSlider.value = _value;
+        OnSliderValueChanged(fxSlider.value);
     }
 }

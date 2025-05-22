@@ -6,11 +6,12 @@ public class Choice_SoundTexture : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
-    EQCircleController paramEqScript;
+    [SerializeField] EQCircleController paramEqScript;
+    //public EQCircleController test;
 
     void Start()
     {
-        paramEqScript = GameObject.FindGameObjectWithTag("eqHandle").GetComponent<EQCircleController>();
+        //paramEqScript = GameObject.FindGameObjectWithTag("eqHandle").GetComponent<EQCircleController>();
     }
 
     public void GetValue()
@@ -24,6 +25,7 @@ public class Choice_SoundTexture : MonoBehaviour
         else if (dropdown.value == 1)
         {
             Debug.Log("UnityDebug Sound_Texture: " + "Option_1");
+            //test.ApplyEQ(3, 10);
             paramEqScript.ApplyEQ(3, 10);
         }
         else if (dropdown.value == 2)

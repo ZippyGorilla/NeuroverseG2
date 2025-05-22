@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 10783996}
+  paramEqScript: {fileID: 502896050}
 --- !u!114 &10783996 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
@@ -231,6 +232,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &10783999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10783990}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4682837593e398438123de4199f9f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels: []
+  labelDirections: []
+  hoverThreshold: 0.6
+  glowSegments: []
+  handle: {fileID: 728134856}
+  circleArea: {fileID: 1475785938}
+  mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+  gainParameter: Gain
+  frequencyParameter: Frequency
+  maxGain: 3
+  minGain: 0.05
+  minFreq: 20
+  maxFreq: 8000
 --- !u!1 &29397927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1286,7 @@ PrefabInstance:
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 74115008}
+      objectReference: {fileID: 74115011}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1271,7 +1297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SpatialAudio, Unity.XR.Content.Interaction
+      value: AmbientSound, Unity.XR.Content.Interaction
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1303,7 +1329,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 74115008}
+      addedObject: {fileID: 74115011}
   m_SourcePrefab: {fileID: 100100000, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
 --- !u!224 &74115005 stripped
 RectTransform:
@@ -1326,7 +1352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &74115008
+--- !u!114 &74115011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1335,7 +1361,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 74115006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d9fbbb31bcf840ba868a442f00d8c63, type: 3}
+  m_Script: {fileID: 11500000, guid: 4fe457d406b9642eeaa224dfc3e56763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 74115007}
@@ -26859,9 +26885,10 @@ GameObject:
   - component: {fileID: 1167410782}
   - component: {fileID: 1167410784}
   - component: {fileID: 1167410783}
+  - component: {fileID: 1167410785}
   m_Layer: 5
   m_Name: Saturation Slider
-  m_TagString: Untagged
+  m_TagString: saturation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26925,6 +26952,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167410781}
   m_CullTransparentMesh: 0
+--- !u!114 &1167410785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167410781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d8095413b9b8045a0b39a8e718c6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fxSlider: {fileID: 1595561873}
+  mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+  distortionParam: DistortionAmount
+  highpassParam: HighpassCutoff
+  duckVolumeParam: DuckVolume
+  minDistortion: 0
+  maxDistortion: 0.9
+  minCutoff: 10
+  maxCutoff: 10000
+  minVolume: 0
+  maxVolume: -30
 --- !u!1001 &1181626725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37376,10 +37426,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1595561871}
   - component: {fileID: 1595561873}
-  - component: {fileID: 1595561872}
   m_Layer: 5
   m_Name: MinMax Slider
-  m_TagString: Untagged
+  m_TagString: saturation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37405,29 +37454,6 @@ RectTransform:
   m_AnchoredPosition: {x: 77, y: -0.000030517578}
   m_SizeDelta: {x: -154, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1595561872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595561870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d8095413b9b8045a0b39a8e718c6ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fxSlider: {fileID: 1595561873}
-  mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
-  distortionParam: DistortionAmount
-  highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
-  minDistortion: 0
-  maxDistortion: 0.9
-  minCutoff: 10
-  maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1595561873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37479,10 +37505,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundSettings, Unity.XR.Content.Interaction
-        m_MethodName: SetVolumeFromSlider
-        m_Mode: 1
+      - m_Target: {fileID: 1167410785}
+        m_TargetAssemblyTypeName: FXSliderControl, Unity.XR.Content.Interaction
+        m_MethodName: OnSliderValueChanged
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -52032,6 +52058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 2058998972}
+  saturation: {fileID: 1167410785}
 --- !u!1001 &2060333755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53738,6 +53765,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 10783995}
+    - targetCorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 10783999}
   m_SourcePrefab: {fileID: 100100000, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
 --- !u!1001 &2110687715
 PrefabInstance:
