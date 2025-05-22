@@ -141,9 +141,47 @@ MonoBehaviour:
   m_GameObject: {fileID: 10783990}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4611c6d949441e582c706aad50f0ab, type: 3}
+  m_Script: {fileID: 11500000, guid: e08be28ca35bf46f6812cfd11dbc2a4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropdown: {fileID: 10783996}
+  paramEqScript: {fileID: 0}
+--- !u!114 &10783996 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+  m_PrefabInstance: {fileID: 2108368452}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10783990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &10783999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10783990}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4682837593e398438123de4199f9f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels: []
+  labelDirections: []
+  hoverThreshold: 0.6
+  glowSegments: []
+  handle: {fileID: 728134856}
+  circleArea: {fileID: 1475785938}
+  mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+  gainParameter: Gain
+  frequencyParameter: Frequency
+  maxGain: 3
+  minGain: 0.05
+  minFreq: 20
+  maxFreq: 8000
 --- !u!1 &29397927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1080,216 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59007980}
   m_CullTransparentMesh: 0
+--- !u!1001 &74115004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1893470741}
+    m_Modifications:
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.0017217065
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -248.98631
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 58.5078
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 126.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -88.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Name
+      value: Dropdown
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Options.m_Options.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Text
+      value: Choose
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[1].m_Text
+      value: Deep and relaxed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[2].m_Text
+      value: Balanced
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Text
+      value: Energetic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Text
+      value: Prefer not to tell
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 74115011}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AmbientSound, Unity.XR.Content.Interaction
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102763893786, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_text
+      value: Choose
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935102763893787, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935103029644402, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935103029644402, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6262935103526533789, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 74115011}
+  m_SourcePrefab: {fileID: 100100000, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+--- !u!224 &74115005 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+  m_PrefabInstance: {fileID: 74115004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &74115006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+  m_PrefabInstance: {fileID: 74115004}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &74115007 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+  m_PrefabInstance: {fileID: 74115004}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74115006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &74115011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74115006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe457d406b9642eeaa224dfc3e56763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 74115007}
 --- !u!1 &74725089
 GameObject:
   m_ObjectHideFlags: 0
@@ -1884,7 +2132,7 @@ AudioSource:
   m_GameObject: {fileID: 151237504}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 9a02ea84904f947eeaf270f2154853f6, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   m_audioClip: {fileID: 8300000, guid: d5130e2e127634fcf8bd7559a6b2b4d7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3532,7 +3780,7 @@ GameObject:
   - component: {fileID: 240031066}
   - component: {fileID: 240031065}
   m_Layer: 5
-  m_Name: Timbre
+  m_Name: Sound Texture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8516,7 +8764,6 @@ GameObject:
   m_Component:
   - component: {fileID: 543642434}
   - component: {fileID: 543642435}
-  - component: {fileID: 543642436}
   m_Layer: 5
   m_Name: MinMax Vol Slider
   m_TagString: Untagged
@@ -8595,21 +8842,19 @@ MonoBehaviour:
   m_Value: 36.9
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
---- !u!114 &543642436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543642433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a3abac4cd634916bd37d9563f18bf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundSlider: {fileID: 543642435}
-  masterMixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+      m_Calls:
+      - m_Target: {fileID: 1605729808}
+        m_TargetAssemblyTypeName: SoundSettings, Unity.XR.Content.Interaction
+        m_MethodName: SetVolumeFromSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &546415612
 GameObject:
   m_ObjectHideFlags: 0
@@ -9033,7 +9278,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 564670098}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 4.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9041,8 +9286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 9.4, y: -64.8}
-  m_SizeDelta: {x: 187.7669, y: 17.3679}
+  m_AnchoredPosition: {x: -24.8, y: -67.2}
+  m_SizeDelta: {x: 222.5, y: 22.2}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &564670100
 MonoBehaviour:
@@ -9064,7 +9309,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Do you prefer crisp, detailed sounds or softer, blended ones?
+  m_text: How do you usually respond to sound environments
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -12177,6 +12422,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &666621132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 496.12027
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -45.737003
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -72.43325
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187027, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
+      propertyPath: m_Name
+      value: XR Device Simulator
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
 --- !u!1 &669627765 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4769098102207602867, guid: c91b6479bcc5dc94f8290551ae3e6d76, type: 3}
@@ -12235,7 +12537,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671367910}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12243,8 +12545,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 9.5, y: -70.1}
-  m_SizeDelta: {x: 187.7669, y: 17.3679}
+  m_AnchoredPosition: {x: -28, y: -70.1}
+  m_SizeDelta: {x: 225.8, y: 17.4}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &671367912
 MonoBehaviour:
@@ -12266,7 +12568,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How much bass (low-end rumble) do you prefer?
+  m_text: Would you like to disable background ambient sound?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -13127,9 +13429,11 @@ GameObject:
   - component: {fileID: 713817925}
   - component: {fileID: 713817927}
   - component: {fileID: 713817926}
+  - component: {fileID: 713817928}
+  - component: {fileID: 713817929}
   m_Layer: 5
   m_Name: Master Volume Slider
-  m_TagString: Untagged
+  m_TagString: sfxVol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13193,6 +13497,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713817924}
   m_CullTransparentMesh: 0
+--- !u!114 &713817928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713817924}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a3abac4cd634916bd37d9563f18bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSlider: {fileID: 1382787440}
+  masterMixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
+--- !u!114 &713817929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713817924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2946eda0d7a094d9da09f2b5c02e8f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSlider: {fileID: 1382787440}
+  masterMixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
 --- !u!1 &723386688
 GameObject:
   m_ObjectHideFlags: 0
@@ -13205,7 +13537,7 @@ GameObject:
   - component: {fileID: 723386691}
   - component: {fileID: 723386690}
   m_Layer: 5
-  m_Name: Music
+  m_Name: Distortion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13219,7 +13551,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723386688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13288,7 +13620,7 @@ GameObject:
   - component: {fileID: 728134857}
   m_Layer: 5
   m_Name: Handle
-  m_TagString: Untagged
+  m_TagString: eqHandle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15065,7 +15397,7 @@ GameObject:
   - component: {fileID: 873196934}
   - component: {fileID: 873196933}
   m_Layer: 5
-  m_Name: Frequency
+  m_Name: Sound Envs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19063,7 +19395,7 @@ GameObject:
   - component: {fileID: 1109714800}
   - component: {fileID: 1109714799}
   m_Layer: 5
-  m_Name: Ambience
+  m_Name: Disable Ambient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19077,7 +19409,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109714797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19140,7 +19472,7 @@ GameObject:
   - component: {fileID: 1112800817}
   - component: {fileID: 1112800816}
   m_Layer: 5
-  m_Name: Haptic
+  m_Name: Reverb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19541,6 +19873,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 1135353762}
+  sSScript: {fileID: 1605729808}
+  eqTest: {fileID: 728134861}
 --- !u!1 &1140094416
 GameObject:
   m_ObjectHideFlags: 0
@@ -19864,9 +20198,10 @@ MonoBehaviour:
   m_text: "Welcome to the XR Interaction Toolkit examples, \nmodified to include
     sound settings. Here you\u2019ll find \nexamples of an XR rig setup with ray
     and grab \ninteractors, locomotion settings and a variety of \ninteractive objects.\n\nOpen/close
-    sound menu: press 'X' button on your left controller.\n\nYou can use your right
-    thumbstick to teleport and your \nleft thumbstick to move freely between areas.\n\nInteract
-    with 2D user interface with the trigger button, \nand 3D controls with the grip."
+    sound menu: press 'X' button on your left controller (circled in blue in the
+    above picture).\n\nYou can use your right thumbstick to teleport and your left
+    thumbstick to move freely between areas.\n\nInteract with 2D user interface with
+    the trigger button, and 3D controls with the grip."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -20871,7 +21206,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1163034301}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20879,8 +21214,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 5.8, y: -82.3}
-  m_SizeDelta: {x: 187.7669, y: 17.3679}
+  m_AnchoredPosition: {x: -33.1, y: -82.3}
+  m_SizeDelta: {x: 235.7, y: 17.3}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1163034303
 MonoBehaviour:
@@ -20902,7 +21237,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Are high-pitched sounds (e.g.  's' sounds, cymbals) uncomfortable?
+  m_text: "How do you feel about distorted or \u201Crough\u201D sound textures?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -21056,9 +21391,10 @@ GameObject:
   - component: {fileID: 1167410782}
   - component: {fileID: 1167410784}
   - component: {fileID: 1167410783}
+  - component: {fileID: 1167410785}
   m_Layer: 5
   m_Name: Saturation Slider
-  m_TagString: Untagged
+  m_TagString: saturation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21122,6 +21458,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167410781}
   m_CullTransparentMesh: 0
+--- !u!114 &1167410785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167410781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50d8095413b9b8045a0b39a8e718c6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fxSlider: {fileID: 1595561873}
+  mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
+  distortionParam: DistortionAmount
+  highpassParam: HighpassCutoff
+  duckVolumeParam: DuckVolume
+  minDistortion: 0
+  maxDistortion: 0.9
+  minCutoff: 10
+  maxCutoff: 10000
+  minVolume: 0
+  maxVolume: -30
 --- !u!1001 &1181626725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21218,6 +21577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dropdown
       objectReference: {fileID: 0}
+    - target: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      propertyPath: m_TagString
+      value: SoundSetSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.size
       value: 5
@@ -21228,19 +21591,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: Softer and less defined
+      value: 'I am highly sensitive (I prefer minimal or gentle audio) '
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: Balanced
+      value: I have a moderate tolerance for sound
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: Sharp and high-detail
+      value: I am under-responsive (I prefer louder or more stimulating audio)
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
-      value: Prefer not to tell
+      value: Prefer not to say
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -21276,7 +21639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102763893787, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.4999847
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103029644402, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchorMax.x
@@ -21797,7 +22160,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1219607155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 5.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21805,8 +22168,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 5.8, y: -95.3}
-  m_SizeDelta: {x: 187.7669, y: 17.3679}
+  m_AnchoredPosition: {x: -41.1, y: -96.9}
+  m_SizeDelta: {x: 235.4, y: 20.5}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1219607157
 MonoBehaviour:
@@ -21828,7 +22191,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Do you like sounds to feel \u2018all around you\u2019 or more focused?"
+  m_text: "How do you feel about reverb or \u201Croom-like\u201D audio?\n(e.g., sounds
+    that feel like they\u2019re in a large space)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -22668,15 +23032,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: Yes, They are too sharp
+      value: I find it overwhelming or distracting
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: No, they are fine
+      value: I can tolerate mild distortion
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: I like bright, sparkly treble
+      value: I enjoy it and find it stimulating
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
@@ -24390,6 +24754,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e601cf28e9702c945abe3b90e7f51974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1365457343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1365457348}
+  - component: {fileID: 1365457347}
+  - component: {fileID: 1365457346}
+  - component: {fileID: 1365457345}
+  - component: {fileID: 1365457344}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1365457344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365457343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1a90109ccd54f48a0ee6a70dcea765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1474711670}
+  eqAndReverb: {fileID: 1545281220}
+  saturationAndDelay: {fileID: 1053124817}
+--- !u!114 &1365457345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365457343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c1a90109ccd54f48a0ee6a70dcea765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropdown: {fileID: 1807853625}
+  eqAndReverb: {fileID: 2025310968}
+  saturationAndDelay: {fileID: 1078831331}
+--- !u!114 &1365457346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365457343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203e5bc9598d55844a331724ab9d53a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toggle: {fileID: 2049156094}
+  soundSettings: {fileID: 908305334}
+  soundSettingsLabel: {fileID: 469443461}
+  sxfSettings: {fileID: 774480001}
+  sxfSettingsLabel: {fileID: 617241754}
+--- !u!114 &1365457347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365457343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80e0f70eea06c494a967e9f264d42ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 1096871495}
+  closeButton: {fileID: 450925215}
+  toggleMenuAction: {fileID: 6256702787432715321, guid: 428378bc1765ab14b8b5707630b4170c, type: 3}
+--- !u!224 &1365457348
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365457343}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1.7075}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0.000011444092, y: 3.524994}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1370161116 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 407316127920852602, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
@@ -24746,10 +25211,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1382787438}
   - component: {fileID: 1382787440}
-  - component: {fileID: 1382787439}
   m_Layer: 5
   m_Name: MinMax Vol Slider
-  m_TagString: Untagged
+  m_TagString: sfxVol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24775,20 +25239,6 @@ RectTransform:
   m_AnchoredPosition: {x: 77, y: -0.000030517578}
   m_SizeDelta: {x: -154, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1382787439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1382787437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a3abac4cd634916bd37d9563f18bf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundSlider: {fileID: 1382787440}
-  masterMixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
 --- !u!114 &1382787440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24839,7 +25289,19 @@ MonoBehaviour:
   m_Value: 36.9
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 713817929}
+        m_TargetAssemblyTypeName: sfxSettings, Unity.XR.Content.Interaction
+        m_MethodName: SetVolumeFromSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1392977948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25804,73 +26266,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430356485}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1436233550
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1436233551}
-  - component: {fileID: 1436233553}
-  - component: {fileID: 1436233552}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1436233551
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436233550}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.7075}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0.000011444092, y: 3.524994}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1436233552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436233550}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c1a90109ccd54f48a0ee6a70dcea765, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropdown: {fileID: 0}
-  eqAndReverb: {fileID: 0}
-  saturationAndDelay: {fileID: 0}
---- !u!114 &1436233553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436233550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80e0f70eea06c494a967e9f264d42ac6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuPanel: {fileID: 0}
-  closeButton: {fileID: 0}
-  toggleMenuAction: {fileID: 6256702787432715321, guid: 428378bc1765ab14b8b5707630b4170c, type: 3}
 --- !u!1 &1437949819
 GameObject:
   m_ObjectHideFlags: 0
@@ -26501,6 +26896,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
   m_PrefabInstance: {fileID: 1474711668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1474711670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+  m_PrefabInstance: {fileID: 1474711668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1475785937
 GameObject:
   m_ObjectHideFlags: 0
@@ -27478,6 +27884,10 @@ PrefabInstance:
     - target: {fileID: 7601151017137744336, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7694348203196807451, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8048614821069700333, guid: eb062ec49f40b17408a5dc25961a60ef, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -29158,10 +29568,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1595561871}
   - component: {fileID: 1595561873}
-  - component: {fileID: 1595561872}
   m_Layer: 5
   m_Name: MinMax Slider
-  m_TagString: Untagged
+  m_TagString: saturation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29187,29 +29596,6 @@ RectTransform:
   m_AnchoredPosition: {x: 77, y: -0.000030517578}
   m_SizeDelta: {x: -154, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1595561872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595561870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d8095413b9b8045a0b39a8e718c6ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fxSlider: {fileID: 1595561873}
-  mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
-  distortionParam: DistortionAmount
-  highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
-  minDistortion: 0
-  maxDistortion: 0.9
-  minCutoff: 10
-  maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1595561873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29261,10 +29647,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: SoundSettings, Unity.XR.Content.Interaction
-        m_MethodName: SetVolumeFromSlider
-        m_Mode: 1
+      - m_Target: {fileID: 1167410785}
+        m_TargetAssemblyTypeName: FXSliderControl, Unity.XR.Content.Interaction
+        m_MethodName: OnSliderValueChanged
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -29594,9 +29980,10 @@ GameObject:
   - component: {fileID: 1605729804}
   - component: {fileID: 1605729807}
   - component: {fileID: 1605729806}
+  - component: {fileID: 1605729808}
   m_Layer: 5
   m_Name: Master Volume Slider
-  m_TagString: Untagged
+  m_TagString: musicVol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29660,6 +30047,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605729803}
   m_CullTransparentMesh: 0
+--- !u!114 &1605729808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605729803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a3abac4cd634916bd37d9563f18bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundSlider: {fileID: 543642435}
+  masterMixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
 --- !u!1 &1611893770
 GameObject:
   m_ObjectHideFlags: 0
@@ -31411,7 +31812,7 @@ AudioSource:
   m_GameObject: {fileID: 1724002211}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 9a02ea84904f947eeaf270f2154853f6, type: 2}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 3bd7f1f5d88b13a41baad701d2d782e4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -32171,6 +32572,140 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751911996}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1752359781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1752359782}
+  - component: {fileID: 1752359784}
+  - component: {fileID: 1752359783}
+  m_Layer: 5
+  m_Name: Label
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1752359782
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752359781}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1893470741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: -28, y: -95.3}
+  m_SizeDelta: {x: 218.6, y: 17.3}
+  m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &1752359783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752359781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: What kind of ambience do you like?
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
+  m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4293190884
+  m_fontColor: {r: 0.89411765, g: 0.89411765, b: 0.89411765, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1752359784
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752359781}
+  m_CullTransparentMesh: 0
 --- !u!1 &1757845773
 GameObject:
   m_ObjectHideFlags: 0
@@ -34721,6 +35256,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
   m_PrefabInstance: {fileID: 1807853623}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1807853625 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+  m_PrefabInstance: {fileID: 1807853623}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1812461338
 GameObject:
   m_ObjectHideFlags: 0
@@ -35755,7 +36301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
@@ -35763,15 +36309,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: "Very little \u2014 bass makes me uncomfortable"
+      value: Yes
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: Balanced Bass
+      value: No, I'dlike it on
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: I enjoy strong, deep bass
+      value: Prefer not to Say
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
@@ -35811,7 +36357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102763893787, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.4999847
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103029644402, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchorMax.x
@@ -35896,23 +36442,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 74916329, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -20.5807
+      value: -22.2
       objectReference: {fileID: 0}
     - target: {fileID: 74916329, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -119.0374
+      value: -119
       objectReference: {fileID: 0}
     - target: {fileID: 74916329, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 74916329, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.5
+      value: -5.700012
       objectReference: {fileID: 0}
     - target: {fileID: 74916329, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -42.6
+      value: -42.600006
       objectReference: {fileID: 0}
     - target: {fileID: 74916331, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_VerticalScrollbar
@@ -35920,19 +36466,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212194522, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 226.4196
+      value: 276.2
       objectReference: {fileID: 0}
     - target: {fileID: 212194522, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 13.0371
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 212194522, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 212194522, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.5
+      value: -37.5
       objectReference: {fileID: 0}
     - target: {fileID: 212194522, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -35940,23 +36486,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212194523, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_text
-      value: How do you feel about loud sounds in general?
+      value: How do you feel about audio delays or echoes?
+      objectReference: {fileID: 0}
+    - target: {fileID: 274634023, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -12.4
       objectReference: {fileID: 0}
     - target: {fileID: 274634023, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 274634023, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -6.5
+      value: 5.700012
       objectReference: {fileID: 0}
     - target: {fileID: 274634023, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -8.4
+      value: -8.399994
       objectReference: {fileID: 0}
     - target: {fileID: 1027582128, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Name
-      value: Volume
+      value: Delays+Echoes
       objectReference: {fileID: 0}
     - target: {fileID: 1027582129, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -36056,7 +36606,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0019226074
+      value: -0.00079345703
       objectReference: {fileID: 0}
     - target: {fileID: 98673970485294386, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_BlockingMask.m_Bits
@@ -36096,15 +36646,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103352266349, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: I find them overwhelming
+      value: I prefer dry, immediate sound with no echoes
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103352266349, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: I can tolerate moderate sounds
+      value: I'm okay with subtle delay
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103352266349, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: I enjoy or need them to be louder
+      value: I enjoy pronounced echoes or spatial depth
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103352266349, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
@@ -36172,7 +36722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935104275876997, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.4999847
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6305924214708580358, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_ChildControlWidth
@@ -36224,7 +36774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 561.8481
+      value: 724.5921
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -36252,7 +36802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.8663
+      value: 1.8636
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -36272,7 +36822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.8085
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -36324,20 +36874,23 @@ PrefabInstance:
     - {fileID: 1536156193, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 873196932}
     - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
-      insertIndex: -1
+      insertIndex: 1
       addedObject: {fileID: 240031064}
     - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
-      insertIndex: -1
+      insertIndex: 2
       addedObject: {fileID: 1109714798}
     - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 723386689}
     - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1112800815}
+    - targetCorrespondingSourceObject: {fileID: 1696836626, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1893470741}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6262935103352266351, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       insertIndex: -1
@@ -36791,15 +37344,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: I prefer centered, simple audio
+      value: I prefer flat or close-up sound
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: Balanced spatial feel is best
+      value: "I\u2019m okay with light reverb"
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: I like immersive surround sound
+      value: I enjoy rich, immersive reverb
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
@@ -36839,7 +37392,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102763893787, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.4999847
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103029644402, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchorMax.x
@@ -37328,6 +37881,83 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888242059}
+  m_CullTransparentMesh: 0
+--- !u!1 &1893470740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1893470741}
+  - component: {fileID: 1893470743}
+  - component: {fileID: 1893470742}
+  m_Layer: 5
+  m_Name: Ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1893470741
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893470740}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1752359782}
+  - {fileID: 74115005}
+  m_Father: {fileID: 1855192878}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1893470742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893470740}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: d862c4d6d47b37348a252ad3f6139791, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1893470743
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893470740}
   m_CullTransparentMesh: 0
 --- !u!1 &1893805378
 GameObject:
@@ -40235,6 +40865,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3931899018356448435, guid: 565136863683f59469de76718dbbfb65, type: 3}
   m_PrefabInstance: {fileID: 2049156091}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2049156094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3931899018356448434, guid: 565136863683f59469de76718dbbfb65, type: 3}
+  m_PrefabInstance: {fileID: 2049156091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2056722029
 GameObject:
   m_ObjectHideFlags: 0
@@ -40374,6 +41015,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 2058998972}
+  saturation: {fileID: 1167410785}
 --- !u!1001 &2060333755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41536,15 +42178,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: I prefer silence
+      value: 'Warm / soft (less treble, smoother) '
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: I don't mind
+      value: ' Balanced / neutral'
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: I enjoy immersive ambient layers
+      value: Bright / sharp (more treble, more presence)
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
@@ -41572,7 +42214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: AmbientSound, Unity.XR.Content.Interaction
+      value: Choice_SoundTexture, Unity.XR.Content.Interaction
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -41584,7 +42226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102763893787, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -5.4999847
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103029644402, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_AnchorMax.x
@@ -41605,6 +42247,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       insertIndex: -1
       addedObject: {fileID: 10783995}
+    - targetCorrespondingSourceObject: {fileID: 6262935102578480881, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 10783999}
   m_SourcePrefab: {fileID: 100100000, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
 --- !u!1001 &2110687715
 PrefabInstance:
@@ -41690,7 +42335,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111358337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 4.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41698,8 +42343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 9.4, y: -67.3}
-  m_SizeDelta: {x: 187.7669, y: 17.3679}
+  m_AnchoredPosition: {x: -27.7, y: -68.6}
+  m_SizeDelta: {x: 236.1, y: 19.9}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2111358339
 MonoBehaviour:
@@ -41721,7 +42366,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How do you feel about background noise (like wind, water, hums)?
+  m_text: Which type of sound texture do you find most comfortable?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -44209,14 +44854,15 @@ SceneRoots:
   - {fileID: 611330722}
   - {fileID: 1882929043}
   - {fileID: 1902120916235679079}
-  - {fileID: 1436233551}
   - {fileID: 499064196}
   - {fileID: 275395432}
   - {fileID: 1747299680}
+  - {fileID: 1365457348}
   - {fileID: 151237507}
   - {fileID: 1406097966}
   - {fileID: 1806469818}
   - {fileID: 1316312064}
+  - {fileID: 666621132}
   - {fileID: 316387290}
   - {fileID: 566623378}
   - {fileID: 1611893771}
