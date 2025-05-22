@@ -54,6 +54,10 @@ public class AudioVolumeAndMuteSlider : MonoBehaviour
         {
             Debug.Log("UnityDebug Mute_" + muteToggle.name + ": Muted");
         }
+        else
+        {
+            Debug.Log("UnityDebug Mute_" + muteToggle.name + ": Unmuted");
+        }
     }
 
     void ApplyVolume()

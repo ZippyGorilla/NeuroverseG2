@@ -9837,7 +9837,7 @@ GameObject:
   - component: {fileID: 372151464}
   - component: {fileID: 372151463}
   m_Layer: 5
-  m_Name: MinMax Delay Slider
+  m_Name: DelaySlider_Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14810,7 +14810,7 @@ GameObject:
   - component: {fileID: 530918607}
   - component: {fileID: 530918606}
   m_Layer: 5
-  m_Name: MinMax Pitch Slider
+  m_Name: PitchSlider_Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19946,7 +19946,7 @@ GameObject:
   - component: {fileID: 665929353}
   - component: {fileID: 665929352}
   m_Layer: 5
-  m_Name: MinMax Saturation Slider
+  m_Name: SaturationSlider_Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20395,7 +20395,7 @@ GameObject:
   - component: {fileID: 690632966}
   - component: {fileID: 690632965}
   m_Layer: 5
-  m_Name: MinMax Delay Slider
+  m_Name: DelaySlider_Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28821,7 +28821,7 @@ GameObject:
   - component: {fileID: 1091911763}
   - component: {fileID: 1091911762}
   m_Layer: 5
-  m_Name: MinMax Pitch Slider
+  m_Name: PitchSlider_Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34888,7 +34888,7 @@ GameObject:
   - component: {fileID: 1295448592}
   - component: {fileID: 1295448591}
   m_Layer: 5
-  m_Name: MinMax Pitch Slider
+  m_Name: PitchSlider_Bug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38565,7 +38565,7 @@ GameObject:
   - component: {fileID: 1417162087}
   - component: {fileID: 1417162086}
   m_Layer: 5
-  m_Name: MinMax Delay Slider
+  m_Name: DelaySlider_Wf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43704,7 +43704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45046,7 +45046,7 @@ GameObject:
   - component: {fileID: 1595561873}
   - component: {fileID: 1595561872}
   m_Layer: 5
-  m_Name: MinMax Saturation Slider
+  m_Name: SaturationSlider_Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48315,7 +48315,7 @@ GameObject:
   - component: {fileID: 1726797156}
   - component: {fileID: 1726797155}
   m_Layer: 5
-  m_Name: MinMax Pitch Slider
+  m_Name: PitchSliderWf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49058,7 +49058,7 @@ GameObject:
   - component: {fileID: 1745756536}
   - component: {fileID: 1745756535}
   m_Layer: 5
-  m_Name: MinMax Saturation Slider
+  m_Name: SaturationSlider_Bug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52605,7 +52605,7 @@ GameObject:
   - component: {fileID: 1811534138}
   - component: {fileID: 1811534137}
   m_Layer: 5
-  m_Name: MinMax Saturation Slider
+  m_Name: SaturationSlider_Wf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60556,7 +60556,7 @@ GameObject:
   - component: {fileID: 2096055650}
   - component: {fileID: 2096055649}
   m_Layer: 5
-  m_Name: MinMax Delay Slider
+  m_Name: DelaySlider_Bug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
