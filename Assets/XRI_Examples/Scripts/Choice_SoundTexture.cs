@@ -26,7 +26,8 @@ public class Choice_SoundTexture : MonoBehaviour
         {
             Debug.Log("UnityDebug Sound_Texture: " + "Option_1");
             //test.ApplyEQ(3, 10);
-            paramEqScript.ApplyEQ(3, 10);
+            //paramEqScript.ApplyEQ(3, 10);
+            paramEqScript.test();
         }
         else if (dropdown.value == 2)
         {
@@ -35,7 +36,8 @@ public class Choice_SoundTexture : MonoBehaviour
         else if (dropdown.value == 3)
         {
             Debug.Log("UnityDebug Sound_Texture: " + "Option_3");
-            paramEqScript.ApplyEQ(3,8000);
+            //paramEqScript.ApplyEQ(3, 8000);
+            paramEqScript.test();
         }
         else if (dropdown.value == 4)
         {

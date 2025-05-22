@@ -25369,6 +25369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 1135353762}
+  sSScript: {fileID: 1605729808}
+  eqTest: {fileID: 728134861}
 --- !u!1 &1140094416
 GameObject:
   m_ObjectHideFlags: 0

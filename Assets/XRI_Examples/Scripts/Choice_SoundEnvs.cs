@@ -6,12 +6,12 @@ public class Choice_SoundEnvs : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
-    SoundSettings sSScript;
-    [SerializeField] sfxSettings sfxVol;
+    [SerializeField] SoundSettings sSScript;
+    [SerializeField] EQCircleController eqTest;
 
     void Start()
     {
-        sSScript = GameObject.FindGameObjectWithTag("musicVol").GetComponent<SoundSettings>();
+        //sSScript = GameObject.FindGameObjectWithTag("musicVol").GetComponent<SoundSettings>();
         //sfxVol = GameObject.FindGameObjectWithTag("sfxVol").GetComponent<sfxSettings>();
     }
 
@@ -27,19 +27,19 @@ public class Choice_SoundEnvs : MonoBehaviour
         {
             Debug.Log("UnityDebug SoundEnvs: " + "Option_1");
             sSScript.musHighlySensitiveVol();
-            sfxVol.sfxHighlySensitiveVol();
+            eqTest.test();
         }
         else if (dropdown.value == 2)
         {
             Debug.Log("UnityDebug SoundEnvs: " + "Option_2");
             sSScript.musModerateVol();
-            sfxVol.sfxModerateVol();
+            //sfxVol.sfxModerateVol();
         }
         else if (dropdown.value == 3)
         {
             Debug.Log("UnityDebug SoundEnvs: " + "Option_3");
             sSScript.musUnderResponsiveVol();
-            sfxVol.sfxUnderResponsiveVol();
+            //sfxVol.sfxUnderResponsiveVol();
         }
         else if (dropdown.value == 4)
         {

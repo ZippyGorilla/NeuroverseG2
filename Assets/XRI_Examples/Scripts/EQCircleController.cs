@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
 {
-    
+
     [SerializeField] TMPro.TextMeshProUGUI[] labels;
     [SerializeField] Vector2[] labelDirections; // matching label order
     [SerializeField] float hoverThreshold = 0.6f;
-    
+
     [SerializeField] Image[] glowSegments; // same count/order as labels
-    
+
     Color normalColor = Color.black;
     Color hoverColor = Color.white;
 
@@ -64,15 +64,15 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
 
         if (offset.magnitude > radius)
             offset = offset.normalized * radius;
-        
+
         handle.anchoredPosition = offset;
-        
+
         float normX = offset.x / radius; // -1 to 1
         float normY = offset.y / radius; // -1 to 1
 
         ApplyEQ(normX, normY);
     }
-    
+
 
     void UpdateLabelVisuals(Vector2 handlePos)
     {
@@ -83,10 +83,10 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
 
             labels[i].color = Color.Lerp(normalColor, hoverColor, t);
             targetScales[i] = Vector3.Lerp(Vector3.one * 0.2f, Vector3.one * 1.1f, t);
-            
+
             currentScales[i] = Vector3.Lerp(currentScales[i], targetScales[i], Time.deltaTime * scaleSpeed);
             labels[i].transform.localScale = currentScales[i];
-            
+
             //glowSegments[i].color = new Color(1f, 0.5f, 0.5f, t * 0.8f); // subtle red glow
         }
     }
@@ -107,5 +107,10 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
         UpdateLabelVisuals(new Vector2(x, y));
 
         Debug.Log("UnityDebug EQ: " + $"Gain:{gain}dB,Frequency:{freq}Hz,x:{x},y:{y}");
+    }
+
+    public void test()
+    {
+        Debug.Log("EQCircleController.cs: test");
     }
 }
