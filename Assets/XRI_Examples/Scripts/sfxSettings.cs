@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
-public class SoundSettings : MonoBehaviour
+public class sfxSettings : MonoBehaviour
 {
     [SerializeField] Slider soundSlider;
     [SerializeField] AudioMixer masterMixer;
@@ -15,8 +15,8 @@ public class SoundSettings : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
-        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 8.0"));
-        SetVolume(8);
+        SetVolume(PlayerPrefs.GetFloat("SavedMasterVolume, 10.0"));
+        SetVolume(10); // Louder than the music at 8.0
     }
 
     public void SetVolume(float _value)

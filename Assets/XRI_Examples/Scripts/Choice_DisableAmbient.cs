@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class BassIntensity : MonoBehaviour
+public class Choice_DisableAmbient : MonoBehaviour
 {
     [SerializeField] private TMP_Dropdown dropdown;
 
