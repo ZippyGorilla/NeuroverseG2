@@ -172,9 +172,9 @@ MonoBehaviour:
   labels: []
   labelDirections: []
   hoverThreshold: 0.6
-  glowSegments: []
-  handle: {fileID: 728134856}
   circleArea: {fileID: 1475785938}
+  handle: {fileID: 728134856}
+  resetButton: {fileID: 0}
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   gainParameter: Gain
   frequencyParameter: Frequency
@@ -182,6 +182,7 @@ MonoBehaviour:
   minGain: 0.05
   minFreq: 20
   maxFreq: 8000
+  smoothTime: 0.1
 --- !u!1 &29397927
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,6 +2802,8 @@ MonoBehaviour:
   pitchParam: pitchAmount
   minPitch: 0.5
   maxPitch: 2
+  resetButton: {fileID: 0}
+  smoothingTime: 0.2
 --- !u!114 &161886382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8384,6 +8387,8 @@ MonoBehaviour:
   pitchParam: pitchAmount
   minPitch: 0.5
   maxPitch: 2
+  resetButton: {fileID: 0}
+  smoothingTime: 0.2
 --- !u!114 &530918607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9020,7 +9025,7 @@ GameObject:
   - component: {fileID: 550656888}
   - component: {fileID: 550656887}
   m_Layer: 0
-  m_Name: Table (1)
+  m_Name: ControllerImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9034,13 +9039,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550656885}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.14333002, y: -0.67756563, z: 0.13712862, w: 0.708207}
-  m_LocalPosition: {x: 3.155, y: 2.4467, z: 3.693}
-  m_LocalScale: {x: 0.70561653, y: 0.7498068, z: 0.0104}
+  m_LocalRotation: {x: 0.0011317022, y: 0.9977324, z: -0.0672968, w: -0.00000014901161}
+  m_LocalPosition: {x: 0.44, y: 0.88999987, z: 1.8374155}
+  m_LocalScale: {x: 0.7056166, y: 0.7498068, z: 0.010400001}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1660718184}
-  m_LocalEulerAnglesHint: {x: 22.882, y: -87.467, z: 0}
+  m_Father: {fileID: 1831917469}
+  m_LocalEulerAnglesHint: {x: 7.717, y: 180.009, z: 0.131}
 --- !u!65 &550656887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12997,6 +13002,7 @@ MonoBehaviour:
   echoDelayParam: echoDelay
   minDelay: 1
   maxDelay: 5000
+  resetButton: {fileID: 0}
 --- !u!114 &690632966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13864,9 +13870,9 @@ MonoBehaviour:
   - {x: -38, y: 27}
   - {x: -38, y: -27}
   hoverThreshold: 0.6
-  glowSegments: []
-  handle: {fileID: 728134856}
   circleArea: {fileID: 1475785938}
+  handle: {fileID: 728134856}
+  resetButton: {fileID: 0}
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   gainParameter: FreqG
   frequencyParameter: CFreq
@@ -13874,6 +13880,7 @@ MonoBehaviour:
   minGain: 0.05
   minFreq: 20
   maxFreq: 8000
+  smoothTime: 0.1
 --- !u!114 &728134862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16385,6 +16392,7 @@ MonoBehaviour:
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
   duckVolumeParam: DuckVolume
+  resetButton: {fileID: 0}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
@@ -19873,8 +19881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 1135353762}
-  sSScript: {fileID: 1605729808}
-  eqTest: {fileID: 728134861}
 --- !u!1 &1140094416
 GameObject:
   m_ObjectHideFlags: 0
@@ -21475,6 +21481,7 @@ MonoBehaviour:
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
   duckVolumeParam: DuckVolume
+  resetButton: {fileID: 0}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
@@ -23860,15 +23867,14 @@ MonoBehaviour:
   handle: {fileID: 1306927428}
   circleArea: {fileID: 1770637983}
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
-  dryLevelParameter: dryLevel
+  resetButton: {fileID: 0}
   roomParameter: Room
   decayTimeParameter: decayTime
-  dryWet: -5000
-  decayTime: 1
   maxDryWet: 0
   minDryWet: -10000
   minDecayTime: 0.5
   maxDecayTime: 4
+  smoothingTime: 0.2
 --- !u!114 &1306927433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24786,9 +24792,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1a90109ccd54f48a0ee6a70dcea765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropdown: {fileID: 1474711670}
-  eqAndReverb: {fileID: 1545281220}
-  saturationAndDelay: {fileID: 1053124817}
+  dropdowns: []
+  eqsAndReverbs: []
+  saturationsAndDelays: []
 --- !u!114 &1365457345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24801,9 +24807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c1a90109ccd54f48a0ee6a70dcea765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dropdown: {fileID: 1807853625}
-  eqAndReverb: {fileID: 2025310968}
-  saturationAndDelay: {fileID: 1078831331}
+  dropdowns: []
+  eqsAndReverbs: []
+  saturationsAndDelays: []
 --- !u!114 &1365457346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24816,11 +24822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 203e5bc9598d55844a331724ab9d53a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggle: {fileID: 2049156094}
-  soundSettings: {fileID: 908305334}
-  soundSettingsLabel: {fileID: 469443461}
-  sxfSettings: {fileID: 774480001}
-  sxfSettingsLabel: {fileID: 617241754}
+  toggles: []
+  soundObjects: []
 --- !u!114 &1365457347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26896,17 +26899,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
   m_PrefabInstance: {fileID: 1474711668}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1474711670 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
-  m_PrefabInstance: {fileID: 1474711668}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1475785937
 GameObject:
   m_ObjectHideFlags: 0
@@ -29921,9 +29913,9 @@ MonoBehaviour:
   - {x: -38, y: 27}
   - {x: -38, y: -27}
   hoverThreshold: 0.6
-  glowSegments: []
-  handle: {fileID: 1599665637}
   circleArea: {fileID: 1862363110}
+  handle: {fileID: 1599665637}
+  resetButton: {fileID: 0}
   mixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
   gainParameter: FreqG
   frequencyParameter: CFreq
@@ -29931,6 +29923,7 @@ MonoBehaviour:
   minGain: 0.05
   minFreq: 20
   maxFreq: 8000
+  smoothTime: 0.1
 --- !u!114 &1599665643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31085,7 +31078,6 @@ Transform:
   - {fileID: 1343286192}
   - {fileID: 1765538934}
   - {fileID: 1675349794}
-  - {fileID: 550656886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1663053464
@@ -33593,6 +33585,7 @@ MonoBehaviour:
   echoDelayParam: echoDelay
   minDelay: 1
   maxDelay: 5000
+  resetButton: {fileID: 0}
 --- !u!114 &1770426918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35256,17 +35249,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6262935102578480880, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
   m_PrefabInstance: {fileID: 1807853623}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1807853625 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
-  m_PrefabInstance: {fileID: 1807853623}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1812461338
 GameObject:
   m_ObjectHideFlags: 0
@@ -35952,6 +35934,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 550656886}
   - {fileID: 1855192877}
   - {fileID: 2073684555}
   - {fileID: 189386907}
@@ -40505,15 +40488,14 @@ MonoBehaviour:
   handle: {fileID: 2036932635}
   circleArea: {fileID: 1743605455}
   mixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
-  dryLevelParameter: dryLevel
+  resetButton: {fileID: 0}
   roomParameter: Room
   decayTimeParameter: decayTime
-  dryWet: -5000
-  decayTime: 1
   maxDryWet: 0
   minDryWet: -10000
   minDecayTime: 0.5
   maxDecayTime: 4
+  smoothingTime: 0.2
 --- !u!114 &2036932640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40865,17 +40847,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3931899018356448435, guid: 565136863683f59469de76718dbbfb65, type: 3}
   m_PrefabInstance: {fileID: 2049156091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2049156094 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3931899018356448434, guid: 565136863683f59469de76718dbbfb65, type: 3}
-  m_PrefabInstance: {fileID: 2049156091}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2056722029
 GameObject:
   m_ObjectHideFlags: 0
@@ -41015,7 +40986,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropdown: {fileID: 2058998972}
-  saturation: {fileID: 1167410785}
 --- !u!1001 &2060333755
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 81564
+  controlID: 15
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 81565
+  controlID: 16
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 81566
+  controlID: 17
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -192,8 +192,8 @@ MonoBehaviour:
     y: 0
     width: 363
     height: 556
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: f4f0faff8875fcff9675fcff267bfcffce51fdffec51fdff1255fdff3055fdff4655fdff6258fdff8058fdfff070feff1a72feffa675feffb08ffeffdac0feff00eeffff30eeffff04f7ffff0af7ffff24fbffff0e870000bc8800002a8b0000b88b0000ba8e0000048f0000a28f00001c90000096900000fe9000006e93000094930000
+      m_SelectedIDs: aada0100
+      m_LastClickedID: 121514
+      m_ExpandedIDs: 3ad5fdff72d5fdffc6d5fdffd8dbfdff3647feff3e47feff4a47feffc647feffec55feffe663feff22c5feffaad0feffacd0feff24dbfeff5612ffff6012ffff8831ffff4054ffffd054ffff0a5effff145effff8260fffffc90ffff0691ffffb093ffff62c2ffffc4f8ffffd0230100fa4401002c480100a6480100964a0100aa7e0100b48a010068ce0100b0ce010062d10100c8d4010050d601009ed70100d0d7010008db0100c2db0100c0df0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -825,9 +825,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.3980001, y: 3.3000004, z: -2.369}
+    m_Target: {x: 3.1449997, y: 3.9617, z: -2.857}
     speed: 2
-    m_Value: {x: 1.3980001, y: 3.3000004, z: -2.369}
+    m_Value: {x: 3.1449997, y: 3.9617, z: -2.857}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -877,9 +877,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_Size:
-    m_Target: 0.30479997
+    m_Target: 1.3245404
     speed: 2
-    m_Value: 0.2916746
+    m_Value: 1.3255346
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -949,7 +949,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/XRI_Examples/Scripts
+    - Assets/XRI_Examples
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -957,16 +957,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/XRI_Examples/Scripts
+  - Assets/XRI_Examples
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\msvieira\Documents\GitHub\Toolkitex
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 206}
-    m_SelectedIDs: 1a5f0200
-    m_LastClickedID: 155418
-    m_ExpandedIDs: 0000000004e1000006e10000
+    m_SelectedIDs: 2eea0000
+    m_LastClickedID: 59950
+    m_ExpandedIDs: 000000002cea00002eea0000aaea0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -994,7 +994,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000004e1000006e10000
+    m_ExpandedIDs: 000000002cea00002eea0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1120,8 +1120,8 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 78f90300
-    m_LastClickedID: 260472
+    m_SelectedIDs: 708b0000
+    m_LastClickedID: 35696
     m_ExpandedIDs: 12eb343c
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1237,7 +1237,7 @@ MonoBehaviour:
       oldMaxSizes: 
       oldSplitSize: 0
     m_HorizontalSplitter:
-      ID: 81839
+      ID: 7895
       splitterInitialOffset: 0
       currentActiveSplitter: -1
       realSizes:

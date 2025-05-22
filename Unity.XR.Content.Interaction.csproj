@@ -75,7 +75,6 @@
     <Compile Include="Assets\XRI_Examples\Global\Scripts\ObjectReset.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\EQ_Circle.cs" />
     <Compile Include="Assets\XRI_Examples\VRWalkthrough\Scripts\WaypointCurve.cs" />
-    <Compile Include="Assets\XRI_Examples\Scripts\MuteAudio.cs" />
     <Compile Include="Assets\XRI_Examples\Setup\Scripts\LocomotionSetup.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\InteractionAnimator.cs" />
     <Compile Include="Assets\XRI_Examples\ActivateInteractables\Scripts\LaunchProjectile.cs" />
