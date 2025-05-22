@@ -16,17 +16,31 @@ public class EchoController : MonoBehaviour
     public float minDelay = 10f;
     public float maxDelay = 5000f;
 
+    [Header("Reset Button")]
+    public Button resetButton;
+
     void Start()
     {
         // Optionally set default slider values
         echoDelaySlider.onValueChanged.AddListener(SetEchoDelay);
         SetEchoDelay(echoDelaySlider.value);
+
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetDelay);
+        }
     }
 
     public void SetEchoDelay(float value)
     {
         float delay = Mathf.Lerp(minDelay, maxDelay, value);
         mixer.SetFloat(echoDelayParam, delay);
+    }
+
+    private void ResetDelay()
+    {
+        echoDelaySlider.SetValueWithoutNotify(0f);
+        SetEchoDelay(0f);
     }
 
 }

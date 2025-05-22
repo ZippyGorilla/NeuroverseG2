@@ -3,68 +3,87 @@ using UnityEngine.Audio;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class RevCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
+public class RevCircleController : MonoBehaviour
 {
-
     public RectTransform handle; // draggable object
     public RectTransform circleArea; // the circle container
-    public AudioMixer mixer; // your AudioMixer if using Unity's mixer
-    public string dryLevelParameter = "dryLevel";
+    public AudioMixer mixer;
+    public Button resetButton;
+
     public string roomParameter = "Room";
     public string decayTimeParameter = "decayTime";
 
-    public float dryWet = -5000f;
-    public float decayTime = 1.0f;
-    
     public float maxDryWet = 0f;
     public float minDryWet = -10000f;
 
-    public float minDecayTime = 0.5f;
+    public float minDecayTime = 0.1f;
     public float maxDecayTime = 4f;
 
     Vector2 center;
+
+    // Smoothing variables
+    private float targetRoom = -10000f;
+    private float smoothedRoom;
+    private float roomVelocity;
+
+    private float targetDecay = 0.1f;
+    private float smoothedDecay;
+    private float decayVelocity;
+
+    public float smoothingTime = 0.2f;
 
     void Start()
     {
         center = circleArea.rect.center;
 
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetRevSettings);
+        }
+
+        // Initialize smoothed values
+        smoothedRoom = targetRoom;
+        smoothedDecay = targetDecay;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    void Update()
     {
-        OnDrag(eventData);
+        // Smoothly interpolate room and decayTime
+        smoothedRoom = Mathf.SmoothDamp(smoothedRoom, targetRoom, ref roomVelocity, smoothingTime);
+        smoothedDecay = Mathf.SmoothDamp(smoothedDecay, targetDecay, ref decayVelocity, smoothingTime);
+
+        mixer.SetFloat(roomParameter, smoothedRoom);
+        mixer.SetFloat(decayTimeParameter, smoothedDecay);
     }
 
-    public void OnDrag(PointerEventData eventData)
+    public void ProcessDrag(Vector2 screenPosition, Camera eventCamera)
     {
         Vector2 localPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(circleArea, eventData.position, eventData.pressEventCamera, out localPoint);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(circleArea, screenPosition, eventCamera, out localPoint);
 
         Vector2 offset = localPoint - center;
         float radius = circleArea.rect.width * 0.5f;
 
         if (offset.magnitude > radius)
             offset = offset.normalized * radius;
-        
+
         handle.anchoredPosition = offset;
-        
+
         float normX = offset.x / radius; // -1 to 1
         float normY = offset.y / radius; // -1 to 1
 
-        decayTime = Mathf.Lerp(minDecayTime, maxDecayTime, (normX+1)/2f);
-        dryWet = normY;
-
-        ApplyReverbSettings();
+        SetTargetReverb(normX, normY);
     }
-    
 
-    void ApplyReverbSettings()
+    void SetTargetReverb(float x, float y)
     {
-        //float dryLevel = Mathf.Lerp(maxDryWet, minDryWet, (dryWet+1)/2f);  // Dry in dB
-        float room = Mathf.Lerp(minDryWet, maxDryWet, (dryWet+1)/2f);      // Wet in dB
+        targetRoom = Mathf.Lerp(minDryWet, maxDryWet, (y + 1f) / 2f);
+        targetDecay = Mathf.Lerp(minDecayTime, maxDecayTime, (x + 1f) / 2f);
+    }
 
-        //mixer.SetFloat(dryLevelParameter, dryLevel);
-        mixer.SetFloat(roomParameter, room);
-        mixer.SetFloat(decayTimeParameter, decayTime);
+    private void ResetRevSettings()
+    {
+        handle.anchoredPosition = Vector2.zero;
+        SetTargetReverb(-1f, -1f); // Bottom-left of the circle
     }
 }
