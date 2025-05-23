@@ -22777,7 +22777,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 11, y: -10}
+  m_AnchoredPosition: {x: 11, y: -57}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &818371204
@@ -22801,13 +22801,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Welcome to the XR Interaction Toolkit examples, \nmodified to include
-    sound settings. Here you\u2019ll find \nexamples of an XR rig setup with ray
-    and grab \ninteractors, locomotion settings and a variety of \ninteractive objects.\n\nOpen/close
-    sound menu: press menu button on your left controller (circled in pink in the
-    above picture).\n\nTurn audio off/on with the \xB4X\xB4button (circled in blue).\n\nYou
-    can use your right thumbstick to teleport and your left thumbstick to move freely
-    between areas.\n\nInteract with 2D user interface with the trigger button, and
-    3D controls with the grip."
+    sound settings. \n\nOpen/close sound menu: press menu button on your left controller
+    (circled in pink in the above picture).\n\nTurn audio off/on with the \xB4X\xB4button
+    (circled in blue).\n\nYou can use your right thumbstick to teleport and your
+    left thumbstick to move freely between areas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -23467,7 +23464,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &892699983
 GameObject:
   m_ObjectHideFlags: 0
@@ -26469,7 +26466,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &969316845
 GameObject:
   m_ObjectHideFlags: 0
@@ -29030,7 +29027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.25}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096871497
@@ -39462,7 +39459,7 @@ Transform:
   m_GameObject: {fileID: 1440016135}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7130268, z: -0, w: 0.70113677}
-  m_LocalPosition: {x: 1.4090004, y: 3.1100001, z: -2.385}
+  m_LocalPosition: {x: 1.4090004, y: 2.516, z: -2.385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -41005,7 +41002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: No, I'dlike it on
+      value: No, I'd like it on
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
@@ -43693,7 +43690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6598815579406187037, guid: 18ddb545287c546e19cc77dc9fbb2189, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -47133,7 +47130,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1683072530
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47150,10 +47147,10 @@ RectTransform:
   - {fileID: 1498740545}
   m_Father: {fileID: 574688125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 60}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 243.45, y: -164}
+  m_SizeDelta: {x: 486.9, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1683072531
 MonoBehaviour:
@@ -48824,7 +48821,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!1 &1741604368
 GameObject:
   m_ObjectHideFlags: 0
@@ -64206,6 +64203,10 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 366349417295850678, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 714330505145295791, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -64812,7 +64813,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!224 &3931899018722251667
 RectTransform:
   m_ObjectHideFlags: 0
