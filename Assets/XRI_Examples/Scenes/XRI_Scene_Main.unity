@@ -8835,14 +8835,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 657832ae85751634c99e37f03d986fd4, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 643122558}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &317511899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11185,14 +11182,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 1522329575}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &410563075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19555,97 +19549,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5544843954597323747, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954045085634, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954151633963, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843953439010132, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1749130782, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1899885026, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 976622492, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954797277834, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843953989346977, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954905119389, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843952977826287, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 4746955687254345310, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954184404164, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 503515099956352599, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954112978430, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954219589825, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954333700926, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954008761078, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954907719922, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5692375087211879999, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 1870205203715573335, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 6986316538109937757, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 251158790255692688, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843952989892027, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954082460684, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843953815577426, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954651627905, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954069823365, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843953166608148, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-    - targetCorrespondingSourceObject: {fileID: 5544843954293269526, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11d9c2d4a31153d48871dba786324550, type: 3}
 --- !u!4 &657290259 stripped
 Transform:
@@ -20042,14 +19946,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 643122558}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &665929353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24142,14 +24043,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 1990171328}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &908305343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26174,14 +26072,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 1990171328}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &964270574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45183,14 +45078,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 1990171328}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1595561873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49195,14 +49087,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 867605588}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1745756536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51423,14 +51312,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 657832ae85751634c99e37f03d986fd4, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 643122558}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1792231345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52742,14 +52628,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 8867bd72adb124ed7a038aaae2540d1a, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 1522329575}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1811534138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53548,14 +53431,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 5961e8decdfdb3c41b957a4cdd12979c, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 1522329575}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &1817032152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56288,23 +56168,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1664567161, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1664567161, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1664567161, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 677.0221
       objectReference: {fileID: 0}
     - target: {fileID: 1664567161, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 338.51105
       objectReference: {fileID: 0}
     - target: {fileID: 1664567161, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: 1696836625, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Name
@@ -56409,6 +56289,10 @@ PrefabInstance:
     - target: {fileID: 6660557788904195445, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Name
       value: Visual Menu w/ Scroll
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660557788904195445, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7063214586489008646, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Pivot.x
@@ -56520,11 +56404,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969571751759893798, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.000010000001
       objectReference: {fileID: 0}
     - target: {fileID: 8969571751759893798, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752397485358, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Enabled
@@ -56532,15 +56416,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752397485359, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.000010000001
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752397485359, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752397485359, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.000010000001
       objectReference: {fileID: 0}
     - target: {fileID: 8969571752588281520, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Value
@@ -59871,14 +59755,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 7d79ca7d650b65845a9ba48ad744e8b0, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 867605588}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &2080627220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61131,14 +61012,11 @@ MonoBehaviour:
   mixer: {fileID: 24100000, guid: 7d79ca7d650b65845a9ba48ad744e8b0, type: 2}
   distortionParam: DistortionAmount
   highpassParam: HighpassCutoff
-  duckVolumeParam: DuckVolume
   resetButton: {fileID: 867605588}
   minDistortion: 0
   maxDistortion: 0.9
   minCutoff: 10
   maxCutoff: 10000
-  minVolume: 0
-  maxVolume: -30
 --- !u!114 &2102002378
 MonoBehaviour:
   m_ObjectHideFlags: 0
