@@ -9,6 +9,8 @@ public class ChoiceSaturation : MonoBehaviour
 
     [SerializeField] Slider[] Sliders;
 
+    [SerializeField] SaturationController[] scripts;
+
     public void GetValue()
     {
         if (dropdown.value == 0)
@@ -21,6 +23,7 @@ public class ChoiceSaturation : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0f);
+                scripts[i].OnSliderValueChanged(0f);
             }
         }
         else if (dropdown.value == 2)
@@ -29,6 +32,7 @@ public class ChoiceSaturation : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.2f);
+                scripts[i].OnSliderValueChanged(0.2f);
             }
         }
         else if (dropdown.value == 3)
@@ -37,6 +41,7 @@ public class ChoiceSaturation : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.5f);
+                scripts[i].OnSliderValueChanged(0.5f);
             }
         }
         else if (dropdown.value == 4)
@@ -45,6 +50,7 @@ public class ChoiceSaturation : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0f);
+                scripts[i].OnSliderValueChanged(0f);
             }
         }
     }

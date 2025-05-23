@@ -8,6 +8,8 @@ public class ChoicePitchShift : MonoBehaviour
     [SerializeField] private TMP_Dropdown dropdown;
 
     [SerializeField] Slider[] Sliders;
+    
+    [SerializeField] PitchController[] scripts;
 
     public void GetValue()
     {
@@ -21,6 +23,7 @@ public class ChoicePitchShift : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.1f);
+                scripts[i].OnSliderChanged(0.1f);
             }
         }
         else if (dropdown.value == 2)
@@ -29,6 +32,7 @@ public class ChoicePitchShift : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.33f);
+                scripts[i].OnSliderChanged(0.33f);
             }
         }
         else if (dropdown.value == 3)
@@ -37,6 +41,7 @@ public class ChoicePitchShift : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.6f);
+                scripts[i].OnSliderChanged(0.6f);
             }
         }
         else if (dropdown.value == 4)
@@ -45,6 +50,7 @@ public class ChoicePitchShift : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.33f);
+                scripts[i].OnSliderChanged(0.33f);
             }
         }
     }

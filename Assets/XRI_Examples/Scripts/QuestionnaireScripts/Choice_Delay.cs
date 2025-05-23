@@ -9,6 +9,8 @@ public class ChoiceDelay : MonoBehaviour
 
     [SerializeField] Slider[] Sliders;
 
+    [SerializeField] EchoController[] scripts;
+
     public void GetValue()
     {
         if (dropdown.value == 0)
@@ -21,6 +23,7 @@ public class ChoiceDelay : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0f);
+                scripts[i].SetEchoDelay(0f);
             }
         }
         else if (dropdown.value == 2)
@@ -29,6 +32,7 @@ public class ChoiceDelay : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.2f);
+                scripts[i].SetEchoDelay(0.2f);
             }
         }
         else if (dropdown.value == 3)
@@ -37,6 +41,7 @@ public class ChoiceDelay : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0.4f);
+                scripts[i].SetEchoDelay(0.4f);
             }
         }
         else if (dropdown.value == 4)
@@ -45,6 +50,7 @@ public class ChoiceDelay : MonoBehaviour
             for (int i = 0; i < Sliders.Length; i++)
             {
                 Sliders[i].SetValueWithoutNotify(0f);
+                scripts[i].SetEchoDelay(0f);
             }
         }
     }

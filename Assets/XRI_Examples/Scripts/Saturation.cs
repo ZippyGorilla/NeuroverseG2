@@ -37,7 +37,7 @@ public class SaturationController : MonoBehaviour
 
     }
 
-    void OnSliderValueChanged(float value)
+    public void OnSliderValueChanged(float value)
     {
         float distortion = Mathf.Lerp(minDistortion, maxDistortion, value);
         float cutoff = Mathf.Lerp(minCutoff, maxCutoff, value);

@@ -43,14 +43,14 @@ public class PitchController : MonoBehaviour
     {
         // Smoothly interpolate the pitch value
         smoothedPitch = Mathf.SmoothDamp(smoothedPitch, targetPitch, ref pitchVelocity, smoothingTime);
-        mixer.SetFloat(pitchParam, smoothedPitch);
     }
 
-    void OnSliderChanged(float value)
+    public void OnSliderChanged(float value)
     {
         // Convert slider value (0-1) to pitch range
         targetPitch = Mathf.Lerp(minPitch, maxPitch, value);
 
+        mixer.SetFloat(pitchParam, smoothedPitch);
         Debug.Log("UnityDebug PitchShift_" + pitchSlider.name + ": " + value + "x");
     }
 
