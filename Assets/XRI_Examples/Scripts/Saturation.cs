@@ -10,7 +10,6 @@ public class SaturationController : MonoBehaviour
     [Header("Mixer Parameters")]
     public string distortionParam = "DistortionAmount";
     public string highpassParam = "HighpassCutoff";
-    public string duckVolumeParam = "DuckVolume";
 
     [Header("Reset Button")]
     public Button resetButton;
@@ -21,9 +20,6 @@ public class SaturationController : MonoBehaviour
 
     public float minCutoff = 10f;
     public float maxCutoff = 10000f;
-
-    public float minVolume = 0f;      // 0 dB (no ducking)
-    public float maxVolume = -30f;    // -30 dB (heavy ducking)
 
     void Start()
     {
@@ -41,11 +37,9 @@ public class SaturationController : MonoBehaviour
     {
         float distortion = Mathf.Lerp(minDistortion, maxDistortion, value);
         float cutoff = Mathf.Lerp(minCutoff, maxCutoff, value);
-        float volume = Mathf.Lerp(minVolume, maxVolume, value);
 
         mixer.SetFloat(distortionParam, distortion);
         mixer.SetFloat(highpassParam, cutoff);
-        mixer.SetFloat(duckVolumeParam, volume);
 
         Debug.Log("UnityDebug Saturation_" + fxSlider.name + ": " + value * 100 + "%");
     }
