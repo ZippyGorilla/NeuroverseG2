@@ -38,7 +38,7 @@ public class AudioVolumeAndMuteSlider : MonoBehaviour
         }
     }
 
-    void OnVolumeChanged(float val)
+    public void OnVolumeChanged(float val)
     {
         if (!muteToggle.isOn)
         {
@@ -60,7 +60,7 @@ public class AudioVolumeAndMuteSlider : MonoBehaviour
         }
     }
 
-    void ApplyVolume()
+    public void ApplyVolume()
     {
         float value = muteToggle.isOn ? 0.0001f : Mathf.Clamp(smoothedValue, 0.0001f, 1f); // Avoid log(0)
         float dB = muteToggle.isOn ? minDecibels : Mathf.Log10(value) * 20f;

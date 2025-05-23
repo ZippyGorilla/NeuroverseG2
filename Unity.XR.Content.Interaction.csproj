@@ -92,6 +92,7 @@
     <Compile Include="Assets\XRI_Examples\Setup\Scripts\TargetFilterToggle.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\OpenScene.cs" />
     <Compile Include="Assets\XRI_Examples\Global\Scripts\OnAnimationEvent.cs" />
+    <Compile Include="Assets\XRI_Examples\Scripts\MacroSelection.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\QuestionnaireScripts\Choice_MuteAmbient.cs" />
     <Compile Include="Assets\XRI_Examples\AdamAmbientZoneScripts\LockAudioToHead.cs" />
     <Compile Include="Assets\XRI_Examples\Scripts\QuestionnaireScripts\Choice_Reverb.cs" />
