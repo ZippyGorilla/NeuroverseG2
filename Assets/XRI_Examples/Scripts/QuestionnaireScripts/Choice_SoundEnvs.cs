@@ -22,7 +22,7 @@ public class ChoiceSoundEnvs : MonoBehaviour
             musicSlider.SetValueWithoutNotify(0.2f);
             for (int i = 0; i < sfxSliders.Length; i++)
             {
-                sfxSliders[i].SetValueWithoutNotify(0.35f);
+                sfxSliders[i].SetValueWithoutNotify(0.15f);
             }
         }
         else if (dropdown.value == 2)
