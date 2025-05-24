@@ -1325,12 +1325,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Services.Lobby.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Meta.XR.Editor.Reflection">
-      <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.Reflection.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="NewAssembly">
       <HintPath>Library\ScriptAssemblies\NewAssembly.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Meta.XR.Editor.Reflection">
+      <HintPath>Library\ScriptAssemblies\Meta.XR.Editor.Reflection.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Oculus.Interaction.Editor">
