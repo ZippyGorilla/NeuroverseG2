@@ -1695,7 +1695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "How do you feel about distorted or \u201Crough\u201D sound textures?"
+  m_text: How do you feel about "colored" (rough/smooth) sound textures?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -3352,6 +3352,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000502271417764967, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294188322495658247, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540757057817346915, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4554896663186571609, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_Name
       value: Label Container
@@ -3446,6 +3458,10 @@ PrefabInstance:
       objectReference: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
     - target: {fileID: 5824004174204152854, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875386228668900036, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373307448547552173, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
@@ -6083,11 +6099,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: "I\u2019m okay with light reverb"
+      value: "I\u2019m okay with a smaller sounding space"
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: I enjoy rich, immersive reverb
+      value: I enjoy rich, immersive spaces
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
@@ -11303,6 +11319,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000502271417764967, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294188322495658247, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540757057817346915, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4554896663186571609, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_Name
       value: Label Container
@@ -11397,6 +11425,10 @@ PrefabInstance:
       objectReference: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
     - target: {fileID: 5824004174204152854, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875386228668900036, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373307448547552173, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
@@ -16502,7 +16534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 212194523, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_text
-      value: How do you feel about audio delays or echoes?
+      value: How do you feel about echoes?
       objectReference: {fileID: 0}
     - target: {fileID: 212194523, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_fontSize
@@ -16678,7 +16710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103352266349, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: I'm okay with subtle delay
+      value: I'm okay with subtle echoes
       objectReference: {fileID: 0}
     - target: {fileID: 6262935103352266349, guid: 4a0b42a560105eb478d0a55132fb017d, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
@@ -17138,8 +17170,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: How do you feel about reverb (sounds that feel like they are in a large
-    or small room)?
+  m_text: How do you feel about spacious sound (sounds that feel like they are in
+    a large or small room)?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -20140,7 +20172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturation
+  m_text: Color
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -20840,7 +20872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reverb
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -22439,6 +22471,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000502271417764967, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294188322495658247, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540757057817346915, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4554896663186571609, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_Name
       value: Label Container
@@ -22533,6 +22577,10 @@ PrefabInstance:
       objectReference: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
     - target: {fileID: 5824004174204152854, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875386228668900036, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373307448547552173, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
@@ -23118,7 +23166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturation
+  m_text: Color
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -31008,7 +31056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1142933489
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31578,7 +31626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reverb
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -34571,6 +34619,18 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3000502271417764967, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3294188322495658247, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4540757057817346915, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4554896663186571609, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_Name
       value: Label Container
@@ -34665,6 +34725,10 @@ PrefabInstance:
       objectReference: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
     - target: {fileID: 5824004174204152854, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
       propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875386228668900036, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373307448547552173, guid: 220e230fe752245498e98b2c1c334a99, type: 3}
@@ -36841,7 +36905,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturation
+  m_text: Color
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -37647,7 +37711,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Delay
+  m_text: Echo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -41729,7 +41793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Delay
+  m_text: Echo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -44072,7 +44136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: I can tolerate mild distortion
+      value: I can tolerate mild roughness
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
@@ -44473,7 +44537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Saturation
+  m_text: Color
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -47770,7 +47834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Delay
+  m_text: Echo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -53649,11 +53713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[0].m_Text
-      value: EQ and Reverb
+      value: EQ and Space
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102578480883, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: Saturation and Echo
+      value: Color and Echo
       objectReference: {fileID: 0}
     - target: {fileID: 6262935102763893786, guid: c07ef68f08a1b5a4fb6c4b71ea47b8ba, type: 3}
       propertyPath: m_text
@@ -55716,7 +55780,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Delay
+  m_text: Echo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -61572,7 +61636,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reverb
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -61831,7 +61895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Reverb
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -65292,9 +65356,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: EQ and Reverb
+    - m_Text: EQ and Space
       m_Image: {fileID: 0}
-    - m_Text: Saturation and Echo
+    - m_Text: Color and Echo
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -65607,7 +65671,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EQ and Reverb
+  m_text: EQ and Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -67000,9 +67064,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: EQ and Reverb
+    - m_Text: EQ and Space
       m_Image: {fileID: 0}
-    - m_Text: Saturation and Echo
+    - m_Text: Color and Echo
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -67430,7 +67494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EQ and Reverb
+  m_text: EQ and Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
@@ -69849,9 +69913,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: EQ and Reverb
+    - m_Text: EQ and Space
       m_Image: {fileID: 0}
-    - m_Text: Saturation and Echo
+    - m_Text: Color and Echo
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -70216,7 +70280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EQ and Reverb
+  m_text: EQ and Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
   m_sharedMaterial: {fileID: 4687939059374929122, guid: f675742eaf9c20a4f909d78ee7a14fed, type: 2}
