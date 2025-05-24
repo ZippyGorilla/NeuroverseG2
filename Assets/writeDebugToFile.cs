@@ -5,6 +5,7 @@ using System.IO;
 
 public class writeDebugToFile : MonoBehaviour
 {
+    /*
     string filename = "";
     void OnEnable()
     {
@@ -25,4 +26,5 @@ public class writeDebugToFile : MonoBehaviour
         tw.WriteLine("[" + System.DateTime.Now + "]" + logString);
         tw.Close();
     }
+    */
 }

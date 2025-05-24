@@ -13,17 +13,48 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "MuteGlobal",
+                    "type": "Button",
+                    "id": "9823add4-9ac6-4fa2-bf1c-a00597ab7874",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "27adfb7e-3b46-4c12-b3e0-a7ea5ce8d64e",
-                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "path": "<XRController>{LeftHand}/{MenuButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "ToggleMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b4eaf03-812b-4ee1-89e7-cb3927ac6448",
+                    "path": "<XRController>{LeftHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MuteGlobal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9a365fa5-ebc1-44a7-9847-bad6cc9b5af0",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MuteGlobal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -4,28 +4,28 @@ using UnityEngine.UI; // or TMPro if using TMP_Dropdown
 
 public class DropdownSoundSelector : MonoBehaviour
 {
-    public TMP_Dropdown dropdown;
-    public GameObject eqPanel;
-    public GameObject reverbPanel;
+    public TMP_Dropdown[] dropdowns;
+    public GameObject[] eqsAndReverbs;
+    public GameObject[] saturationsAndDelays;
 
     private void Start()
     {
-        dropdown.onValueChanged.AddListener(OnDropdownValueChanged);
-        OnDropdownValueChanged(dropdown.value); // Initialize
+        for (int i = 0; i < dropdowns.Length; i++)
+        {
+            int index = i; // Capture the loop variable
+            dropdowns[i].onValueChanged.AddListener((value) => OnDropdownChanged(index, value));
+        }
+
+        for (int i = 0; i < dropdowns.Length; i++)
+        {
+            OnDropdownChanged(i, dropdowns[i].value);
+        }
     }
 
-    private void OnDropdownValueChanged(int index)
+    void OnDropdownChanged(int index, int value)
     {
-        switch (index)
-        {
-            case 0: // Option A - EQ
-                eqPanel.SetActive(true);
-                reverbPanel.SetActive(false);
-                break;
-            case 1: // Option B - Reverb
-                eqPanel.SetActive(false);
-                reverbPanel.SetActive(true);
-                break;
-        }
+        bool isEQ = (value == 0);
+        eqsAndReverbs[index].SetActive(isEQ);
+        saturationsAndDelays[index].SetActive(!isEQ);
     }
 }

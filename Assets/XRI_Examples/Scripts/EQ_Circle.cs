@@ -1,17 +1,13 @@
 using UnityEngine;
 using UnityEngine.Audio;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
+public class EQCircleController : MonoBehaviour
 {
-    
     [SerializeField] TMPro.TextMeshProUGUI[] labels;
-    [SerializeField] Vector2[] labelDirections; // matching label order
+    [SerializeField] Vector2[] labelDirections;
     [SerializeField] float hoverThreshold = 0.6f;
-    
-    [SerializeField] Image[] glowSegments; // same count/order as labels
-    
+
     Color normalColor = Color.black;
     Color hoverColor = Color.white;
 
@@ -19,20 +15,29 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
     private Vector3[] targetScales;
     private const float scaleSpeed = 5f;
 
-
-    public RectTransform handle; // draggable object
-    public RectTransform circleArea; // the circle container
-    public AudioMixer mixer; // your AudioMixer if using Unity's mixer
+    public RectTransform circleArea;
+    public RectTransform handle;
+    public Button resetButton;
+    public AudioMixer mixer;
     public string gainParameter = "Gain";
     public string frequencyParameter = "Frequency";
 
     public float maxGain = 3f;
     public float minGain = 0.05f;
-
     public float minFreq = 20f;
     public float maxFreq = 8000f;
 
-    Vector2 center;
+    private Vector2 center;
+
+    private float targetGain = 1f;
+    private float targetFreq = 8000f;
+    private float currentGain;
+    private float currentFreq;
+
+    private float gainVelocity;
+    private float freqVelocity;
+
+    public float smoothTime = 0.1f; // Time to smooth toward target values
 
     void Start()
     {
@@ -47,65 +52,76 @@ public class EQCircleController : MonoBehaviour, IDragHandler, IBeginDragHandler
             targetScales[i] = Vector3.one;
         }
 
+        if (resetButton != null)
+        {
+            resetButton.onClick.AddListener(ResetEQSettings);
+        }
+
+        currentGain = targetGain;
+        currentFreq = targetFreq;
     }
 
-    public void OnBeginDrag(PointerEventData eventData)
+    void Update()
     {
-        OnDrag(eventData);
+        currentGain = Mathf.SmoothDamp(currentGain, targetGain, ref gainVelocity, smoothTime);
+        currentFreq = Mathf.SmoothDamp(currentFreq, targetFreq, ref freqVelocity, smoothTime);
+
+        mixer.SetFloat(gainParameter, currentGain);
+        mixer.SetFloat(frequencyParameter, currentFreq);
     }
 
-    public void OnDrag(PointerEventData eventData)
+    public void ProcessDrag(Vector2 screenPosition, Camera eventCamera)
     {
         Vector2 localPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(circleArea, eventData.position, eventData.pressEventCamera, out localPoint);
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(circleArea, screenPosition, eventCamera, out localPoint);
 
         Vector2 offset = localPoint - center;
         float radius = circleArea.rect.width * 0.5f;
 
         if (offset.magnitude > radius)
             offset = offset.normalized * radius;
-        
+
         handle.anchoredPosition = offset;
-        
-        float normX = offset.x / radius; // -1 to 1
-        float normY = offset.y / radius; // -1 to 1
 
-        ApplyEQ(normX, normY);
-    }
-    
+        float normX = offset.x / radius;
+        float normY = offset.y / radius;
 
-    void UpdateLabelVisuals(Vector2 handlePos)
-    {
-        for (int i = 0; i < labels.Length; i++)
-        {
-            float proximity = Vector2.Dot(handlePos.normalized, labelDirections[i]);
-            float t = Mathf.InverseLerp(hoverThreshold, 1f, proximity);
-
-            labels[i].color = Color.Lerp(normalColor, hoverColor, t);
-            targetScales[i] = Vector3.Lerp(Vector3.one * 0.2f, Vector3.one * 1.1f, t);
-            
-            currentScales[i] = Vector3.Lerp(currentScales[i], targetScales[i], Time.deltaTime * scaleSpeed);
-            labels[i].transform.localScale = currentScales[i];
-            
-            //glowSegments[i].color = new Color(1f, 0.5f, 0.5f, t * 0.8f); // subtle red glow
-        }
+        SetTargetEQ(normX, normY);
     }
 
-    void ApplyEQ(float x, float y)
+    public void SetTargetEQ(float x, float y)
     {
-        // Gain mapping
-        float gain = Mathf.Lerp(minGain, maxGain, (x + 1) / 2f);
-        // CFreq mapping
+        targetGain = Mathf.Lerp(minGain, maxGain, (x + 1) / 2f);
+
         float logMin = Mathf.Log10(minFreq);
         float logMax = Mathf.Log10(maxFreq);
         float logFreq = Mathf.Lerp(logMin, logMax, (y + 1f) / 2f);
-        float freq = Mathf.Pow(10f, logFreq);
+        targetFreq = Mathf.Pow(10f, logFreq);
+
+        //UpdateLabelVisuals(new Vector2(x, y));
+
+        Debug.Log("UnityDebug EQ_" + handle.name + ": " + $"Gain:{currentGain}dB,Frequency:{currentFreq}Hz,x:{x},y:{y}");
+    }
+
+    //void UpdateLabelVisuals(Vector2 handlePos)
+    //{
+    //    for (int i = 0; i < labels.Length; i++)
+    //    {
+    //        float proximity = Vector2.Dot(handlePos.normalized, labelDirections[i]);
+    //        float t = Mathf.InverseLerp(hoverThreshold, 1f, proximity);
+    //
+    //        labels[i].color = Color.Lerp(normalColor, hoverColor, t);
+    //        targetScales[i] = Vector3.Lerp(Vector3.one * 0.2f, Vector3.one * 1.1f, t);
+    //        currentScales[i] = Vector3.Lerp(currentScales[i], targetScales[i], Time.deltaTime * scaleSpeed);
+    //        labels[i].transform.localScale = currentScales[i];
+    //    }
+    //}
+
+    public void ResetEQSettings()
+    {
+        handle.anchoredPosition = Vector2.zero;
+        SetTargetEQ(-0.36f, 0f); // Reset to neutral values
         
-        mixer.SetFloat(gainParameter, gain);
-        mixer.SetFloat(frequencyParameter, freq);
-
-        UpdateLabelVisuals(new Vector2(x, y));
-
-        Debug.Log($"Gain: {gain} dB, Frequency: {freq} Hz");
+        Debug.Log("UnityDebug EQ_" + handle.name + ": Reseted");
     }
 }
