@@ -16,7 +16,7 @@ def extract_vr_data(group):
 def extract_postquestionnaire_data(group):
     return group[20:30]  # Replace with actual extraction logic
 
-def perform_manova(data1, data2, data3, data4):
+def perform_manova(data1, data2):
     """
     Expects 4 lists of dictionaries (or similar), each representing a group,
     with consistent keys for dependent variables (e.g., 'reverb', 'saturation').
@@ -25,10 +25,8 @@ def perform_manova(data1, data2, data3, data4):
     all_data = []
     vrdata1 = extract_vr_data(data1)
     vrdata2 = extract_vr_data(data2)
-    vrdata3 = extract_vr_data(data3)
-    vrdata4 = extract_vr_data(data4)
-    for i, group_data in enumerate([vrdata1, vrdata2, vrdata3, vrdata4]):
-        group_name = ['hypo', 'hyper', 'hypofluctuating', 'regular'][i]
+    for i, group_data in enumerate([vrdata1, vrdata2]):
+        group_name = ['Neurotypical', 'Neurodiverse'][i]
         for entry in group_data:
             entry_copy = entry.copy()  # Prevent mutation
             entry_copy['group'] = group_name
