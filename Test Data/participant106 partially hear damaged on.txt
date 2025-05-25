@@ -1,2 +1,0 @@
-player105 partially hear damaged on right ear
-Registered more responsiveness to reverb

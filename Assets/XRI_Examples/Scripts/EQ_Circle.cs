@@ -1,27 +1,22 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class EQCircleController : MonoBehaviour
 {
-    [SerializeField] TMPro.TextMeshProUGUI[] labels;
-    [SerializeField] Vector2[] labelDirections;
-    [SerializeField] float hoverThreshold = 0.6f;
-
-    Color normalColor = Color.black;
-    Color hoverColor = Color.white;
-
-    private Vector3[] currentScales;
-    private Vector3[] targetScales;
-    private const float scaleSpeed = 5f;
-
+    // The necessary objects that need to be assigned on the editor
     public RectTransform circleArea;
     public RectTransform handle;
     public Button resetButton;
     public AudioMixer mixer;
-    public string gainParameter = "Gain";
-    public string frequencyParameter = "Frequency";
 
+    // The exposed mixer parameters with the specific names
+    // (public so they can be defined in the editor)
+    public string gainParameter = "FreqG";
+    public string frequencyParameter = "CFreq";
+
+    //Ranges for Frequency Gain and Center Frequency
     public float maxGain = 3f;
     public float minGain = 0.05f;
     public float minFreq = 20f;
@@ -29,28 +24,18 @@ public class EQCircleController : MonoBehaviour
 
     private Vector2 center;
 
+    // Parameters for smoothing
     private float targetGain = 1f;
     private float targetFreq = 8000f;
     private float currentGain;
     private float currentFreq;
-
     private float gainVelocity;
     private float freqVelocity;
-
     public float smoothTime = 0.1f; // Time to smooth toward target values
 
-    void Start()
+    void Start() //Initialize, making the class aware of reset button
     {
         center = circleArea.rect.center;
-
-        currentScales = new Vector3[labels.Length];
-        targetScales = new Vector3[labels.Length];
-
-        for (int i = 0; i < labels.Length; i++)
-        {
-            currentScales[i] = Vector3.one;
-            targetScales[i] = Vector3.one;
-        }
 
         if (resetButton != null)
         {
@@ -61,67 +46,60 @@ public class EQCircleController : MonoBehaviour
         currentFreq = targetFreq;
     }
 
-    void Update()
-    {
-        currentGain = Mathf.SmoothDamp(currentGain, targetGain, ref gainVelocity, smoothTime);
-        currentFreq = Mathf.SmoothDamp(currentFreq, targetFreq, ref freqVelocity, smoothTime);
-
-        mixer.SetFloat(gainParameter, currentGain);
-        mixer.SetFloat(frequencyParameter, currentFreq);
-    }
-
+    // This function is called by the EQHandleDragRelay, which provides the
+    // position information of the handle in the screen
     public void ProcessDrag(Vector2 screenPosition, Camera eventCamera)
     {
         Vector2 localPoint;
         RectTransformUtility.ScreenPointToLocalPointInRectangle(circleArea, screenPosition, eventCamera, out localPoint);
 
-        Vector2 offset = localPoint - center;
-        float radius = circleArea.rect.width * 0.5f;
+        // Since there is only a rectangle in object manipulation, a circle has to be created
+        Vector2 offset = localPoint - center; // checks the distance of the immediate point of the handle compared to the center
+        float radius = circleArea.rect.width * 0.5f; // defining the radius
 
         if (offset.magnitude > radius)
-            offset = offset.normalized * radius;
+            offset = offset.normalized * radius; // Sets the offset to a normalized point within the circle
 
-        handle.anchoredPosition = offset;
+        handle.anchoredPosition = offset; // Sets the handle based on that offset
 
-        float normX = offset.x / radius;
+        float normX = offset.x / radius; // Turns x and y to numbers from -1 to 1
         float normY = offset.y / radius;
 
         SetTargetEQ(normX, normY);
     }
 
+    // Sets the targetGain and targetFreq that will then be smoothed
+    // in the update function
     public void SetTargetEQ(float x, float y)
     {
+        // Since x and y are from -1 to 1, they have to be normalized from 0 to 1 by
+        // doing (x+1)/2 [when x=-1, val=(-1+1)/2=0, vice versa]
         targetGain = Mathf.Lerp(minGain, maxGain, (x + 1) / 2f);
 
+        // Logarithmic scale for shorter turns; minFreq = 0.05f as log(0) does not exist
         float logMin = Mathf.Log10(minFreq);
         float logMax = Mathf.Log10(maxFreq);
         float logFreq = Mathf.Lerp(logMin, logMax, (y + 1f) / 2f);
         targetFreq = Mathf.Pow(10f, logFreq);
 
-        //UpdateLabelVisuals(new Vector2(x, y));
-
+        // Logs the result for data analysis
         Debug.Log("UnityDebug EQ_" + handle.name + ": " + $"Gain:{currentGain}dB,Frequency:{currentFreq}Hz,x:{x},y:{y}");
     }
+    
+    void Update() // Happens every frame; where smoothing must occur
+    {
+        currentGain = Mathf.SmoothDamp(currentGain, targetGain, ref gainVelocity, smoothTime);
+        currentFreq = Mathf.SmoothDamp(currentFreq, targetFreq, ref freqVelocity, smoothTime);
 
-    //void UpdateLabelVisuals(Vector2 handlePos)
-    //{
-    //    for (int i = 0; i < labels.Length; i++)
-    //    {
-    //        float proximity = Vector2.Dot(handlePos.normalized, labelDirections[i]);
-    //        float t = Mathf.InverseLerp(hoverThreshold, 1f, proximity);
-    //
-    //        labels[i].color = Color.Lerp(normalColor, hoverColor, t);
-    //        targetScales[i] = Vector3.Lerp(Vector3.one * 0.2f, Vector3.one * 1.1f, t);
-    //        currentScales[i] = Vector3.Lerp(currentScales[i], targetScales[i], Time.deltaTime * scaleSpeed);
-    //        labels[i].transform.localScale = currentScales[i];
-    //    }
-    //}
+        mixer.SetFloat(gainParameter, currentGain); // Function that sets the desired values
+        mixer.SetFloat(frequencyParameter, currentFreq);
+    }
 
-    public void ResetEQSettings()
+    public void ResetEQSettings() // Programs the button to reset to its original position
     {
         handle.anchoredPosition = Vector2.zero;
         SetTargetEQ(-0.36f, 0f); // Reset to neutral values
-        
+
         Debug.Log("UnityDebug EQ_" + handle.name + ": Reseted");
     }
 }
