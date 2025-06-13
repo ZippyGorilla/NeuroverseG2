@@ -6,7 +6,6 @@ This project explores adaptive sensory filtering and profile blending in shared 
 
 ## 🧠 Features
 
-- Sensory calibration and profile prediction using ML
 - Real-time filtering (audio, visual, motion)
 - Shared user blending engine
 - GDPR-compliant anonymous data collection
@@ -15,31 +14,11 @@ This project explores adaptive sensory filtering and profile blending in shared 
 ➡️ **[See Full Development Guide on GitHub Wiki](https://github.com/Ziforge/Neuroverse/wiki/Development-Setup-Guide)**
 
 
-## 🔁 Flow Chart
-
-```mermaid
-flowchart TD
-    A[Start VR Session] --> B[Consent + GDPR Notice]
-    B --> C[Calibration Scene]
-    C --> D[Passive Behavior Tracking]
-    D --> E[ML Predicts Sensory Profile]
-    E --> F{Is Other User Nearby?}
-    F -- Yes --> G[Blend Sensory Profiles]
-    F -- No --> H[Continue Solo Experience]
-    G --> I[Adapt Environment]
-    H --> I
-    I --> J[Cooperative Task or Puzzle]
-    J --> K[Post-Session Debrief]
-    K --> L[Session Ends]
-```
-
-
 ## 📂 Structure
 
 - `docs/`: Academic LaTeX report and diagrams  
 - `unity_project/`: Unity C# source files  
 - `data/`: Anonymized datasets  
-- `website/`: HTML files for recruitment and consent  
 
 ## 🧪 Run the Study
 
