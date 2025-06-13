@@ -25,7 +25,7 @@ This project explores adaptive sensory filtering and profile blending in shared 
 1. Clone the repo  
 2. Open `unity_project/` in Unity 2022+  
 3. Load the calibration or experience scenes  
-4. Start testing on Meta Quest 3  
+4. Start testing on Meta Quest 2 or 3 (or similar).  
 
 ## 📜 License
 
